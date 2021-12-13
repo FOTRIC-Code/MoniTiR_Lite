@@ -1,0 +1,182 @@
+﻿<TabItem
+    x:Class="Firefly.Client.CustomSoftwareControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:control="http://schemas.fireflyclient.com/control/2022/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+    xmlns:local="clr-namespace:Firefly.Client"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    amur:TabItemAssist.Icon="{control:SymbolIcon DataCenter}"
+    d:DataContext="{d:DesignInstance local:CustomSoftwareControl,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Loaded="CustomSoftwareControl_Loaded"
+    Style="{StaticResource IRtek.Styles.TabItem.Classic}"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource IRtek.Brushes.ThemeBackground.WorkArea}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="{DynamicResource LargeMargin}" Background="{StaticResource IRtek.Brushes.ThemeBackground.Content}">
+                <StackPanel
+                    Margin="{DynamicResource LeftMargin}"
+                    HorizontalAlignment="Left"
+                    Orientation="Vertical">
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="350"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                IsReadOnly="True"
+                                Text="{Binding ViewModel.SoftwareIconName}"
+                                TextAlignment="Left" />
+                            <amur:Button Margin="{DynamicResource LeftMargin}" Click="btnOpenFolder_Click">
+                                <amur:Button.Icon>
+                                    <amur:SymbolIcon
+                                        FontFamily="{DynamicResource FluentSystemIcons}"
+                                        FontSize="24"
+                                        Symbol="FolderOpen24" />
+                                </amur:Button.Icon>
+                            </amur:Button>
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.SoftwareIcon}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="350"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                x:Name="tbSoftwareName"
+                                Width="300"
+                                Height="48"
+                                AcceptsReturn="True"
+                                MaxLines="2"
+                                Text="{Binding ViewModel.SoftwareName}"
+                                TextAlignment="Left"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.SoftwareName}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="350"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Height="48"
+                                AcceptsReturn="True"
+                                MaxLines="2"
+                                Text="{Binding ViewModel.FontSize}"
+                                TextAlignment="Left"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.FontSize}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel MaxHeight="48" Margin="{DynamicResource LeftMargin}">
+                        <Grid
+                            Width="350"
+                            HorizontalAlignment="Left"
+                            DockPanel.Dock="Right">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+                                    Width="auto"
+                                    MinWidth="32"
+                                    MaxWidth="110" />
+                                <ColumnDefinition Width="auto" MaxWidth="190" />
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                Grid.Column="0"
+                                MinWidth="32"
+                                MinHeight="32"
+                                MaxWidth="110"
+                                MaxHeight="42"
+                                Source="{Binding ViewModel.SoftwareIcon}" />
+                            <TextBlock
+                                x:Name="tbPreviewTitle"
+                                Grid.Column="1"
+                                Width="190"
+                                MaxWidth="190"
+                                MaxHeight="60"
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                FontFamily="{DynamicResource SourceHan}"
+                                FontSize="{Binding ViewModel.FontSize}"
+                                FontStretch="Medium"
+                                FontWeight="Black"
+                                Foreground="{DynamicResource IRtek.Brushes.ThemeForeground}"
+                                Text="{Binding ViewModel.SoftwareName}"
+                                TextTrimming="CharacterEllipsis"
+                                TextWrapping="Wrap" />
+                        </Grid>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.Preview}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="350"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                Width="300"
+                                Text="1. 图标尺寸建议128x128像素&#10;2. 软件名称支持最多1次换行"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            Margin="0,8,0,0"
+                            VerticalAlignment="Top"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.Note}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel
+            Grid.Row="1"
+            Margin="{StaticResource RightMargin}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Orientation="Horizontal">
+            <Button
+                x:Name="btnSave"
+                Click="btnSave_Click"
+                Content="{x:Static lang:Resources.Save}" />
+        </StackPanel>
+    </Grid>
+</TabItem>

@@ -1,0 +1,258 @@
+﻿<DockPanel
+    x:Class="Firefly.Client.Control.DayGridItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amurControls="clr-namespace:Amur.Controls;assembly=Amur.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+    xmlns:local="clr-namespace:Firefly.Client.Control"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="root"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="{DynamicResource IRtek.Brushes.ComboBox.Popup.Border}"
+    LastChildFill="False"
+    mc:Ignorable="d">
+
+    <DockPanel.Resources>
+        <Style
+            x:Key="displayWhenMove"
+            BasedOn="{StaticResource IRtek.Styles.TextBlock.Classic}"
+            TargetType="TextBlock">
+            <Setter Property="Margin" Value="-70,-40,-70,0" />
+            <Setter Property="Background" Value="{StaticResource IRtek.Brushes.ThemeBackground.WorkArea}" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="Foreground" Value="{StaticResource IRtek.Brushes.ThemeForeground}" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Visibility" Value="Hidden" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ItemStatus}" Value="RightMove">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ItemStatus}" Value="LeftMove">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ItemStatus}" Value="Moving">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="displayWhenHover" TargetType="Grid">
+            <Setter Property="Background" Value="{StaticResource IRtek.Brushes.ThemeBackground.WorkArea}" />
+            <Setter Property="Margin" Value="-100,-50,-100,20" />
+            <Setter Property="Width" Value="140" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=root, Path=IsMouseOver}" Value="true">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=root, Path=IsMouseOver}" Value="false">
+                    <Setter Property="Visibility" Value="Hidden" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style
+            x:Key="TimeTextBox"
+            BasedOn="{StaticResource IRtek.Styles.TextBox.Classic}"
+            TargetType="TextBox">
+            <Setter Property="Width" Value="48" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="displayThumb" TargetType="Thumb">
+            <Setter Property="Height" Value="{Binding ElementName=root, Path=ActualHeight}" />
+            <Setter Property="Opacity" Value="0" />
+            <Setter Property="Cursor" Value="SizeWE" />
+            <Setter Property="Width" Value="2" />
+            <Setter Property="Visibility" Value="Hidden" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsSelected}" Value="true">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </DockPanel.Resources>
+    <Grid DockPanel.Dock="Top" Style="{StaticResource displayWhenHover}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                Text="{Binding StartTime}"
+                TextAlignment="Center" />
+            <TextBlock
+                Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                Text=" — "
+                TextAlignment="Center" />
+            <TextBlock
+                Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                Text="{Binding EndTime}"
+                TextAlignment="Center" />
+        </StackPanel>
+    </Grid>
+    <Popup
+        x:Name="PART_set_value"
+        Width="348"
+        Placement="Custom"
+        PlacementTarget="{Binding ElementName=root}">
+        <Popup.Style>
+            <Style TargetType="Popup">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding ItemStatus}" Value="Focused">
+                        <Setter Property="IsOpen" Value="True" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Popup.Style>
+        <Border
+            Height="212"
+            Background="{StaticResource IRtek.Brushes.ThemeBackground.Content}"
+            BorderBrush="{DynamicResource IRtek.Brushes.ComboBox.Border}"
+            BorderThickness="{StaticResource DefaultBorderThickness}">
+            <DockPanel Margin="{DynamicResource LargeMargin}">
+                <TextBlock DockPanel.Dock="Top" Text="{Binding Label}" />
+                <Rectangle Height="{DynamicResource IntervalsHeight}" DockPanel.Dock="Top" />
+                <StackPanel
+                    HorizontalAlignment="Right"
+                    DockPanel.Dock="Bottom"
+                    Orientation="Horizontal">
+                    <Button
+                        Height="32"
+                        HorizontalAlignment="Center"
+                        Click="btn_Close_Click"
+                        Content="{x:Static lang:Resources.Cancel}"
+                        Style="{StaticResource IRtek.Styles.Button.Classic}" />
+                    <Rectangle Width="{DynamicResource IntervalsWidth}" />
+                    <Button
+                        x:Name="btn_Save"
+                        Height="32"
+                        HorizontalAlignment="Center"
+                        Click="btn_Save_Click"
+                        Content="{x:Static lang:Resources.Save}"
+                        IsDefault="True">
+                        <Button.Style>
+                            <Style BasedOn="{StaticResource IRtek.Styles.Button.Classic}" TargetType="Button">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding EditingStartHours}" Value="">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding EditingStartMinutes}" Value="">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding EditingEndHours}" Value="">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding EditingEndMinutes}" Value="">
+                                        <Setter Property="IsEnabled" Value="False" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Top" Visibility="{Binding DurationTypeViewVisibility}">
+                    <ComboBox
+                        x:Name="cmb_duration_type"
+                        HorizontalAlignment="Center"
+                        ItemsSource="{Binding ComboBoxItemsSource}"
+                        SelectedItem="{Binding SelectedType}"
+                        Style="{StaticResource IRtek.Styles.ComboBox.Classic}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock
+                                        Width="150"
+                                        Text="{Binding Name}"
+                                        TextAlignment="Center" />
+                                </Grid>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" DockPanel.Dock="Top" />
+                    <StackPanel
+                        Grid.Row="2"
+                        Margin="{StaticResource NormalMargin}"
+                        HorizontalAlignment="Left"
+                        Orientation="Horizontal">
+                        <TextBox
+                            x:Name="cmb_start_hour"
+                            HorizontalAlignment="Left"
+                            Style="{StaticResource TimeTextBox}"
+                            Text="{Binding EditingStartHours, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                            Text=" ：" />
+                        <TextBox
+                            x:Name="cmb_start_minutes"
+                            Style="{StaticResource TimeTextBox}"
+                            Text="{Binding EditingStartMinutes, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                            Text=" — " />
+                        <TextBox
+                            x:Name="cmb__hour"
+                            Style="{StaticResource TimeTextBox}"
+                            Text="{Binding EditingEndHours, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Style="{StaticResource IRtek.Styles.TextBlock.Classic}"
+                            Text=" ：" />
+                        <TextBox
+                            Margin="{DynamicResource RightMargin}"
+                            Style="{StaticResource TimeTextBox}"
+                            Text="{Binding EditingEndMinutes, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </StackPanel>
+
+            </DockPanel>
+        </Border>
+    </Popup>
+
+    <TextBlock
+        x:Name="tb_left"
+        HorizontalAlignment="Left"
+        DockPanel.Dock="Top"
+        Style="{StaticResource displayWhenMove}"
+        Text="{Binding StartTime}" />
+    <Border BorderBrush="{DynamicResource IRtek.Brushes.Highlight}" DockPanel.Dock="Bottom">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="BorderThickness" Value="0,0,0,0" />
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding IsSelected}" Value="true">
+                        <Setter Property="BorderThickness" Value="{StaticResource DefaultBorderThickness}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+        <DockPanel>
+            <Thumb
+                x:Name="PART_left"
+                DragStarted="PART_left_DragStarted"
+                Style="{StaticResource displayThumb}" />
+            <Thumb
+                x:Name="PART_right"
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Right"
+                DragStarted="PART_right_DragStarted"
+                Style="{StaticResource displayThumb}" />
+        </DockPanel>
+    </Border>
+    <TextBlock
+        x:Name="tb_right"
+        HorizontalAlignment="Right"
+        DockPanel.Dock="Top"
+        Style="{StaticResource displayWhenMove}"
+        Text="{Binding EndTime}" />
+</DockPanel>

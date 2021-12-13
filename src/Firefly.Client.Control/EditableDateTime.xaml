@@ -1,0 +1,93 @@
+﻿<UserControl
+    x:Class="Firefly.Client.Control.EditableDateTime"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Firefly.Client.Control"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type TextBox}">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Height" Value="38" />
+            <Setter Property="AllowDrop" Value="False" />
+            <Setter Property="Margin" Value="{StaticResource NormalMargin}" />
+        </Style>
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="{StaticResource IRtek.Brushes.ThemeBackground.SelectMenu}" />
+            <Setter Property="Height" Value="32" />
+        </Style>
+    </UserControl.Resources>
+    <Border
+        Background="{StaticResource IRtek.Brushes.ThemeBackground.SelectMenu}"
+        BorderBrush="{StaticResource BorderBrush}"
+        BorderThickness="0">
+        <DockPanel>
+            <UniformGrid
+                Columns="1"
+                DockPanel.Dock="Right"
+                Rows="2">
+                <amur:Button
+                    Width="32"
+                    Height="20"
+                    Click="btnIncrease_Click"
+                    Icon="{amur:SymbolIcon ChevronUp20}"
+                    PreviewMouseLeftButtonDown="cb_PreviewMouseLeftButtonDown" />
+                <amur:Button
+                    Width="32"
+                    Height="20"
+                    Click="btnDecrease_Click"
+                    Icon="{amur:SymbolIcon ChevronDown20}"
+                    PreviewMouseLeftButtonDown="cb_PreviewMouseLeftButtonDown" />
+            </UniformGrid>
+            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                <Rectangle Margin="{StaticResource NormalMargin}" />
+                <TextBox
+                    x:Name="tbYear"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Year}" />
+                <TextBlock Margin="0,10,0,0" Text="-" />
+                <TextBox
+                    x:Name="tbMonth"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Month}" />
+                <TextBlock Margin="0,10,0,0" Text="-" />
+                <TextBox
+                    x:Name="tbDay"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Day}" />
+                <TextBlock Text=" " />
+                <TextBox
+                    x:Name="tbHour"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Hour}" />
+                <TextBlock Margin="0,10,0,0" Text=":" />
+                <TextBox
+                    x:Name="tbMinute"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Minute}" />
+                <TextBlock Margin="0,10,0,0" Text=":" />
+                <TextBox
+                    x:Name="tbSecond"
+                    InputMethod.IsInputMethodEnabled="False"
+                    LostFocus="textBox_LostFocus"
+                    PreviewTextInput="textBox_PreviewTextInput"
+                    Tag="{x:Static local:DateType.Second}" />
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</UserControl>

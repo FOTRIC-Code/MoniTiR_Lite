@@ -1,0 +1,13 @@
+﻿<Thumb  x:Class="Firefly.Client.Control.CharacterThumb"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Firefly.Client.Control"
+            Cursor="SizeAll"
+            DragStarted="Thumb_DragStarted" DragDelta="Thumb_DragDelta" DragCompleted="Thumb_DragCompleted" Focusable="True" GotFocus="Thumb_GotFocus" LostFocus="Thumb_LostFocus" >
+    <Thumb.Template>
+        <ControlTemplate>
+        </ControlTemplate>
+    </Thumb.Template>
+</Thumb>

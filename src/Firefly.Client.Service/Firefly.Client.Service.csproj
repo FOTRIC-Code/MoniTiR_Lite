@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE5E4E61-A061-4CAB-B4CC-BB271D9CDCBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Firefly.Client.Service</RootNamespace>
+    <AssemblyName>Firefly.Client.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amur.Common, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Amur.Controls, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LiteDb\LiteFireDataRepository.cs" />
+    <Compile Include="LiteDb\LocalImagePath.cs" />
+    <Compile Include="LiteDb\LiteAlarmRepository.cs" />
+    <Compile Include="LiteDb\LiteAgentRepository.cs" />
+    <Compile Include="LiteDb\LiteDatabase.cs" />
+    <Compile Include="LiteDb\LiteDbPaths.cs" />
+    <Compile Include="LiteDb\LiteDeviceRepository.cs" />
+    <Compile Include="LiteDb\LiteFireDeviceConfDefaults.cs" />
+    <Compile Include="LiteDb\LiteLocalAgents.cs" />
+    <Compile Include="LiteDb\LiteSystemConfigRepository.cs" />
+    <Compile Include="Abstractions\IAgentHealth.cs" />
+    <Compile Include="Abstractions\IFireCallbackDispatcher.cs" />
+    <Compile Include="Abstractions\IFireDeviceRuntime.cs" />
+    <Compile Include="Abstractions\FireCallbackDispatcher.cs" />
+    <Compile Include="Abstractions\FireRuntimeServices.cs" />
+    <Compile Include="Abstractions\InProcAgentHealth.cs" />
+    <Compile Include="Abstractions\InProcFireDeviceRuntime.cs" />
+    <Compile Include="Abstractions\InProcFireEngineHost.cs" />
+    <Compile Include="Abstractions\InProcFireEngineBridge.cs" />
+    <Compile Include="DataObjects\CameraDiscoveryDO.cs" />
+    <Compile Include="DataObjects\CommonConfigDO.cs" />
+    <Compile Include="DataObjects\CustomSoftwareDO.cs" />
+    <Compile Include="Manager\OnvifManager.cs" />
+    <Compile Include="Manager\AgentManager.cs" />
+    <Compile Include="Manager\AlarmManager.cs" />
+    <Compile Include="Background\TrackingService.cs" />
+    <Compile Include="DataObjects\AdminAgentConfig.cs" />
+    <Compile Include="DataObjects\AlarmCenterConfigDataObject.cs" />
+    <Compile Include="DataObjects\AlarmConfirmerDataObject.cs" />
+    <Compile Include="DataObjects\AlarmOutDataObject.cs" />
+    <Compile Include="DataObjects\AreaDO.cs" />
+    <Compile Include="DataObjects\CruisePositionEventBO.cs" />
+    <Compile Include="DataObjects\DatabasesConfigDataObject.cs" />
+    <Compile Include="DataObjects\LivePreviewCruisePlanConfigDO.cs" />
+    <Compile Include="DataObjects\OSDCustomerInputModel.cs" />
+    <Compile Include="DataObjects\FileDataObject.cs" />
+    <Compile Include="InputModel\DeviceChannelInputModel.cs" />
+    <Compile Include="DataObjects\DeviceOverrideDataObject.cs" />
+    <Compile Include="DataObjects\EnvironmentDO.cs" />
+    <Compile Include="DataObjects\DeviceDataStatisticsDO.cs" />
+    <Compile Include="DataObjects\EventMessageBO.cs" />
+    <Compile Include="DataObjects\HubConnectionBO.cs" />
+    <Compile Include="DataObjects\DeviceStreamDO.cs" />
+    <Compile Include="DataObjects\SubscriptionBO.cs" />
+    <Compile Include="Manager\DeviceEngineManager.cs" />
+    <Compile Include="Manager\EnvironmentManager.cs" />
+    <Compile Include="OutputModel\SampleOutputModel.cs" />
+    <Compile Include="Manager\SystemConfigManager.cs" />
+    <Compile Include="DataObjects\AgentConfig.cs" />
+    <Compile Include="DataObjects\AlarmDO.cs" />
+    <Compile Include="DataObjects\DeviceConfigDataObject.cs" />
+    <Compile Include="DataObjects\DeviceDO.cs" />
+    <Compile Include="DataObjects\DeviceParamDataObject.cs" />
+    <Compile Include="DataObjects\DeviceStatusDataObject.cs" />
+    <Compile Include="DataObjects\DeviceDataDO.cs" />
+    <Compile Include="DataObjects\PTZControlDataObject.cs" />
+    <Compile Include="DataObjects\PTZCruiseDataObject.cs" />
+    <Compile Include="DataObjects\PTZPresetDataObject.cs" />
+    <Compile Include="DataObjects\ServerDO.cs" />
+    <Compile Include="DataObjects\DeviceStoreDataObject.cs" />
+    <Compile Include="Manager\DeviceManager.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="Plugin\IDeviceConfigurer.cs" />
+    <Compile Include="IRTekHttpClient.cs" />
+    <Compile Include="PaginationInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Manager\ServerManager.cs" />
+    <Compile Include="Manager\StoreManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Type.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly.Client.Common\Firefly.Client.Common.csproj">
+      <Project>{CF3BF28A-E3B0-4F16-936E-A731A5455E5E}</Project>
+      <Name>Firefly.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Client.Control\Firefly.Client.Control.csproj">
+      <Project>{0e2157cb-49ae-4dc8-957e-b995bc108eda}</Project>
+      <Name>Firefly.Client.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Server.StorageAgent\Firefly.Server.StorageAgent.csproj">
+      <Name>Firefly.Server.StorageAgent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DiscoveryMessage.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

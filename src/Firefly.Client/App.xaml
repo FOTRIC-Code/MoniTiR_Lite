@@ -1,0 +1,21 @@
+
+<Application
+    x:Class="Firefly.Client.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:local="clr-namespace:Firefly.Client">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <amur:ControlsDictionary />
+                <ResourceDictionary Source="pack://application:,,,/Amur.Controls;component/Styles/Themes/Dark.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Firefly.Client.Control;component/Themes/Dictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Firefly.Client.Control;component/Controls/Image/IRtekImage.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MoniTiRLite;component/Resources/svg_resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="SymbolRegular">pack://application:,,,/Firefly.Client.Control;component/Resources/Fonts/#SymbolRegular</FontFamily>
+            <Style BasedOn="{StaticResource IRtek.Styles.DataGrid.Classic}" TargetType="{x:Type local:DynamicDataGrid}" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

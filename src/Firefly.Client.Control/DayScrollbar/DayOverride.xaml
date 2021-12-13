@@ -1,0 +1,46 @@
+﻿<Grid x:Class="Firefly.Client.Control.DayOverride"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+             xmlns:control="clr-namespace:Firefly.Client.Control"
+             mc:Ignorable="d" 
+             x:Name="root"
+             d:DesignHeight="450" d:DesignWidth="800" Background="{StaticResource IRtek.Brushes.ThemeBackground.WorkArea}" 
+             Visibility="Hidden" MinWidth="270" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Grid.Resources>
+        <Style TargetType="CheckBox" BasedOn="{StaticResource IRtek.Styles.CheckBox.Classic}">
+            <Setter Property="Margin" Value="{StaticResource NormalMargin}" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Grid.Resources>
+    <Border BorderThickness="{StaticResource DefaultBorderThickness}" BorderBrush="{StaticResource BorderBrush}">
+        <Grid Margin="{DynamicResource NormalMargin}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <DockPanel Grid.Row="0" Margin="{StaticResource NormalMargin}">
+                <TextBlock Text="{x:Static lang:Resources.CopyToPoints}" VerticalAlignment="Center" Margin="{StaticResource NormalMargin}" HorizontalAlignment="Center" />
+                <CheckBox x:Name="cb_all" Content="{x:Static lang:Resources.SelectAll}" HorizontalAlignment="Right" IsChecked="{Binding IsAllChecked}"/>
+            </DockPanel>
+
+            <UniformGrid Grid.Row="1" Columns="3" Rows="3">
+                <CheckBox x:Name="cb_monday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Monday}}" IsChecked="{Binding IsMondayChecked}" Content="{x:Static lang:Resources.Monday}" Tag="{x:Static control:DayOfWeek.Monday}" HorizontalAlignment="Left" />
+                <CheckBox x:Name="cb_tuesday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Tuesday}}" IsChecked="{Binding IsTuesdayChecked}" Content="{x:Static lang:Resources.Tuesday}" Tag="{x:Static control:DayOfWeek.Tuesday}" HorizontalAlignment="Left" />
+                <CheckBox x:Name="cb_wednesday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Wednesday}}" IsChecked="{Binding IsWednesdayChecked}" Content="{x:Static lang:Resources.Wednesday}" Tag="{x:Static control:DayOfWeek.Wednesday}" HorizontalAlignment="Left" />
+                <CheckBox x:Name="cb_thursday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Thursday}}" IsChecked="{Binding IsThursdayChecked}" Content="{x:Static lang:Resources.Thursday}" Tag="{x:Static control:DayOfWeek.Thursday}" HorizontalAlignment="Left" />
+                <CheckBox x:Name="cb_friday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Friday}}" IsChecked="{Binding IsFridayChecked}" Content="{x:Static lang:Resources.Friday}" Tag="{x:Static control:DayOfWeek.Friday}" HorizontalAlignment="Left" />
+                <CheckBox  x:Name="cb_saturday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Saturday}}" IsChecked="{Binding IsSaturdayChecked}" Content="{x:Static lang:Resources.Saturday}" Tag="{x:Static control:DayOfWeek.Saturday}" HorizontalAlignment="Left" />
+                <CheckBox x:Name="cb_sunday" IsEnabled="{Binding FromDayOfWeek, Converter={StaticResource NotEqualityToBoolConverter},ConverterParameter={x:Static control:DayOfWeek.Sunday}}" IsChecked="{Binding IsSundayChecked}" Content="{x:Static lang:Resources.Sunday}" Tag="{x:Static control:DayOfWeek.Sunday}" HorizontalAlignment="Left" />
+            </UniformGrid>
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Height="40" Grid.Row="2">
+                <Button x:Name="btn_ok" Style="{StaticResource IRtek.Styles.Button.Classic}" Content="{x:Static lang:Resources.OK}" Click="btn_ok_Click" Margin="{StaticResource NormalMargin}" />
+                <Button x:Name="btn_delete" Style="{StaticResource IRtek.Styles.Button.Classic}" Content="{x:Static lang:Resources.Cancel}" Click="btn_delete_Click" Margin="{StaticResource NormalMargin}" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Grid>

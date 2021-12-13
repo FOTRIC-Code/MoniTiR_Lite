@@ -1,0 +1,51 @@
+﻿<Window x:Class="Firefly.Client.AlarmConfirmNoteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:amurControls="clr-namespace:Amur.Controls;assembly=Amur.Controls"
+        xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+        x:Name="root"
+        Style="{StaticResource ResizableDialogWindow}"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" Title="AlarmConfirmNoteWindow" 
+        MinHeight="580" MinWidth="480" SizeToContent="Height" Width="480" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <amurControls:IRtekWindowHeader Title="{x:Static lang:Resources.AlarmConfirm}" ResizeMode="{Binding ResizeMode,ElementName=root}" />
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="{StaticResource LargeMargin}" Background="{DynamicResource IRtek.Brushes.ThemeBackground.Content}">
+            <TextBlock Margin="{DynamicResource NormalMargin}">
+                <Run Text="{x:Static lang:Resources.AlarmTime}" />
+                <Run Text=":" />
+                <Run Text="{Binding AlarmTime,StringFormat={}{0:yyyy-MM-dd HH:mm:ss}}" />
+            </TextBlock>
+            <TextBlock Margin="{DynamicResource NormalMargin}">
+                <Run Text="{x:Static lang:Resources.AlarmDevice}" />
+                <Run Text=":" />
+                <Run Text="{Binding DeviceName}" />
+            </TextBlock>
+            <TextBlock Margin="{DynamicResource NormalMargin}">
+                <Run Text="{x:Static lang:Resources.AlarmType}" />
+                <Run Text=":" />
+                <Run Text="{Binding AlarmType}" />
+            </TextBlock>
+            <TextBlock Margin="{DynamicResource NormalMargin}">
+                <Run Text="{x:Static lang:Resources.AlarmLevel}" />
+                <Run Text=":" />
+                <Run Text="{Binding AlarmLevel}" />
+            </TextBlock>
+            <CheckBox x:Name="cbConfirmConfig" Margin="{DynamicResource NormalMargin}" Style="{StaticResource IRtek.Styles.CheckBox.Classic}" Content="{x:Static lang:Resources.ConfirmSameDeviceAlarm}" />
+            <TextBlock Margin="{DynamicResource NormalMargin}" Text="{x:Static lang:Resources.Note}" />
+            <TextBox x:Name="tbNote" VerticalContentAlignment="Top" TextWrapping="Wrap" HorizontalContentAlignment="Left" Height="248" Margin="{StaticResource NormalMargin}" />
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="2" Margin="{StaticResource LargeMargin}">
+            <Button IsDefault="True" Content="{x:Static lang:Resources.OK}" Click="btnSave_Click" />
+            <Rectangle Width="{DynamicResource IntervalsWidth}" />
+            <Button Content="{x:Static lang:Resources.Cancel}" Click="btnCancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

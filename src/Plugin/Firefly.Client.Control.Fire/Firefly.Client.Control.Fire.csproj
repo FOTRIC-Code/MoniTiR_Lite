@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22FC9957-AE9D-4BCB-9A6C-19EFAA2BF1B5}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Firefly.Client.Control.Fire</RootNamespace>
+    <AssemblyName>Firefly.Client.Control.Fire</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Firefly.Client\bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Firefly.Client\bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Firefly.Client\bin\x86\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\Firefly.Client\bin\x86\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Firefly.Client\bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\Firefly.Client\bin\x64\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amur.Common, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Amur.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Amur.Controls, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Amur.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.13" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataObjects\AlarmRuleDataObject.cs" />
+    <Compile Include="DataObjects\AlarmScheduleDataObject.cs" />
+    <Compile Include="DataObjects\CruiseRouteDataObject.cs" />
+    <Compile Include="DataObjects\DevicePresetDataObject.cs" />
+    <Compile Include="DataObjects\FireAgentDataObject.cs" />
+    <Compile Include="DataObjects\EventTriggerDataObject.cs" />
+    <Compile Include="DataObjects\GeneralConfigDataObject.cs" />
+    <Compile Include="DataObjects\OSDConfigDataObject.cs" />
+    <Compile Include="DataObjects\PTZPresetDataObject.cs" />
+    <Compile Include="DataObjects\TaskScheduleDataObject.cs" />
+    <Compile Include="DeviceConfigurer.cs" />
+    <Compile Include="View\ExportDialog.xaml.cs">
+      <DependentUpon>ExportDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorCodeTranslator.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service\FireAgentDeviceManager.cs" />
+    <Compile Include="EnumToStringConverter.cs" />
+    <Compile Include="Type.cs" />
+    <Compile Include="View\AlarmRuleWindow.xaml.cs">
+      <DependentUpon>AlarmRuleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmRuleEditWindow.xaml.cs">
+      <DependentUpon>AlarmRuleEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmRuleViewModel.cs" />
+    <Compile Include="View\AlarmScheduleControl.xaml.cs">
+      <DependentUpon>AlarmScheduleControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmScheduleViewModel.cs" />
+    <Compile Include="View\DeviceOverrideViewModel.cs" />
+    <Compile Include="View\DeviceOverrideWindow.xaml.cs">
+      <DependentUpon>DeviceOverrideWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CruiseRouteControl.xaml.cs">
+      <DependentUpon>CruiseRouteControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CruiseRouteEditWindow.xaml.cs">
+      <DependentUpon>CruiseRouteEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CruiseRouteViewModel.cs" />
+    <Compile Include="View\CruiseRouteEditPresetWindow.xaml.cs">
+      <DependentUpon>CruiseRouteEditPresetWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OSDConfigControl.xaml.cs">
+      <DependentUpon>OSDConfigControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OSDConfigViewModel.cs" />
+    <Compile Include="View\PresetMarkerEditWindow.xaml.cs">
+      <DependentUpon>PresetMarkerEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventTriggerControl.xaml.cs">
+      <DependentUpon>EventTriggerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventTriggerViewModel.cs" />
+    <Compile Include="View\GeneralControl.xaml.cs">
+      <DependentUpon>GeneralControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeneralViewModel.cs" />
+    <Compile Include="View\PresetControl.xaml.cs">
+      <DependentUpon>PresetControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PresetShieldMaskEditWindow.xaml.cs">
+      <DependentUpon>PresetShieldMaskEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PresetViewModel.cs" />
+    <Compile Include="View\TaskScheduleControl.xaml.cs">
+      <DependentUpon>TaskScheduleControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TaskScheduleViewModel.cs" />
+    <Compile Include="DataObjects\TabStatusModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\ExportDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmRuleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AlarmRuleEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmScheduleControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DeviceOverrideWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CruiseRouteControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CruiseRouteEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CruiseRouteEditPresetWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OSDConfigControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PresetMarkerEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventTriggerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GeneralControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PresetControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PresetShieldMaskEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TaskScheduleControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Firefly.Client.Common\Firefly.Client.Common.csproj">
+      <Project>{cf3bf28a-e3b0-4f16-936e-a731a5455e5e}</Project>
+      <Name>Firefly.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Firefly.Client.Control\Firefly.Client.Control.csproj">
+      <Project>{0e2157cb-49ae-4dc8-957e-b995bc108eda}</Project>
+      <Name>Firefly.Client.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Firefly.Client.I18n\Firefly.Client.I18n.csproj">
+      <Project>{1e8054ff-276d-4f30-aa3c-6421c14d2dd2}</Project>
+      <Name>Firefly.Client.I18n</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Firefly.Client.Service\Firefly.Client.Service.csproj">
+      <Project>{ae5e4e61-a061-4cab-b4cc-bb271d9cdcbd}</Project>
+      <Name>Firefly.Client.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\down_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\up_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pause_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\play_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\aperture_down_icon.png" />
+    <Resource Include="Resources\aperture_up_icon.png" />
+    <Resource Include="Resources\auto_focus_icon.png" />
+    <Resource Include="Resources\focus_down_icon.png" />
+    <Resource Include="Resources\focus_up_icon.png" />
+    <Resource Include="Resources\zoom_down_icon.png" />
+    <Resource Include="Resources\zoom_up_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\stop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\clean_icon.png" />
+    <Resource Include="Resources\config_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

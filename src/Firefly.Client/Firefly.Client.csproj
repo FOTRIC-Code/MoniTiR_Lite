@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{9A233123-39FE-4324-9BB6-7441DBF95456}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Firefly.Client</RootNamespace>
+    <AssemblyName>MoniTiRLite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amur.Common, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Amur.Controls, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Linq" Version="4.4.1" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="Helpers\ChartDoubleToDateTimeConverter.cs" />
+    <Compile Include="Helpers\ChartHelper.cs" />
+    <Compile Include="Helpers\ItemType.cs" />
+    <Compile Include="Helpers\LiteAgentBootstrap.cs" />
+    <Compile Include="Helpers\LiteServerHost.cs" />
+    <Compile Include="Helpers\TreeViewHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmConfirmNoteWindow.xaml.cs">
+      <DependentUpon>AlarmConfirmNoteWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmItemViewModel.cs" />
+    <Compile Include="View\Alarm\AlarmTipViewModel.cs" />
+    <Compile Include="View\Alarm\AlarmTipWindow.xaml.cs">
+      <DependentUpon>AlarmTipWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmPage.xaml.cs">
+      <DependentUpon>AlarmPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmRecordVideoWindow.xaml.cs">
+      <DependentUpon>AlarmRecordVideoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmQuery\AlarmQueryControl.xaml.cs">
+      <DependentUpon>AlarmQueryControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\AlarmQuery\AlarmQueryViewModel.cs" />
+    <Compile Include="View\Alarm\AlarmStatusBarControl.xaml.cs">
+      <DependentUpon>AlarmStatusBarControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\Preference\AlarmCenterBO.cs" />
+    <Compile Include="View\Alarm\Preference\AlarmCenterPreference.cs" />
+    <Compile Include="View\Alarm\RealTimeAlarm\RealTimeAlarmsControl.xaml.cs">
+      <DependentUpon>RealTimeAlarmsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Alarm\RealTimeAlarm\RealTimeAlarmsViewModel.cs" />
+    <Compile Include="View\App\Preference\AppBO.cs" />
+    <Compile Include="View\App\Preference\AppPreference.cs" />
+    <Compile Include="View\DataCenter\Controls\AmurPlotView.xaml.cs">
+      <DependentUpon>AmurPlotView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataCenter\Controls\DynamicDataGrid.cs" />
+    <Compile Include="View\DataCenter\ViewModels\DataCenterDetailWindowViewModel.cs" />
+    <Compile Include="View\DataCenter\Views\DataCenterRecordImageWindow.xaml.cs">
+      <DependentUpon>DataCenterRecordImageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataCenter\ViewModels\IRFileViewerViewModel.cs" />
+    <Compile Include="View\DataCenter\Views\IRFileViewerWindow.xaml.cs">
+      <DependentUpon>IRFileViewerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataCenter\Views\DataCenterDetailWindow.xaml.cs">
+      <DependentUpon>DataCenterDetailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Info\InfoViewModel.cs" />
+    <Compile Include="View\Info\InfoWindow.xaml.cs">
+      <DependentUpon>InfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LivePreview\Preference\LivePreviewBO.cs" />
+    <Compile Include="View\LivePreview\ViewModels\PollingGroupViewModel.cs" />
+    <Compile Include="View\LivePreview\Views\LivePreviewFullScreenWindow.xaml.cs">
+      <DependentUpon>LivePreviewFullScreenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LivePreview\Views\LivePreviewPage.CruisePlan.cs" />
+    <Compile Include="View\LivePreview\Views\LivePreviewPage.xaml.cs">
+      <DependentUpon>LivePreviewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LivePreview\ViewModels\LivePreviewPageViewModel.cs" />
+    <Compile Include="View\LivePreview\Preference\LivePreviewPreference.cs" />
+    <Compile Include="View\LivePreview\Views\PollingGroupWindow.xaml.cs">
+      <DependentUpon>PollingGroupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LivePreview\Views\SplitItemsPanelControl.cs" />
+    <Compile Include="View\LivePreview\Views\SplitVideoControl.xaml.cs">
+      <DependentUpon>SplitVideoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LivePreview\ViewModels\SplitVideoViewModel.cs" />
+    <Compile Include="View\Main\Preference\MainWindowBO.cs" />
+    <Compile Include="View\Main\Preference\MainWindowPreference.cs" />
+    <Compile Include="View\SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataCenter\Views\DataCenterPage.xaml.cs">
+      <DependentUpon>DataCenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataCenter\ViewModels\DataCenterPageViewModel.cs" />
+    <Compile Include="View\MainViewModel.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\DeviceManager\SubDeviceDetailViewModel.cs" />
+    <Compile Include="View\Resource\DeviceTypeConverter.cs" />
+    <Compile Include="View\Resource\DeviceManager\DeviceManagerControl.xaml.cs">
+      <DependentUpon>DeviceManagerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\DeviceManager\DeviceManagerViewModel.cs" />
+    <Compile Include="View\Resource\DeviceManager\DeviceDetailViewModel.cs" />
+    <Compile Include="View\Resource\DeviceManager\DeviceDetailWindow.xaml.cs">
+      <DependentUpon>DeviceDetailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\DeviceManager\SubDeviceDetailWindow.xaml.cs">
+      <DependentUpon>SubDeviceDetailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\ResourcePage.xaml.cs">
+      <DependentUpon>ResourcePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\ServerManager\NVREditWindow.xaml.cs">
+      <DependentUpon>NVREditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\ServerManager\StoreServerConfigViewModel.cs" />
+    <Compile Include="View\Resource\ServerManager\StoreServerConfigWindow.xaml.cs">
+      <DependentUpon>StoreServerConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\ServerTypeConverter.cs" />
+    <Compile Include="View\Resource\StorePlanning\StorePlanningControl.xaml.cs">
+      <DependentUpon>StorePlanningControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Resource\StorePlanning\StorePlanningViewModel.cs" />
+    <Compile Include="View\Status\DeviceDetailMonitorWindow.xaml.cs">
+      <DependentUpon>DeviceDetailMonitorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Status\RealTimeMonitorViewModel.cs" />
+    <Compile Include="View\Status\RealTimeMonitorWindow.xaml.cs">
+      <DependentUpon>RealTimeMonitorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Status\StatusMonitorPage.xaml.cs">
+      <DependentUpon>StatusMonitorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Status\StatusMonitorViewModel.cs" />
+    <Compile Include="View\SystemConfig\CommonConfig\CommonConfigControl.xaml.cs">
+      <DependentUpon>CommonConfigControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemConfig\CommonConfig\CommonConfigViewModel.cs" />
+    <Compile Include="View\SystemConfig\CustomSystem\CustomSoftwareControl.xaml.cs">
+      <DependentUpon>CustomSoftwareControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemConfig\CustomSystem\CustomSoftwareViewModel.cs" />
+    <Compile Include="View\SystemConfig\ImageCanvas\ImageCanvasConfigControl.xaml.cs">
+      <DependentUpon>ImageCanvasConfigControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemConfig\Preference\SystemConfigBO.cs" />
+    <Compile Include="View\SystemConfig\Preference\SystemConfigPreference.cs" />
+    <Compile Include="View\SystemConfig\SystemConfigPage.xaml.cs">
+      <DependentUpon>SystemConfigPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly.Client.Common\Firefly.Client.Common.csproj">
+      <Project>{CF3BF28A-E3B0-4F16-936E-A731A5455E5E}</Project>
+      <Name>Firefly.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Client.Control\Firefly.Client.Control.csproj">
+      <Project>{0e2157cb-49ae-4dc8-957e-b995bc108eda}</Project>
+      <Name>Firefly.Client.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Client.I18n\Firefly.Client.I18n.csproj">
+      <Project>{1e8054ff-276d-4f30-aa3c-6421c14d2dd2}</Project>
+      <Name>Firefly.Client.I18n</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Client.Service\Firefly.Client.Service.csproj">
+      <Project>{AE5E4E61-A061-4CAB-B4CC-BB271D9CDCBD}</Project>
+      <Name>Firefly.Client.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Device.FireMonitor\Firefly.Device.FireMonitor.csproj">
+      <Project>{05093CDE-5859-4513-9914-715B817FC126}</Project>
+      <Name>Firefly.Device.FireMonitor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Server.StorageAgent\Firefly.Server.StorageAgent.csproj">
+      <Project>{2080D030-4126-48E8-ADFE-DE368E78DE9C}</Project>
+      <Name>Firefly.Server.StorageAgent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.SDK.File\Firefly.SDK.File.csproj">
+      <Project>{0306a04f-63a4-41f9-a744-6873662af19a}</Project>
+      <Name>Firefly.SDK.File</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\svg_resources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="View\DataCenter\Controls\AmurPlotView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataCenter\Views\IRFileViewerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Info\InfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LivePreview\Views\PollingGroupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Status\DeviceDetailMonitorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemConfig\CommonConfig\CommonConfigControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemConfig\CustomSystem\CustomSoftwareControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemConfig\ImageCanvas\ImageCanvasConfigControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\AlarmConfirmNoteWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Alarm\AlarmTipWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\AlarmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\AlarmRecordVideoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\AlarmQuery\AlarmQueryControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\AlarmStatusBarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Alarm\RealTimeAlarm\RealTimeAlarmsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataCenter\Views\DataCenterRecordImageWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DataCenter\Views\DataCenterDetailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LivePreview\Views\LivePreviewFullScreenWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LivePreview\Views\LivePreviewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LivePreview\Views\SplitVideoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SplashWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DataCenter\Views\DataCenterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Main\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Resource\DeviceManager\DeviceManagerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Resource\DeviceManager\DeviceDetailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Resource\DeviceManager\SubDeviceDetailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Resource\ResourcePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Resource\ServerManager\NVREditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Resource\ServerManager\StoreServerConfigWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Resource\StorePlanning\StorePlanningControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Status\RealTimeMonitorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Status\StatusMonitorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemConfig\SystemConfigPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\warrning.wav" />
+    <Resource Include="Resources\live_preview_selected_icon.png" />
+    <Resource Include="Resources\live_preview_main_icon.png" />
+    <Resource Include="Resources\live_preview_icon.png" />
+    <Resource Include="Resources\link_white_icon.png" />
+    <Resource Include="Resources\link_red_icon.png" />
+    <Resource Include="Resources\left.png" />
+    <Resource Include="Resources\ledger_manager_selected_icon.png" />
+    <Resource Include="Resources\ledger_manager_main_icon.png" />
+    <Resource Include="Resources\ledger_manager_icon.png" />
+    <Resource Include="Resources\ledger_icon.png" />
+    <Resource Include="Resources\inspection_task_real_time_selected_icon.png" />
+    <Resource Include="Resources\inspection_task_real_time_icon.png" />
+    <Resource Include="Resources\inspection_task_menu_icon.png" />
+    <Resource Include="Resources\inspection_task_icon.png" />
+    <Resource Include="Resources\inspection_task_history_selected_icon.png" />
+    <Resource Include="Resources\inspection_task_history_icon.png" />
+    <Resource Include="Resources\inspection_ledger_selected_icon.png" />
+    <Resource Include="Resources\inspection_ledger_main_icon.png" />
+    <Resource Include="Resources\inspection_ledger_list_icon.png" />
+    <Resource Include="Resources\inspection_ledger_icon.png" />
+    <Resource Include="Resources\import_icon.png" />
+    <Resource Include="Resources\hiddenbar_icon.png" />
+    <Resource Include="Resources\fullscreen_icon.png" />
+    <Resource Include="Resources\form_max_icon.png" />
+    <Resource Include="Resources\focus_up_icon.png" />
+    <Resource Include="Resources\focus_down_icon.png" />
+    <Resource Include="Resources\file_icon.png" />
+    <Resource Include="Resources\export_icon.png" />
+    <Resource Include="Resources\exitfullscreen_icon.png" />
+    <Resource Include="Resources\equipment_monitor_selected_icon.png" />
+    <Resource Include="Resources\equipment_monitor_main_icon.png" />
+    <Resource Include="Resources\equipment_monitor_icon.png" />
+    <Resource Include="Resources\equipment_icon.png" />
+    <Resource Include="Resources\edit_icon.png" />
+    <Resource Include="Resources\draw_mask_icon.png" />
+    <Resource Include="Resources\download_icon.png" />
+    <Resource Include="Resources\device_selected_icon.png" />
+    <Resource Include="Resources\device_icon.png" />
+    <Resource Include="Resources\device_config_big_chosen.png" />
+    <Resource Include="Resources\device_config_big.png" />
+    <Resource Include="Resources\delete_icon.png" />
+    <Resource Include="Resources\data_icon.png" />
+    <Resource Include="Resources\data_center_selected_icon.png" />
+    <Resource Include="Resources\data_center_main_icon.png" />
+    <Resource Include="Resources\data_center_icon.png" />
+    <Resource Include="Resources\copy_icon.png" />
+    <Resource Include="Resources\config_icon.png" />
+    <Resource Include="Resources\close_small_icon.png" />
+    <Resource Include="Resources\clean_icon.png" />
+    <Resource Include="Resources\cancel_icon.png" />
+    <Resource Include="Resources\binding_icon.png" />
+    <Resource Include="Resources\basic_info_icon.png" />
+    <Resource Include="Resources\auto_focus_icon.png" />
+    <Resource Include="Resources\arrow_u.png" />
+    <Resource Include="Resources\arrow_r.png" />
+    <Resource Include="Resources\arrow_l.png" />
+    <Resource Include="Resources\arrow_icon.png" />
+    <Resource Include="Resources\arrow_d.png" />
+    <Resource Include="Resources\area_selected_icon.png" />
+    <Resource Include="Resources\area_icon.png" />
+    <Resource Include="Resources\aperture_up_icon.png" />
+    <Resource Include="Resources\aperture_down_icon.png" />
+    <Resource Include="Resources\alarms_realtime.png" />
+    <Resource Include="Resources\alarm_query_selected_icon.png" />
+    <Resource Include="Resources\alarm_query_icon.png" />
+    <Resource Include="Resources\alarm_query.png" />
+    <Resource Include="Resources\alarm_platform_selected_icon.png" />
+    <Resource Include="Resources\alarm_platform_icon.png" />
+    <Resource Include="Resources\alarm_out_icon.png" />
+    <Resource Include="Resources\alarm_light_white_icon.png" />
+    <Resource Include="Resources\alarm_light_red_icon.png" />
+    <Resource Include="Resources\alarm_icon.png" />
+    <Resource Include="Resources\alarm_config_selected_icon.png" />
+    <Resource Include="Resources\alarm_config_main_icon.png" />
+    <Resource Include="Resources\alarm_config_icon.png" />
+    <Resource Include="Resources\alarm_center_selected_icon.png" />
+    <Resource Include="Resources\alarm_center_main_icon.png" />
+    <Resource Include="Resources\alarm_center_icon.png" />
+    <Resource Include="Resources\admin_usertype_bg.png" />
+    <Resource Include="Resources\admin_icon.png" />
+    <Resource Include="Resources\add_icon.png" />
+    <Resource Include="Resources\zoom_up_icon.png" />
+    <Resource Include="Resources\zoom_down_icon.png" />
+    <Resource Include="Resources\wiper_icon.png" />
+    <Resource Include="Resources\warrning_on_icon.png" />
+    <Resource Include="Resources\warrning_off_icon.png" />
+    <Resource Include="Resources\warning_icon.png" />
+    <Resource Include="Resources\user_manager_icon.png" />
+    <Resource Include="Resources\tree_icon.png" />
+    <Resource Include="Resources\system_config_selected_icon.png" />
+    <Resource Include="Resources\system_config_main_icon.png" />
+    <Resource Include="Resources\system_config_icon.png" />
+    <Resource Include="Resources\super_admin_usertype_bg.png" />
+    <Resource Include="Resources\super_admin_icon.png" />
+    <Resource Include="Resources\super_admin_bg.png" />
+    <Resource Include="Resources\store_selected_icon.png" />
+    <Resource Include="Resources\store_icon.png" />
+    <Resource Include="Resources\stop_white_icon.png" />
+    <Resource Include="Resources\stop_icon.png" />
+    <Resource Include="Resources\status_monitor_selected_icon.png" />
+    <Resource Include="Resources\status_monitor_main_icon.png" />
+    <Resource Include="Resources\status_monitor_icon.png" />
+    <Resource Include="Resources\station_icon.png" />
+    <Resource Include="Resources\ss11.png" />
+    <Resource Include="Resources\ss10.png" />
+    <Resource Include="Resources\ss9.png" />
+    <Resource Include="Resources\ss8.png" />
+    <Resource Include="Resources\ss7.png" />
+    <Resource Include="Resources\ss6.png" />
+    <Resource Include="Resources\ss5.png" />
+    <Resource Include="Resources\ss4.png" />
+    <Resource Include="Resources\ss3.png" />
+    <Resource Include="Resources\ss2.png" />
+    <Resource Include="Resources\ss1.png" />
+    <Resource Include="Resources\squareRight.png" />
+    <Resource Include="Resources\squareLeft.png" />
+    <Resource Include="Resources\split_icon.png" />
+    <Resource Include="Resources\splash_en.gif" />
+    <Resource Include="Resources\splash.gif" />
+    <Resource Include="Resources\sound_open_icon.png" />
+    <Resource Include="Resources\sound_close_icon.png" />
+    <Resource Include="Resources\smart_icon.png" />
+    <Resource Include="Resources\setting_icon.png" />
+    <Resource Include="Resources\server_selected_icon.png" />
+    <Resource Include="Resources\server_icon.png" />
+    <Resource Include="Resources\search_icon.png" />
+    <Resource Include="Resources\right.png" />
+    <Resource Include="Resources\resume_cruise_icon.png" />
+    <Resource Include="Resources\resource_config_selected_icon.png" />
+    <Resource Include="Resources\resource_config_main_icon.png" />
+    <Resource Include="Resources\resource_config_icon.png" />
+    <Resource Include="Resources\region_icon.png" />
+    <Resource Include="Resources\refresh_icon.png" />
+    <Resource Include="Resources\real_time_monitor_icon.png" />
+    <Resource Include="Resources\play_icon.png" />
+    <Resource Include="Resources\pause_icon.png" />
+    <Resource Include="Resources\password_visible_icon.png" />
+    <Resource Include="Resources\password_hide_icon.png" />
+    <Resource Include="Resources\operator_usertype_bg.png" />
+    <Resource Include="Resources\operator_icon.png" />
+    <Resource Include="Resources\normal_usertype_bg.png" />
+    <Resource Include="Resources\no_video_icon.png" />
+    <Resource Include="Resources\no_picture_icon.png" />
+    <Resource Include="Resources\no_data_icon.png" />
+    <Resource Include="Resources\modify_icon.png" />
+    <Resource Include="Resources\main_selected_icon.png" />
+    <Resource Include="Resources\main_icon.png" />
+    <Resource Include="Resources\logo_white.png" />
+    <Resource Include="Resources\login_background.png" />
+    <Resource Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--
+    In-proc Fire: copy src\Lib (vendored Infrastructure runtime) + FireMonitor build output ? $(OutputPath).
+    C-class (Client-owned): never overwrite from Lib ? FFmpeg.AutoGen / Newtonsoft.Json.
+    Firefly.Device.FireMonitor.dll always comes from its project output, not Lib.
+    FFmpeg natives live only under Lib\FFmpeg\ ? OutputPath\FFmpeg\ (shared by Client RTSP and Stream.Core).
+    Hikvision NVR natives live under Lib\HCNetSDK\ ? OutputPath\HCNetSDK\ (DllImport .\HCNetSDK\HCNetSDK.dll).
+  -->
+  <PropertyGroup>
+    <FireLib>..\Lib</FireLib>
+  </PropertyGroup>
+  <!-- VS Fast Up-to-date Check ignores AfterTargets=Build when project sources are unchanged;
+       Lib DLL drops (e.g. RTSPServer.dll) would otherwise never trigger a copy. -->
+  <ItemGroup Condition="Exists('$(FireLib)')">
+    <UpToDateCheckInput Include="..\Lib\HCNetSDK\HCNetSDKCom\AudioRender.dll" />
+    <UpToDateCheckInput Include="..\Lib\HCNetSDK\libeay32.dll" />
+    <UpToDateCheckInput Include="..\Lib\HCNetSDK\OpenAL32.dll" />
+    <UpToDateCheckInput Include="..\Lib\HCNetSDK\ssleay32.dll" />
+    <UpToDateCheckInput Include="..\Lib\log4net.config" />
+    <UpToDateCheckInput Include="..\Firefly.Device.FireMonitor\bin\$(Platform)\$(Configuration)\Firefly.Device.FireMonitor.dll" />
+    <UpToDateCheckInput Include="..\Firefly.Device.FireMonitor\bin\$(Configuration)\Firefly.Device.FireMonitor.dll" />
+  </ItemGroup>
+  <Target Name="CopyFireInProcDependencies" AfterTargets="Build" Condition="Exists('$(FireLib)')">
+    <!-- Resolve after FireMonitor has built. Project-level Exists() ran too early on Clean+Rebuild. -->
+    <PropertyGroup>
+      <_FireMonitorDll>Firefly.Device.FireMonitor.dll</_FireMonitorDll>
+      <FireMonitorOut Condition="Exists('..\Firefly.Device.FireMonitor\bin\$(Platform)\$(Configuration)\$(_FireMonitorDll)')">..\Firefly.Device.FireMonitor\bin\$(Platform)\$(Configuration)</FireMonitorOut>
+      <FireMonitorOut Condition="'$(FireMonitorOut)' == '' and Exists('..\Firefly.Device.FireMonitor\bin\$(Configuration)\$(_FireMonitorDll)')">..\Firefly.Device.FireMonitor\bin\$(Configuration)</FireMonitorOut>
+      <FireMonitorOut Condition="'$(FireMonitorOut)' == '' and Exists('..\Firefly.Device.FireMonitor\bin\$(Configuration)\net461\$(_FireMonitorDll)')">..\Firefly.Device.FireMonitor\bin\$(Configuration)\net461</FireMonitorOut>
+    </PropertyGroup>
+    <Error Text="Firefly.Device.FireMonitor.dll not found under bin\$(Platform)\$(Configuration) or bin\$(Configuration). In-proc Fire will stay offline; rebuild Firefly.Device.FireMonitor before Client." Condition="'$(FireMonitorOut)' == ''" />
+    <ItemGroup>
+      <_FireMonitorOut Include="$(FireMonitorOut)\$(_FireMonitorDll)" />
+      <_FireMonitorOut Include="$(FireMonitorOut)\FireMonitorRTSPServerConfig.json" Condition="Exists('$(FireMonitorOut)\FireMonitorRTSPServerConfig.json')" />
+      <!-- Root + recursive: root Explicit so Lib\RTSPServer.dll etc. are never missed.
+           Exclude managed C-class / engine self; natives under FFmpeg\ copy via RecursiveDir. -->
+      <_FireLibDll Include="$(FireLib)\*.dll;$(FireLib)\**\*.dll" Exclude="$(FireLib)\FFmpeg.AutoGen.dll;$(FireLib)\Newtonsoft.Json.dll;$(FireLib)\Firefly.Device.FireMonitor.dll;$(FireLib)\avcodec-*.dll;$(FireLib)\avdevice-*.dll;$(FireLib)\avfilter-*.dll;$(FireLib)\avformat-*.dll;$(FireLib)\avutil-*.dll;$(FireLib)\swresample-*.dll;$(FireLib)\swscale-*.dll" />
+      <_FireLibConfig Include="$(FireLib)\log4net.config" Condition="Exists('$(FireLib)\log4net.config')" />
+      <!-- Fallback only when Lib\FFmpeg is empty: Control ships natives under FFmpeg\x64. -->
+      <_ClientFFmpegX64 Include="..\Firefly.Client.Control\FFmpeg\x64\*.dll" Condition="Exists('..\Firefly.Client.Control\FFmpeg\x64')" />
+    </ItemGroup>
+    <Warning Text="src\Lib has no DLLs under $(FireLib); in-proc Fire engines will be incomplete." Condition="'@(_FireLibDll)' == ''" />
+    <Copy SourceFiles="@(_FireMonitorOut)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_FireLibDll)" DestinationFiles="@(_FireLibDll->'$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" Condition="'@(_FireLibDll)' != ''" />
+    <Copy SourceFiles="@(_FireLibConfig)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="false" Condition="'@(_FireLibConfig)' != ''" />
+    <!-- If Lib has no FFmpeg\ folder, seed OutputPath\FFmpeg from Control's x64 natives. -->
+    <MakeDir Directories="$(OutputPath)FFmpeg" Condition="!Exists('$(FireLib)\FFmpeg') and '@(_ClientFFmpegX64)' != ''" />
+    <Copy SourceFiles="@(_ClientFFmpegX64)" DestinationFolder="$(OutputPath)FFmpeg" SkipUnchangedFiles="true" Condition="!Exists('$(FireLib)\FFmpeg') and '@(_ClientFFmpegX64)' != ''" />
+  </Target>
+  <Target Name="LiteRemoveNonFirePlugins" AfterTargets="AfterBuild">
+    <Delete Files="$(OutputPath)Firefly.Client.Control.Equipment.dll" ContinueOnError="true" />
+    <Delete Files="$(OutputPath)Firefly.Client.Control.Environment.dll" ContinueOnError="true" />
+    <Delete Files="$(OutputPath)Firefly.Client.Control.PDMonitor.dll" ContinueOnError="true" />
+  </Target>
+</Project>

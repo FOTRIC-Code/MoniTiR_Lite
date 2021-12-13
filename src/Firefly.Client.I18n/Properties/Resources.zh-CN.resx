@@ -1,0 +1,2602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acceleration" xml:space="preserve">
+    <value>加速度</value>
+  </data>
+  <data name="AccelerationAlarmLevel" xml:space="preserve">
+    <value>加速度报警等级</value>
+  </data>
+  <data name="AccelerationWithSymbol" xml:space="preserve">
+    <value>加速度(m/s²)</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddArea" xml:space="preserve">
+    <value>添加区域</value>
+  </data>
+  <data name="AddEquipment" xml:space="preserve">
+    <value>添加设备</value>
+  </data>
+  <data name="AddEquipmentInfo" xml:space="preserve">
+    <value>添加设备信息</value>
+  </data>
+  <data name="AddFail" xml:space="preserve">
+    <value>添加失败</value>
+  </data>
+  <data name="AddPoint" xml:space="preserve">
+    <value>添加测点</value>
+  </data>
+  <data name="AddProperty" xml:space="preserve">
+    <value>添加属性</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="AddStation" xml:space="preserve">
+    <value>添加站点</value>
+  </data>
+  <data name="AddSuccessfully" xml:space="preserve">
+    <value>添加成功</value>
+  </data>
+  <data name="AgentAddFailed" xml:space="preserve">
+    <value>服务器添加失败</value>
+  </data>
+  <data name="AgentOffline" xml:space="preserve">
+    <value>服务器离线</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>报警</value>
+  </data>
+  <data name="Alarm1Output" xml:space="preserve">
+    <value>I级预警</value>
+  </data>
+  <data name="Alarm2Output" xml:space="preserve">
+    <value>II级预警</value>
+  </data>
+  <data name="AlarmAgent" xml:space="preserve">
+    <value>报警服务器</value>
+  </data>
+  <data name="AlarmCenter" xml:space="preserve">
+    <value>报警中心</value>
+  </data>
+  <data name="AlarmCenterConfig" xml:space="preserve">
+    <value>报警中心配置</value>
+  </data>
+  <data name="AlarmCenterDescription" xml:space="preserve">
+    <value>用于实时显示监控点的报警消息，同时可查询报警历史消息</value>
+  </data>
+  <data name="AlarmConfig" xml:space="preserve">
+    <value>报警配置</value>
+  </data>
+  <data name="AlarmConfigDescription" xml:space="preserve">
+    <value>用于配置监控点的报警输出动作</value>
+  </data>
+  <data name="AlarmConfirm" xml:space="preserve">
+    <value>报警处理</value>
+  </data>
+  <data name="AlarmData" xml:space="preserve">
+    <value>报警数据</value>
+  </data>
+  <data name="AlarmDescription" xml:space="preserve">
+    <value>报警描述</value>
+  </data>
+  <data name="AlarmDetails" xml:space="preserve">
+    <value>报警详情</value>
+  </data>
+  <data name="AlarmDevice" xml:space="preserve">
+    <value>报警监控点</value>
+  </data>
+  <data name="AlarmFilteringTime" xml:space="preserve">
+    <value>报警等待时间(s)</value>
+  </data>
+  <data name="AlarmLevel" xml:space="preserve">
+    <value>报警级别</value>
+  </data>
+  <data name="AlarmMessage" xml:space="preserve">
+    <value>报警消息</value>
+  </data>
+  <data name="AlarmOutAction" xml:space="preserve">
+    <value>报警输出动作</value>
+  </data>
+  <data name="AlarmOutMode" xml:space="preserve">
+    <value>报警输出方式</value>
+  </data>
+  <data name="AlarmPicture" xml:space="preserve">
+    <value>报警图片</value>
+  </data>
+  <data name="AlarmPlatform" xml:space="preserve">
+    <value>报警平台</value>
+  </data>
+  <data name="AlarmPlatformAccess" xml:space="preserve">
+    <value>报警平台接入</value>
+  </data>
+  <data name="AlarmQuery" xml:space="preserve">
+    <value>报警查询</value>
+  </data>
+  <data name="AlarmRecord" xml:space="preserve">
+    <value>报警记录</value>
+  </data>
+  <data name="AlarmRegion" xml:space="preserve">
+    <value>报警区域</value>
+  </data>
+  <data name="AlarmRepeatCount" xml:space="preserve">
+    <value>报警重复次数</value>
+  </data>
+  <data name="AlarmRetentionTime" xml:space="preserve">
+    <value>报警保存时间</value>
+  </data>
+  <data name="AlarmRule" xml:space="preserve">
+    <value>报警规则</value>
+  </data>
+  <data name="AlarmRuleFullMessage" xml:space="preserve">
+    <value>最多支持50个报警规则</value>
+  </data>
+  <data name="AlarmSchedule" xml:space="preserve">
+    <value>布防计划</value>
+  </data>
+  <data name="AlarmService" xml:space="preserve">
+    <value>报警监控服务</value>
+  </data>
+  <data name="AlarmStatus" xml:space="preserve">
+    <value>报警状态</value>
+  </data>
+  <data name="AlarmTemp" xml:space="preserve">
+    <value>报警温度(℃)</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>报警时间</value>
+  </data>
+  <data name="AlarmType" xml:space="preserve">
+    <value>报警类型</value>
+  </data>
+  <data name="AlarmValue" xml:space="preserve">
+    <value>报警阈值</value>
+  </data>
+  <data name="AlarmVideo" xml:space="preserve">
+    <value>报警视频</value>
+  </data>
+  <data name="Alert1FilteringTime" xml:space="preserve">
+    <value>I级预警等待时间(s)</value>
+  </data>
+  <data name="Alert1Temp" xml:space="preserve">
+    <value>I级预警温度(℃)</value>
+  </data>
+  <data name="Alert2FilteringTime" xml:space="preserve">
+    <value>II级预警等待时间(s)</value>
+  </data>
+  <data name="Alert2Temp" xml:space="preserve">
+    <value>II级预警温度(℃)</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>共</value>
+  </data>
+  <data name="AlreadyRunning" xml:space="preserve">
+    <value>已经有实例在运行</value>
+  </data>
+  <data name="AnalysisFailed" xml:space="preserve">
+    <value>解析失败</value>
+  </data>
+  <data name="AnalysisSuccessful" xml:space="preserve">
+    <value>解析成功</value>
+  </data>
+  <data name="Aperture" xml:space="preserve">
+    <value>光圈</value>
+  </data>
+  <data name="AppKey" xml:space="preserve">
+    <value>接口密钥</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="AreaConfig" xml:space="preserve">
+    <value>区域配置</value>
+  </data>
+  <data name="AreaName" xml:space="preserve">
+    <value>区域名称</value>
+  </data>
+  <data name="Association" xml:space="preserve">
+    <value>关联</value>
+  </data>
+  <data name="AtmTemp" xml:space="preserve">
+    <value>大气温度(℃)</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>关注</value>
+  </data>
+  <data name="AutoFocus" xml:space="preserve">
+    <value>自动对焦</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>自动播放视频</value>
+  </data>
+  <data name="AverageGreater" xml:space="preserve">
+    <value>平均温大于</value>
+  </data>
+  <data name="AverageLess" xml:space="preserve">
+    <value>平均温小于</value>
+  </data>
+  <data name="AvgColon" xml:space="preserve">
+    <value>平均值：</value>
+  </data>
+  <data name="AvgTemperature" xml:space="preserve">
+    <value>平均温</value>
+  </data>
+  <data name="AvgTemperatureWithSymbol" xml:space="preserve">
+    <value>平均温(℃)</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="BasicInfomation" xml:space="preserve">
+    <value>基础信息</value>
+  </data>
+  <data name="BatchBinding" xml:space="preserve">
+    <value>批量绑定</value>
+  </data>
+  <data name="Begin" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="BeginStop" xml:space="preserve">
+    <value>开始停止</value>
+  </data>
+  <data name="Binding" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="BindingResource" xml:space="preserve">
+    <value>绑定资源</value>
+  </data>
+  <data name="BookmarkFormatFail" xml:space="preserve">
+    <value>书签"{0}"格式不正确</value>
+  </data>
+  <data name="BookmarkIndexOutofRange" xml:space="preserve">
+    <value>书签"{0}"已超过索引范围</value>
+  </data>
+  <data name="BookmarkMsg" xml:space="preserve">
+    <value>正在插入书签"{0}"，数据 ：{1}</value>
+  </data>
+  <data name="Bound" xml:space="preserve">
+    <value>已绑定</value>
+  </data>
+  <data name="Brightness" xml:space="preserve">
+    <value>亮度</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>调用</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelLoad" xml:space="preserve">
+    <value>取消加载</value>
+  </data>
+  <data name="CannotChooseYourself" xml:space="preserve">
+    <value>不能选择自身</value>
+  </data>
+  <data name="CannotExceedMaxDuration" xml:space="preserve">
+    <value>时间段不能多于{0}个</value>
+  </data>
+  <data name="Channel" xml:space="preserve">
+    <value>通道</value>
+  </data>
+  <data name="ChannelConfig" xml:space="preserve">
+    <value>通道配置</value>
+  </data>
+  <data name="ChannelList" xml:space="preserve">
+    <value>通道列表</value>
+  </data>
+  <data name="ChannelName" xml:space="preserve">
+    <value>通道名称</value>
+  </data>
+  <data name="ChannelNo" xml:space="preserve">
+    <value>通道编号</value>
+  </data>
+  <data name="ChannelZero" xml:space="preserve">
+    <value>通道0</value>
+  </data>
+  <data name="CharacterOverlay" xml:space="preserve">
+    <value>字符叠加</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>勾选</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="ChooseDevice" xml:space="preserve">
+    <value>选择监控点</value>
+  </data>
+  <data name="ChooseEquipmentPoint" xml:space="preserve">
+    <value>选择设备测点</value>
+  </data>
+  <data name="ChooseFireAlarm" xml:space="preserve">
+    <value>选择报警规则</value>
+  </data>
+  <data name="Clean" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="CleanFailed" xml:space="preserve">
+    <value>清空失败</value>
+  </data>
+  <data name="CleanSuccess" xml:space="preserve">
+    <value>清空成功</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="CloseAlarmTip" xml:space="preserve">
+    <value>关闭报警弹窗</value>
+  </data>
+  <data name="CloseSound" xml:space="preserve">
+    <value>关闭声音</value>
+  </data>
+  <data name="CloseSpeech" xml:space="preserve">
+    <value>关闭语音</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>收起</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>通用</value>
+  </data>
+  <data name="Config" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>处理</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>已处理</value>
+  </data>
+  <data name="ConfirmSameDeviceAlarm" xml:space="preserve">
+    <value>同设备报警批量处理</value>
+  </data>
+  <data name="ConfirmState" xml:space="preserve">
+    <value>处理状态</value>
+  </data>
+  <data name="ConnectFailed" xml:space="preserve">
+    <value>连接失败</value>
+  </data>
+  <data name="ConnectionParam" xml:space="preserve">
+    <value>连接参数</value>
+  </data>
+  <data name="ConnectionStatus" xml:space="preserve">
+    <value>连接状态</value>
+  </data>
+  <data name="ContainInvalidValueError" xml:space="preserve">
+    <value>不能包含无效的输入值</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Contrast" xml:space="preserve">
+    <value>对比度</value>
+  </data>
+  <data name="CopyFailed" xml:space="preserve">
+    <value>复制失败</value>
+  </data>
+  <data name="CopySucceeded" xml:space="preserve">
+    <value>复制成功</value>
+  </data>
+  <data name="CopyTo" xml:space="preserve">
+    <value>复制到</value>
+  </data>
+  <data name="CopyToPoints" xml:space="preserve">
+    <value>复制到...</value>
+  </data>
+  <data name="CoverImage" xml:space="preserve">
+    <value>封面图</value>
+  </data>
+  <data name="Critical" xml:space="preserve">
+    <value>严重缺陷</value>
+  </data>
+  <data name="Critical1" xml:space="preserve">
+    <value>危急缺陷</value>
+  </data>
+  <data name="CriticalFilteringTime" xml:space="preserve">
+    <value>严重缺陷等待时间(s)</value>
+  </data>
+  <data name="CriticalTemp" xml:space="preserve">
+    <value>严重缺陷温度(℃)</value>
+  </data>
+  <data name="Cruise" xml:space="preserve">
+    <value>巡航</value>
+  </data>
+  <data name="CruiseName" xml:space="preserve">
+    <value>巡航名称</value>
+  </data>
+  <data name="CruiseRoute" xml:space="preserve">
+    <value>巡航路径</value>
+  </data>
+  <data name="CruiseRouteCountLessThanTen" xml:space="preserve">
+    <value>巡航路径不能超过10个</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>数据</value>
+  </data>
+  <data name="DataAlarm" xml:space="preserve">
+    <value>数据报警</value>
+  </data>
+  <data name="DatabasesConfig" xml:space="preserve">
+    <value>数据库配置</value>
+  </data>
+  <data name="DataByteOrder" xml:space="preserve">
+    <value>数据字节序</value>
+  </data>
+  <data name="DataCenter" xml:space="preserve">
+    <value>数据中心</value>
+  </data>
+  <data name="DataCenterDescription" xml:space="preserve">
+    <value>用于查询监控点和设备的历史数据</value>
+  </data>
+  <data name="DataLength" xml:space="preserve">
+    <value>字节长度</value>
+  </data>
+  <data name="DataOffset" xml:space="preserve">
+    <value>数据修正</value>
+  </data>
+  <data name="DataRecord" xml:space="preserve">
+    <value>数据记录(条)</value>
+  </data>
+  <data name="DataRecordEnabled" xml:space="preserve">
+    <value>启用数据记录</value>
+  </data>
+  <data name="DataRecordInterval" xml:space="preserve">
+    <value>数据记录间隔(帧/条)</value>
+  </data>
+  <data name="DataRecordTime" xml:space="preserve">
+    <value>数据记录时间</value>
+  </data>
+  <data name="DataRefreshTime" xml:space="preserve">
+    <value>数据刷新时间</value>
+  </data>
+  <data name="DataRetentionTime" xml:space="preserve">
+    <value>数据保存时间</value>
+  </data>
+  <data name="DataScale" xml:space="preserve">
+    <value>缩放比例</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>数据类型</value>
+  </data>
+  <data name="DataValue" xml:space="preserve">
+    <value>数据值</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DCCamera" xml:space="preserve">
+    <value>可见光</value>
+  </data>
+  <data name="DefaultPolling" xml:space="preserve">
+    <value>默认轮巡</value>
+  </data>
+  <data name="DefectEquipment" xml:space="preserve">
+    <value>缺陷设备</value>
+  </data>
+  <data name="DefectImage" xml:space="preserve">
+    <value>缺陷图</value>
+  </data>
+  <data name="DefectLevel" xml:space="preserve">
+    <value>缺陷等级</value>
+  </data>
+  <data name="DefectPoint" xml:space="preserve">
+    <value>缺陷测点</value>
+  </data>
+  <data name="DefectRecord" xml:space="preserve">
+    <value>缺陷记录</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>删除全部</value>
+  </data>
+  <data name="DeleteCruiseRouteNotify" xml:space="preserve">
+    <value>存在定时任务使用此巡航路径，请先移除定时任务</value>
+  </data>
+  <data name="DeleteFail" xml:space="preserve">
+    <value>删除失败</value>
+  </data>
+  <data name="DeleteInstantTaskFailed" xml:space="preserve">
+    <value>删除即时任务失败</value>
+  </data>
+  <data name="DeletePresetNotify" xml:space="preserve">
+    <value>存在巡航路径使用此预置位，请先移除巡航路径</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>删除成功</value>
+  </data>
+  <data name="Describe" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="Detected" xml:space="preserve">
+    <value>已检测</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>监控点</value>
+  </data>
+  <data name="DeviceAbilityNotMatch" xml:space="preserve">
+    <value>监控点能力集不匹配</value>
+  </data>
+  <data name="DeviceBeenDeleted" xml:space="preserve">
+    <value>监控点已被删除，无法获取报警视频</value>
+  </data>
+  <data name="DeviceChannelNotMatch" xml:space="preserve">
+    <value>监控点通道ID不匹配</value>
+  </data>
+  <data name="DeviceConfig" xml:space="preserve">
+    <value>监控点配置</value>
+  </data>
+  <data name="DeviceCount" xml:space="preserve">
+    <value>监控点数量</value>
+  </data>
+  <data name="DeviceDetail" xml:space="preserve">
+    <value>监控点详情</value>
+  </data>
+  <data name="DeviceGroup" xml:space="preserve">
+    <value>所属分组</value>
+  </data>
+  <data name="DeviceID" xml:space="preserve">
+    <value>监控点ID</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>监控点管理</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>监控点名称</value>
+  </data>
+  <data name="DeviceNotExist" xml:space="preserve">
+    <value>监控点不存在</value>
+  </data>
+  <data name="DeviceNotExisted" xml:space="preserve">
+    <value>包含不存在的监控点</value>
+  </data>
+  <data name="DeviceStatistics" xml:space="preserve">
+    <value>监控点统计</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>监控点类型</value>
+  </data>
+  <data name="DiffColon" xml:space="preserve">
+    <value>温差值：</value>
+  </data>
+  <data name="DiffTempGreater" xml:space="preserve">
+    <value>温差大于</value>
+  </data>
+  <data name="DiffTempLess" xml:space="preserve">
+    <value>温差小于</value>
+  </data>
+  <data name="DingTalk" xml:space="preserve">
+    <value>钉钉</value>
+  </data>
+  <data name="DingTalkID" xml:space="preserve">
+    <value>钉钉号</value>
+  </data>
+  <data name="DisableAll" xml:space="preserve">
+    <value>全部禁用</value>
+  </data>
+  <data name="DisplayDevice" xml:space="preserve">
+    <value>显示监控点</value>
+  </data>
+  <data name="DisplayEquipmentPoint" xml:space="preserve">
+    <value>显示设备测点</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>显示类型</value>
+  </data>
+  <data name="Disposal" xml:space="preserve">
+    <value>处理</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>距离(m)</value>
+  </data>
+  <data name="DocumentFormatMismatch" xml:space="preserve">
+    <value>文档格式不匹配</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>下载失败</value>
+  </data>
+  <data name="DownloadSuccessfully" xml:space="preserve">
+    <value>下载成功</value>
+  </data>
+  <data name="DownloadTemplateFile" xml:space="preserve">
+    <value>下载模板</value>
+  </data>
+  <data name="DPVMaximumCount" xml:space="preserve">
+    <value>最大数量为</value>
+  </data>
+  <data name="EachPage" xml:space="preserve">
+    <value>每页</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="EditAlarmOut" xml:space="preserve">
+    <value>修改报警输出</value>
+  </data>
+  <data name="EditArea" xml:space="preserve">
+    <value>编辑区域</value>
+  </data>
+  <data name="EditDevice" xml:space="preserve">
+    <value>修改监控点</value>
+  </data>
+  <data name="EditEquipment" xml:space="preserve">
+    <value>编辑设备</value>
+  </data>
+  <data name="EditEquipmentInfo" xml:space="preserve">
+    <value>编辑设备信息</value>
+  </data>
+  <data name="EditPoint" xml:space="preserve">
+    <value>编辑测点</value>
+  </data>
+  <data name="EditProperty" xml:space="preserve">
+    <value>编辑属性</value>
+  </data>
+  <data name="EditStation" xml:space="preserve">
+    <value>编辑站点</value>
+  </data>
+  <data name="EditSuccess" xml:space="preserve">
+    <value>修改成功</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>邮箱地址</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>严重缺陷</value>
+  </data>
+  <data name="Emissivity" xml:space="preserve">
+    <value>发射率</value>
+  </data>
+  <data name="EmptyNameError" xml:space="preserve">
+    <value>命名不可以为空</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="EnableAlarmPlatform" xml:space="preserve">
+    <value>启用报警平台接入</value>
+  </data>
+  <data name="EnableAll" xml:space="preserve">
+    <value>全部启用</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="EnableOSD" xml:space="preserve">
+    <value>启用字符叠加</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="EnvironmentMonitorAgent" xml:space="preserve">
+    <value>传感器服务器</value>
+  </data>
+  <data name="EnvironmentMonitorAlarm" xml:space="preserve">
+    <value>环境报警</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="EquipmentAliasName" xml:space="preserve">
+    <value>设备别名</value>
+  </data>
+  <data name="EquipmentAndPoint" xml:space="preserve">
+    <value>设备和测点</value>
+  </data>
+  <data name="EquipmentConfig" xml:space="preserve">
+    <value>设备配置</value>
+  </data>
+  <data name="EquipmentExist" xml:space="preserve">
+    <value>设备已存在</value>
+  </data>
+  <data name="EquipmentID" xml:space="preserve">
+    <value>设备ID</value>
+  </data>
+  <data name="EquipmentInfo" xml:space="preserve">
+    <value>设备信息</value>
+  </data>
+  <data name="EquipmentManagerPlatform" xml:space="preserve">
+    <value>设备平台</value>
+  </data>
+  <data name="EquipmentManagerPlatformAccess" xml:space="preserve">
+    <value>设备平台接入</value>
+  </data>
+  <data name="EquipmentMonitor" xml:space="preserve">
+    <value>设备监控</value>
+  </data>
+  <data name="EquipmentMonitorAgent" xml:space="preserve">
+    <value>设备状态服务器</value>
+  </data>
+  <data name="EquipmentMonitorAlarm" xml:space="preserve">
+    <value>设备状态报警</value>
+  </data>
+  <data name="EquipmentMonitorDescription" xml:space="preserve">
+    <value>用于实时检测设备的报警状态，及时掌握设备的异常状态</value>
+  </data>
+  <data name="EquipmentName" xml:space="preserve">
+    <value>设备名称</value>
+  </data>
+  <data name="EquipmentNO" xml:space="preserve">
+    <value>设备编号</value>
+  </data>
+  <data name="EquipmentPointList" xml:space="preserve">
+    <value>设备测点列表</value>
+  </data>
+  <data name="EquipmentSerial" xml:space="preserve">
+    <value>设备编号</value>
+  </data>
+  <data name="EquipmentSerialNO" xml:space="preserve">
+    <value>设备编号</value>
+  </data>
+  <data name="EquipmentStatistics" xml:space="preserve">
+    <value>设备统计</value>
+  </data>
+  <data name="EventDetails" xml:space="preserve">
+    <value>事件详情</value>
+  </data>
+  <data name="EventTrigger" xml:space="preserve">
+    <value>报警联动</value>
+  </data>
+  <data name="EventTriggerOutput" xml:space="preserve">
+    <value>报警输出</value>
+  </data>
+  <data name="ExitExe" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Expansion" xml:space="preserve">
+    <value>展开</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ExportAll" xml:space="preserve">
+    <value>导出全部</value>
+  </data>
+  <data name="ExportConfig" xml:space="preserve">
+    <value>导出配置</value>
+  </data>
+  <data name="Exported" xml:space="preserve">
+    <value>已输出</value>
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>导出失败</value>
+  </data>
+  <data name="ExportFailedFileOccupied" xml:space="preserve">
+    <value>文件被占用，导出失败</value>
+  </data>
+  <data name="ExportFileFilter" xml:space="preserve">
+    <value>配置文件 (*.json)|*.json</value>
+  </data>
+  <data name="ExportSuccess" xml:space="preserve">
+    <value>导出成功</value>
+  </data>
+  <data name="ExtOptTemp" xml:space="preserve">
+    <value>外部光学温度(℃)</value>
+  </data>
+  <data name="ExtOptTrans" xml:space="preserve">
+    <value>外部光学透过率</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="Fault" xml:space="preserve">
+    <value>故障缺陷</value>
+  </data>
+  <data name="FaultFilteringTime" xml:space="preserve">
+    <value>故障缺陷等待时间(s)</value>
+  </data>
+  <data name="FaultTemp" xml:space="preserve">
+    <value>故障缺陷温度(℃)</value>
+  </data>
+  <data name="FileFormatException" xml:space="preserve">
+    <value>文档格式异常</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名称</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>文件保存到</value>
+  </data>
+  <data name="FireMonitorAgent" xml:space="preserve">
+    <value>红外热像服务器</value>
+  </data>
+  <data name="FireMonitorAlarm" xml:space="preserve">
+    <value>红外报警</value>
+  </data>
+  <data name="FireMonitorService" xml:space="preserve">
+    <value>红外监控服务</value>
+  </data>
+  <data name="FireService" xml:space="preserve">
+    <value>红外监控服务</value>
+  </data>
+  <data name="FirmwareVersion" xml:space="preserve">
+    <value>固件版本号</value>
+  </data>
+  <data name="FixedSpan" xml:space="preserve">
+    <value>固定温宽</value>
+  </data>
+  <data name="FixMonitoringNoCruise" xml:space="preserve">
+    <value>定点监控不能操作巡航</value>
+  </data>
+  <data name="FixMonitoringOnlyPreset1" xml:space="preserve">
+    <value>定点监控只能使用预置位1</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>对焦</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="FunctinalCenter" xml:space="preserve">
+    <value>功能中心</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>通用</value>
+  </data>
+  <data name="General1" xml:space="preserve">
+    <value>一般缺陷</value>
+  </data>
+  <data name="GeneralDefects" xml:space="preserve">
+    <value>一般缺陷</value>
+  </data>
+  <data name="GeneralFilteringTime" xml:space="preserve">
+    <value>一般缺陷等待时间(s)</value>
+  </data>
+  <data name="GeneralTemp" xml:space="preserve">
+    <value>一般缺陷温度(℃)</value>
+  </data>
+  <data name="GradleService" xml:space="preserve">
+    <value>钢包监控服务</value>
+  </data>
+  <data name="Greater" xml:space="preserve">
+    <value>阈值大于</value>
+  </data>
+  <data name="GroupConfig" xml:space="preserve">
+    <value>分组管理</value>
+  </data>
+  <data name="GroupError" xml:space="preserve">
+    <value>所属分组错误</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>分组名称</value>
+  </data>
+  <data name="HappenTime" xml:space="preserve">
+    <value>发生时间</value>
+  </data>
+  <data name="HighestGreater" xml:space="preserve">
+    <value>高温大于</value>
+  </data>
+  <data name="HighestLess" xml:space="preserve">
+    <value>高温小于</value>
+  </data>
+  <data name="IllegalExpression" xml:space="preserve">
+    <value>非法表达式</value>
+  </data>
+  <data name="ImageRecordEnable" xml:space="preserve">
+    <value>启用照片记录</value>
+  </data>
+  <data name="ImageRecordInterval" xml:space="preserve">
+    <value>照片记录间隔(条/张)</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ImportConfig" xml:space="preserve">
+    <value>导入配置</value>
+  </data>
+  <data name="Imported" xml:space="preserve">
+    <value>已导入</value>
+  </data>
+  <data name="ImportFailed" xml:space="preserve">
+    <value>导入失败</value>
+  </data>
+  <data name="ImportFailedForEquipmentAliasName" xml:space="preserve">
+    <value>设备别名不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForEquipmentInfo" xml:space="preserve">
+    <value>设备信息不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForEquipmentName" xml:space="preserve">
+    <value>设备名不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForPointAliasName" xml:space="preserve">
+    <value>测点别名不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForPointName" xml:space="preserve">
+    <value>测点名不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForRegionName" xml:space="preserve">
+    <value>区域名不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedForStationName" xml:space="preserve">
+    <value>站点名称不符合规范，导入失败</value>
+  </data>
+  <data name="ImportFailedUnexistPreset" xml:space="preserve">
+    <value>预置位不存在，导入失败</value>
+  </data>
+  <data name="ImportFile" xml:space="preserve">
+    <value>导入文件</value>
+  </data>
+  <data name="ImportFileFilter" xml:space="preserve">
+    <value>配置文件 (*.json)|*.json</value>
+  </data>
+  <data name="ImportFromDevice" xml:space="preserve">
+    <value>从监控点导入</value>
+  </data>
+  <data name="ImportFromFile" xml:space="preserve">
+    <value>从文件导入</value>
+  </data>
+  <data name="ImportSuccessfully" xml:space="preserve">
+    <value>导入成功</value>
+  </data>
+  <data name="ImportTemplateFile" xml:space="preserve">
+    <value>导入模板</value>
+  </data>
+  <data name="InfoDesc" xml:space="preserve">
+    <value>信息描述</value>
+  </data>
+  <data name="InnerTaskID" xml:space="preserve">
+    <value>内部任务编号</value>
+  </data>
+  <data name="InputChannel" xml:space="preserve">
+    <value>恢复巡航输入通道</value>
+  </data>
+  <data name="InspectionLedger" xml:space="preserve">
+    <value>巡检台账</value>
+  </data>
+  <data name="InspectionTask" xml:space="preserve">
+    <value>巡检任务</value>
+  </data>
+  <data name="InspectionTaskAgent" xml:space="preserve">
+    <value>巡检任务服务器</value>
+  </data>
+  <data name="InspectionTaskStatusCanceled" xml:space="preserve">
+    <value>已取消</value>
+  </data>
+  <data name="InspectionTaskStatusExecuting" xml:space="preserve">
+    <value>执行中</value>
+  </data>
+  <data name="InspectionTaskStatusFinished" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="InspectionTaskStatusNotStarted" xml:space="preserve">
+    <value>待执行</value>
+  </data>
+  <data name="InstantTask" xml:space="preserve">
+    <value>即时任务</value>
+  </data>
+  <data name="IntelligentApplications" xml:space="preserve">
+    <value>智能应用</value>
+  </data>
+  <data name="InTheCarousel" xml:space="preserve">
+    <value>轮巡中</value>
+  </data>
+  <data name="InvalidAlarmOutput" xml:space="preserve">
+    <value>包含无效的报警联动</value>
+  </data>
+  <data name="InvalidAlarmPlatformUserInfo" xml:space="preserve">
+    <value>含有无效的报警输出用户信息</value>
+  </data>
+  <data name="InvalidAliasName" xml:space="preserve">
+    <value>别名允许中文、英文、数字，长度不能超过64个字符</value>
+  </data>
+  <data name="InvalidAppKey" xml:space="preserve">
+    <value>无效接口密钥</value>
+  </data>
+  <data name="InvalidBindingInfo" xml:space="preserve">
+    <value>无效绑定</value>
+  </data>
+  <data name="InvalidChannel" xml:space="preserve">
+    <value>无效通道</value>
+  </data>
+  <data name="InvalidDevice" xml:space="preserve">
+    <value>无效监控点</value>
+  </data>
+  <data name="InvalidIP" xml:space="preserve">
+    <value>IP地址无效</value>
+  </data>
+  <data name="InvalidMarker" xml:space="preserve">
+    <value>包含无效的测温对象</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>名称允许中文、英文、数字，长度不能超过64个字符</value>
+  </data>
+  <data name="InvalidNote" xml:space="preserve">
+    <value>无效备注，长度不能超过255个字符</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>无效密码</value>
+  </data>
+  <data name="InvalidPort" xml:space="preserve">
+    <value>端口无效</value>
+  </data>
+  <data name="InvalidProtocolType" xml:space="preserve">
+    <value>无效协议</value>
+  </data>
+  <data name="InvalidPTZ" xml:space="preserve">
+    <value>监测点正在执行即时任务</value>
+  </data>
+  <data name="InvalidSensitivity" xml:space="preserve">
+    <value>无效的灵敏度</value>
+  </data>
+  <data name="InvalidServer" xml:space="preserve">
+    <value>无效服务器</value>
+  </data>
+  <data name="InvalidShieldMarker" xml:space="preserve">
+    <value>包含无效的屏蔽区域</value>
+  </data>
+  <data name="InvalidTestData" xml:space="preserve">
+    <value>无效测试数据</value>
+  </data>
+  <data name="IRCamera" xml:space="preserve">
+    <value>热像</value>
+  </data>
+  <data name="IsAdd" xml:space="preserve">
+    <value>是否添加选中的条目</value>
+  </data>
+  <data name="IsAddingRuleError" xml:space="preserve">
+    <value>请先完成当前新增规则</value>
+  </data>
+  <data name="IsCancelInspectionTask" xml:space="preserve">
+    <value>是否取消巡检任务:{0}</value>
+  </data>
+  <data name="IsCleanData" xml:space="preserve">
+    <value>是否清空数据</value>
+  </data>
+  <data name="IsCleanListMsg" xml:space="preserve">
+    <value>是否清空列表</value>
+  </data>
+  <data name="IsClear" xml:space="preserve">
+    <value>是否清空选中的条目</value>
+  </data>
+  <data name="IsCloseSound" xml:space="preserve">
+    <value>是否关闭声音</value>
+  </data>
+  <data name="IsCloseSpeech" xml:space="preserve">
+    <value>是否关闭语音</value>
+  </data>
+  <data name="IsDelete" xml:space="preserve">
+    <value>是否删除选中的条目</value>
+  </data>
+  <data name="IsDeleteInspectionTask" xml:space="preserve">
+    <value>是否删除巡检任务:{0}</value>
+  </data>
+  <data name="IsDeleteMessage" xml:space="preserve">
+    <value>是否删除选中的条目</value>
+  </data>
+  <data name="IsExport" xml:space="preserve">
+    <value>是否导出</value>
+  </data>
+  <data name="IsExportResource" xml:space="preserve">
+    <value>是否导出资源列表</value>
+  </data>
+  <data name="IsLeave" xml:space="preserve">
+    <value>是否放弃已经更改的内容</value>
+  </data>
+  <data name="IsOpenSound" xml:space="preserve">
+    <value>是否打开声音</value>
+  </data>
+  <data name="IsOpenSpeech" xml:space="preserve">
+    <value>是否打开语音</value>
+  </data>
+  <data name="IsPollingStarted" xml:space="preserve">
+    <value>正在轮巡中，无法操作</value>
+  </data>
+  <data name="IsUnbinding" xml:space="preserve">
+    <value>是否解绑选中的条目</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>条</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>键</value>
+  </data>
+  <data name="LadleAgent" xml:space="preserve">
+    <value>钢包服务器</value>
+  </data>
+  <data name="Ledger" xml:space="preserve">
+    <value>台账</value>
+  </data>
+  <data name="LedgerDescription" xml:space="preserve">
+    <value>用于管理设备，具有添加、修改、删除和配置功能</value>
+  </data>
+  <data name="LedgerManager" xml:space="preserve">
+    <value>设备管理</value>
+  </data>
+  <data name="LedgerServerAddress" xml:space="preserve">
+    <value>台账服务器地址</value>
+  </data>
+  <data name="Less" xml:space="preserve">
+    <value>阈值小于</value>
+  </data>
+  <data name="LimitMarkerLine" xml:space="preserve">
+    <value>测温对象（线）数量已达上限</value>
+  </data>
+  <data name="LimitMarkerRegion" xml:space="preserve">
+    <value>测温对象（区域）数量已达上限</value>
+  </data>
+  <data name="LimitMarkerSpot" xml:space="preserve">
+    <value>测温对象（点）数量已达上限</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>线</value>
+  </data>
+  <data name="LivePlot" xml:space="preserve">
+    <value>实时曲线</value>
+  </data>
+  <data name="LivePreview" xml:space="preserve">
+    <value>实时预览</value>
+  </data>
+  <data name="LivePreviewDescription" xml:space="preserve">
+    <value>用于实时查看监控点的预览画面</value>
+  </data>
+  <data name="LiveVideo" xml:space="preserve">
+    <value>实时视频</value>
+  </data>
+  <data name="LowestGreater" xml:space="preserve">
+    <value>低温大于</value>
+  </data>
+  <data name="LowestLess" xml:space="preserve">
+    <value>低温小于</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="MainStream" xml:space="preserve">
+    <value>主码流</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>管理配置</value>
+  </data>
+  <data name="ManuallyClearAlarm" xml:space="preserve">
+    <value>手动清空报警</value>
+  </data>
+  <data name="ManuallyTriggerAlarm" xml:space="preserve">
+    <value>手动触发报警</value>
+  </data>
+  <data name="Markers" xml:space="preserve">
+    <value>测温对象</value>
+  </data>
+  <data name="MaxColon" xml:space="preserve">
+    <value>最高值：</value>
+  </data>
+  <data name="Maximize" xml:space="preserve">
+    <value>全屏</value>
+  </data>
+  <data name="MaxTemperature" xml:space="preserve">
+    <value>最高温</value>
+  </data>
+  <data name="MaxTemperatureWithSymbol" xml:space="preserve">
+    <value>最高温(℃)</value>
+  </data>
+  <data name="MeasurementData" xml:space="preserve">
+    <value>监测数据</value>
+  </data>
+  <data name="MeasurementPicture" xml:space="preserve">
+    <value>监测图像</value>
+  </data>
+  <data name="MeasurementPlot" xml:space="preserve">
+    <value>监测曲线</value>
+  </data>
+  <data name="MeasurementStatus" xml:space="preserve">
+    <value>监测状态</value>
+  </data>
+  <data name="MeasurementTime" xml:space="preserve">
+    <value>监测时间</value>
+  </data>
+  <data name="MinColon" xml:space="preserve">
+    <value>最低值：</value>
+  </data>
+  <data name="MinimizeToTray" xml:space="preserve">
+    <value>最小化到系统托盘</value>
+  </data>
+  <data name="MinTemperature" xml:space="preserve">
+    <value>最低温</value>
+  </data>
+  <data name="MinTemperatureWithSymbol" xml:space="preserve">
+    <value>最低温(℃)</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>下移</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>上移</value>
+  </data>
+  <data name="EntityName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NameExist" xml:space="preserve">
+    <value>名称已存在</value>
+  </data>
+  <data name="NetworkException" xml:space="preserve">
+    <value>网络异常</value>
+  </data>
+  <data name="NextGroup" xml:space="preserve">
+    <value>下一组</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="NoArea" xml:space="preserve">
+    <value>无区域信息</value>
+  </data>
+  <data name="NoCheckedAlarmAction" xml:space="preserve">
+    <value>没有选中报警输出配置</value>
+  </data>
+  <data name="NoConfirm" xml:space="preserve">
+    <value>未处理</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>无数据</value>
+  </data>
+  <data name="NoDataToExport" xml:space="preserve">
+    <value>无可导出的数据</value>
+  </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>无监控点信息</value>
+  </data>
+  <data name="NoEquipment" xml:space="preserve">
+    <value>无设备信息</value>
+  </data>
+  <data name="NoExport" xml:space="preserve">
+    <value>未输出</value>
+  </data>
+  <data name="Noise" xml:space="preserve">
+    <value>噪声</value>
+  </data>
+  <data name="NoiseWithSymbol" xml:space="preserve">
+    <value>噪声(dB)</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="NoPageTip" xml:space="preserve">
+    <value>当前页面正在开发中</value>
+  </data>
+  <data name="NoPicture" xml:space="preserve">
+    <value>无图片</value>
+  </data>
+  <data name="NoPlotData" xml:space="preserve">
+    <value>无曲线数据</value>
+  </data>
+  <data name="NoPoint" xml:space="preserve">
+    <value>无测点信息</value>
+  </data>
+  <data name="NoRecord" xml:space="preserve">
+    <value>无记录</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Normal1" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="NormalEquipment" xml:space="preserve">
+    <value>正常设备</value>
+  </data>
+  <data name="NormalPoint" xml:space="preserve">
+    <value>正常测点</value>
+  </data>
+  <data name="NoSelection" xml:space="preserve">
+    <value>没有选中项</value>
+  </data>
+  <data name="NoSupportMarkerLine" xml:space="preserve">
+    <value>不支持添加测温对象（线）</value>
+  </data>
+  <data name="NoSupportMarkerOffset" xml:space="preserve">
+    <value>不支持修改测温参数（测温修正量）</value>
+  </data>
+  <data name="NoSupportMarkerRef" xml:space="preserve">
+    <value>不支持修改测温参数（反射温度）</value>
+  </data>
+  <data name="NoSupportMarkerRegion" xml:space="preserve">
+    <value>不支持添加测温对象（区域）</value>
+  </data>
+  <data name="NoSupportMarkerSpot" xml:space="preserve">
+    <value>不支持添加测温对象（点）</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="NoTemperaturePlot" xml:space="preserve">
+    <value>无温度曲线信息</value>
+  </data>
+  <data name="NotImported" xml:space="preserve">
+    <value>未导入</value>
+  </data>
+  <data name="NotLessThanTime" xml:space="preserve">
+    <value>时间段不能小于</value>
+  </data>
+  <data name="NotRepeatOfTimePeriods" xml:space="preserve">
+    <value>时间段不能有重复</value>
+  </data>
+  <data name="NotSelectDeviceFailed" xml:space="preserve">
+    <value>未选择监控点</value>
+  </data>
+  <data name="NotSelectEventType" xml:space="preserve">
+    <value>未选择事件类型</value>
+  </data>
+  <data name="NotStartedPolling" xml:space="preserve">
+    <value>请先开始轮巡</value>
+  </data>
+  <data name="NotSynchronized" xml:space="preserve">
+    <value>未同步</value>
+  </data>
+  <data name="NoVideo" xml:space="preserve">
+    <value>无视频</value>
+  </data>
+  <data name="NVRManage" xml:space="preserve">
+    <value>NVR 管理</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>离线</value>
+  </data>
+  <data name="OffsetTemp" xml:space="preserve">
+    <value>测温修正量(℃)</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>在线</value>
+  </data>
+  <data name="OnlineDevice" xml:space="preserve">
+    <value>在线监控点</value>
+  </data>
+  <data name="OnlyAssociatedOnePoint" xml:space="preserve">
+    <value>只能关联一个测点</value>
+  </data>
+  <data name="OpenAlarmTip" xml:space="preserve">
+    <value>开启报警弹窗</value>
+  </data>
+  <data name="OpenSound" xml:space="preserve">
+    <value>打开声音</value>
+  </data>
+  <data name="OpenSpeech" xml:space="preserve">
+    <value>打开语音</value>
+  </data>
+  <data name="Operation" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="OpticalCoupler" xml:space="preserve">
+    <value>光耦</value>
+  </data>
+  <data name="OpticalCouplerOutput" xml:space="preserve">
+    <value>光耦输出</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="OutMode" xml:space="preserve">
+    <value>输出方式</value>
+  </data>
+  <data name="OutputChannel" xml:space="preserve">
+    <value>输出通道</value>
+  </data>
+  <data name="OutputState" xml:space="preserve">
+    <value>输出状态</value>
+  </data>
+  <data name="OverriedFailed" xml:space="preserve">
+    <value>覆盖指定的监控点配置失败</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>页</value>
+  </data>
+  <data name="ParentArea" xml:space="preserve">
+    <value>父区域</value>
+  </data>
+  <data name="ParentGroup" xml:space="preserve">
+    <value>父分组</value>
+  </data>
+  <data name="ParentStation" xml:space="preserve">
+    <value>父站点</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="PauseCruise" xml:space="preserve">
+    <value>暂停巡航</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="PlanPolling" xml:space="preserve">
+    <value>轮巡计划</value>
+  </data>
+  <data name="PlatformServerAddress" xml:space="preserve">
+    <value>平台地址</value>
+  </data>
+  <data name="Playback" xml:space="preserve">
+    <value>回放</value>
+  </data>
+  <data name="PleaseAssociate" xml:space="preserve">
+    <value>请关联</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>测点</value>
+  </data>
+  <data name="PointAliasName" xml:space="preserve">
+    <value>测点别名</value>
+  </data>
+  <data name="PointAssociation" xml:space="preserve">
+    <value>关联测点</value>
+  </data>
+  <data name="PointBinding" xml:space="preserve">
+    <value>关联测点</value>
+  </data>
+  <data name="PointDetails" xml:space="preserve">
+    <value>测点详情</value>
+  </data>
+  <data name="PointID" xml:space="preserve">
+    <value>测点ID</value>
+  </data>
+  <data name="PointMonitorEnable" xml:space="preserve">
+    <value>启用定点监控</value>
+  </data>
+  <data name="PointName" xml:space="preserve">
+    <value>测点名称</value>
+  </data>
+  <data name="PointSerialNO" xml:space="preserve">
+    <value>测点编号</value>
+  </data>
+  <data name="Polling" xml:space="preserve">
+    <value>轮巡</value>
+  </data>
+  <data name="PollingGroupEmpty" xml:space="preserve">
+    <value>轮巡组为空</value>
+  </data>
+  <data name="PollingTime" xml:space="preserve">
+    <value>轮巡时间</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="Preset" xml:space="preserve">
+    <value>预置位</value>
+  </data>
+  <data name="PresetControl" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="PresetDescription" xml:space="preserve">
+    <value>预置位描述</value>
+  </data>
+  <data name="PresetEmpeyError" xml:space="preserve">
+    <value>预置位不能为空</value>
+  </data>
+  <data name="PresetFullShieldMarkerMessage" xml:space="preserve">
+    <value>最多支持10个屏蔽区域</value>
+  </data>
+  <data name="PresetIndex" xml:space="preserve">
+    <value>预置位{0}</value>
+  </data>
+  <data name="PresetName" xml:space="preserve">
+    <value>预置位名称</value>
+  </data>
+  <data name="PresetOne" xml:space="preserve">
+    <value>预置位1</value>
+  </data>
+  <data name="PrevGroup" xml:space="preserve">
+    <value>上一组</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="PropertyID" xml:space="preserve">
+    <value>属性ID</value>
+  </data>
+  <data name="PropertyName" xml:space="preserve">
+    <value>属性名称</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="PTZControl" xml:space="preserve">
+    <value>云台控制</value>
+  </data>
+  <data name="Query" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="QueryType" xml:space="preserve">
+    <value>查询类型</value>
+  </data>
+  <data name="Real" xml:space="preserve">
+    <value>实数</value>
+  </data>
+  <data name="RealTimeAlarms" xml:space="preserve">
+    <value>实时报警</value>
+  </data>
+  <data name="RealTimeMonitor" xml:space="preserve">
+    <value>实时监控</value>
+  </data>
+  <data name="RealtimeMonitorConfiguration" xml:space="preserve">
+    <value>实时监控配置</value>
+  </data>
+  <data name="RealTimeTask" xml:space="preserve">
+    <value>实时任务</value>
+  </data>
+  <data name="ReaTimeMonitor" xml:space="preserve">
+    <value>实时预览</value>
+  </data>
+  <data name="ReceivedTime" xml:space="preserve">
+    <value>接收时间</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>录制</value>
+  </data>
+  <data name="RecordDetail" xml:space="preserve">
+    <value>记录详情</value>
+  </data>
+  <data name="Recording" xml:space="preserve">
+    <value>录制中</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="Relay" xml:space="preserve">
+    <value>继电器</value>
+  </data>
+  <data name="RelayOutput" xml:space="preserve">
+    <value>继电器输出</value>
+  </data>
+  <data name="RelHumidity" xml:space="preserve">
+    <value>环境相对湿度</value>
+  </data>
+  <data name="RelTemp" xml:space="preserve">
+    <value>反射温度(℃)</value>
+  </data>
+  <data name="RepeatedNameError" xml:space="preserve">
+    <value>不允许输入重复的名称</value>
+  </data>
+  <data name="RepeatIPPortError" xml:space="preserve">
+    <value>不能使用相同的IP地址和端口</value>
+  </data>
+  <data name="Resource" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="ResourceConfig" xml:space="preserve">
+    <value>资源管理</value>
+  </data>
+  <data name="ResourceConfigDescription" xml:space="preserve">
+    <value>用于管理监控点，具有添加、修改、删除和配置功能</value>
+  </data>
+  <data name="RestoreTime" xml:space="preserve">
+    <value>任务恢复时间(s)</value>
+  </data>
+  <data name="ResumeCruise" xml:space="preserve">
+    <value>恢复巡航</value>
+  </data>
+  <data name="ResumeCruiseFail" xml:space="preserve">
+    <value>恢复巡航失败</value>
+  </data>
+  <data name="RetentionTimeMustGreaterThan0" xml:space="preserve">
+    <value>保存时间必须大于0</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>复查</value>
+  </data>
+  <data name="RH" xml:space="preserve">
+    <value>湿度</value>
+  </data>
+  <data name="RHWithSymbol" xml:space="preserve">
+    <value>湿度(%)</value>
+  </data>
+  <data name="SampleInterval" xml:space="preserve">
+    <value>监控采样率(s/f)</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>保存失败</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchFromEquipmentMonitor" xml:space="preserve">
+    <value>设备监控筛选</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="SecurityMonitorAlarm" xml:space="preserve">
+    <value>安防报警</value>
+  </data>
+  <data name="SecurityMonitorTransferAgent" xml:space="preserve">
+    <value>可见光视频服务器</value>
+  </data>
+  <data name="SecurityMonitorTransferService" xml:space="preserve">
+    <value>安防监控转发服务</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="SelectedDevice" xml:space="preserve">
+    <value>已选监控点</value>
+  </data>
+  <data name="SelectEquipmentService" xml:space="preserve">
+    <value>选择设备服务</value>
+  </data>
+  <data name="SelectPoint" xml:space="preserve">
+    <value>选择测点</value>
+  </data>
+  <data name="SendDingTalk" xml:space="preserve">
+    <value>发送钉钉</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="SendSMS" xml:space="preserve">
+    <value>发送短信</value>
+  </data>
+  <data name="SendTestMessage" xml:space="preserve">
+    <value>发送测试内容</value>
+  </data>
+  <data name="SendWeChat" xml:space="preserve">
+    <value>发送微信</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>灵敏度</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>服务地址</value>
+  </data>
+  <data name="ServerConfig" xml:space="preserve">
+    <value>服务器配置</value>
+  </data>
+  <data name="ServerConfigDeserializeError" xml:space="preserve">
+    <value>服务器配置解析错误</value>
+  </data>
+  <data name="ServerExist" xml:space="preserve">
+    <value>服务器地址已存在</value>
+  </data>
+  <data name="ServerManager" xml:space="preserve">
+    <value>服务器管理</value>
+  </data>
+  <data name="ServerName" xml:space="preserve">
+    <value>服务器名称</value>
+  </data>
+  <data name="ServerPort" xml:space="preserve">
+    <value>服务端口</value>
+  </data>
+  <data name="ServerType" xml:space="preserve">
+    <value>服务器类型</value>
+  </data>
+  <data name="ServerTypeError" xml:space="preserve">
+    <value>服务器类型错误</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SetAlarmOutFail" xml:space="preserve">
+    <value>设置报警输出失败</value>
+  </data>
+  <data name="SetFail" xml:space="preserve">
+    <value>设置失败</value>
+  </data>
+  <data name="SetPresetFailed" xml:space="preserve">
+    <value>设置预置位失败</value>
+  </data>
+  <data name="SetSuccess" xml:space="preserve">
+    <value>设置成功</value>
+  </data>
+  <data name="ShieldMasks" xml:space="preserve">
+    <value>屏蔽区域</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>位移</value>
+  </data>
+  <data name="ShiftAlarmLevel" xml:space="preserve">
+    <value>位移报警等级</value>
+  </data>
+  <data name="ShiftWithSymbol" xml:space="preserve">
+    <value>位移(mm)</value>
+  </data>
+  <data name="ShowAvg" xml:space="preserve">
+    <value>显示平均温</value>
+  </data>
+  <data name="ShowChannelName" xml:space="preserve">
+    <value>显示通道名称</value>
+  </data>
+  <data name="ShowMainWindow" xml:space="preserve">
+    <value>显示主界面</value>
+  </data>
+  <data name="ShowMarkerTemp" xml:space="preserve">
+    <value>显示测温信息</value>
+  </data>
+  <data name="ShowMax" xml:space="preserve">
+    <value>显示最高温</value>
+  </data>
+  <data name="ShowMin" xml:space="preserve">
+    <value>显示最低温</value>
+  </data>
+  <data name="ShowName" xml:space="preserve">
+    <value>显示描述</value>
+  </data>
+  <data name="ShowPresetName" xml:space="preserve">
+    <value>显示预置位标题</value>
+  </data>
+  <data name="ShowTime" xml:space="preserve">
+    <value>显示时间</value>
+  </data>
+  <data name="Sign" xml:space="preserve">
+    <value>有符号整数</value>
+  </data>
+  <data name="SmartApp" xml:space="preserve">
+    <value>智能应用</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>短信</value>
+  </data>
+  <data name="Sn" xml:space="preserve">
+    <value>序列号</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>本地拍照</value>
+  </data>
+  <data name="SoundAlarm" xml:space="preserve">
+    <value>声音报警</value>
+  </data>
+  <data name="SpeechAlarm" xml:space="preserve">
+    <value>语音报警</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>云台速度等级</value>
+  </data>
+  <data name="Split" xml:space="preserve">
+    <value>分屏</value>
+  </data>
+  <data name="Spot" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="StartGreaterThanEnd" xml:space="preserve">
+    <value>开始时间必须早于结束时间</value>
+  </data>
+  <data name="StartPolling" xml:space="preserve">
+    <value>开始轮巡</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="Station" xml:space="preserve">
+    <value>站点</value>
+  </data>
+  <data name="StationName" xml:space="preserve">
+    <value>站点名称</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="StatusMonitor" xml:space="preserve">
+    <value>报警监控</value>
+  </data>
+  <data name="StatusMonitorDescription" xml:space="preserve">
+    <value>用于实时监测监控点的报警状态，及时掌握监控点的异常状况</value>
+  </data>
+  <data name="StopAllPreview" xml:space="preserve">
+    <value>停止所有预览</value>
+  </data>
+  <data name="StopPolling" xml:space="preserve">
+    <value>停止轮巡</value>
+  </data>
+  <data name="StopPreview" xml:space="preserve">
+    <value>停止预览</value>
+  </data>
+  <data name="StoreAgent" xml:space="preserve">
+    <value>存储服务器</value>
+  </data>
+  <data name="StoreDevice" xml:space="preserve">
+    <value>存储设备</value>
+  </data>
+  <data name="StorePlan" xml:space="preserve">
+    <value>存储计划</value>
+  </data>
+  <data name="SubStream" xml:space="preserve">
+    <value>子码流</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="Synchronized" xml:space="preserve">
+    <value>已同步</value>
+  </data>
+  <data name="SyncStatus" xml:space="preserve">
+    <value>同步状态</value>
+  </data>
+  <data name="SyncTime" xml:space="preserve">
+    <value>同步时间</value>
+  </data>
+  <data name="SystemConfig" xml:space="preserve">
+    <value>系统配置</value>
+  </data>
+  <data name="SystemConfigDescription" xml:space="preserve">
+    <value>用于数字化综合管理平台的基本配置</value>
+  </data>
+  <data name="TaskCenter" xml:space="preserve">
+    <value>任务中心</value>
+  </data>
+  <data name="TaskCenterDescription" xml:space="preserve">
+    <value>用于查看任务的台账和历史数据</value>
+  </data>
+  <data name="TaskID" xml:space="preserve">
+    <value>任务编号</value>
+  </data>
+  <data name="TaskName" xml:space="preserve">
+    <value>任务名称</value>
+  </data>
+  <data name="TaskQuery" xml:space="preserve">
+    <value>任务查询</value>
+  </data>
+  <data name="TaskSchedule" xml:space="preserve">
+    <value>定时任务</value>
+  </data>
+  <data name="TaskScheduleUploadFailMsg" xml:space="preserve">
+    <value>请关联巡航路径</value>
+  </data>
+  <data name="TempConfig" xml:space="preserve">
+    <value>测温配置</value>
+  </data>
+  <data name="Temperature" xml:space="preserve">
+    <value>温度</value>
+  </data>
+  <data name="TemperatureAlarm" xml:space="preserve">
+    <value>温度报警</value>
+  </data>
+  <data name="TemperatureAlarmLevel" xml:space="preserve">
+    <value>温度报警等级</value>
+  </data>
+  <data name="TemperatureWithSymbol" xml:space="preserve">
+    <value>温度(℃)</value>
+  </data>
+  <data name="TemplateFormatMismatch" xml:space="preserve">
+    <value>文档模板格式不匹配</value>
+  </data>
+  <data name="TempRange" xml:space="preserve">
+    <value>温度量程(℃)</value>
+  </data>
+  <data name="TempSuddenChangeClosingFilteringTime" xml:space="preserve">
+    <value>撤销等待时间(s)</value>
+  </data>
+  <data name="TempSuddenChangeDiff" xml:space="preserve">
+    <value>触发温差(℃)</value>
+  </data>
+  <data name="TempSuddenChangeEnabled" xml:space="preserve">
+    <value>启用突变高温屏蔽</value>
+  </data>
+  <data name="TempSuddenChangeInterval" xml:space="preserve">
+    <value>时间间隔(s)</value>
+  </data>
+  <data name="TempSuddenChangeSensitivity" xml:space="preserve">
+    <value>屏蔽区域</value>
+  </data>
+  <data name="TempSuddenChangeThreshold" xml:space="preserve">
+    <value>温度阈值(℃)</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>条</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="TestFailed" xml:space="preserve">
+    <value>测试失败</value>
+  </data>
+  <data name="TestSuccessfully" xml:space="preserve">
+    <value>测试成功</value>
+  </data>
+  <data name="ThermalImage" xml:space="preserve">
+    <value>热像图</value>
+  </data>
+  <data name="ThresholdUnit" xml:space="preserve">
+    <value>阈值单位</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TimeWorng" xml:space="preserve">
+    <value>请输入正确时间段</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>数字化综合管理平台</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="ToleranceTemp" xml:space="preserve">
+    <value>容差温度(℃)</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Unbound" xml:space="preserve">
+    <value>未绑定</value>
+  </data>
+  <data name="Unbinding" xml:space="preserve">
+    <value>解绑</value>
+  </data>
+  <data name="UnconfiguredDevice" xml:space="preserve">
+    <value>未配置监控点</value>
+  </data>
+  <data name="UnconfirmedAlarmMessage" xml:space="preserve">
+    <value>未处理报警消息</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>待定</value>
+  </data>
+  <data name="UnSelectAll" xml:space="preserve">
+    <value>取消全选</value>
+  </data>
+  <data name="UnselectedDevice" xml:space="preserve">
+    <value>待选监控点</value>
+  </data>
+  <data name="UnSign" xml:space="preserve">
+    <value>无符号整数</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>修改失败</value>
+  </data>
+  <data name="UserImprovementPlan" xml:space="preserve">
+    <value>用户改善计划</value>
+  </data>
+  <data name="UserManage" xml:space="preserve">
+    <value>用户管理</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="VEAlarmFilteringTime" xml:space="preserve">
+    <value>取值范围0-200s</value>
+  </data>
+  <data name="VEDataRecordInterval" xml:space="preserve">
+    <value>取值范围1-36000个采样间隔</value>
+  </data>
+  <data name="VEDiffTemperature" xml:space="preserve">
+    <value>取值范围10.0-100.0℃</value>
+  </data>
+  <data name="VEImageRecordInterval" xml:space="preserve">
+    <value>取值范围1-36000个数据记录间隔</value>
+  </data>
+  <data name="VEIntervalTime" xml:space="preserve">
+    <value>取值范围1-60s</value>
+  </data>
+  <data name="Velocity" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="VelocityAlarmLevel" xml:space="preserve">
+    <value>速度报警等级</value>
+  </data>
+  <data name="VelocityWithSymbol" xml:space="preserve">
+    <value>速度(m/s)</value>
+  </data>
+  <data name="VELongName" xml:space="preserve">
+    <value>名称只能输入中英文和数字，不超过64字符</value>
+  </data>
+  <data name="VENormalName" xml:space="preserve">
+    <value>名称只能输入中英文和数字，不超过40字符</value>
+  </data>
+  <data name="VERestoreTime" xml:space="preserve">
+    <value>任务恢复时间取值范围5-720s</value>
+  </data>
+  <data name="VESampleInterval" xml:space="preserve">
+    <value>取值范围0.1-3600s/f</value>
+  </data>
+  <data name="VESpeed" xml:space="preserve">
+    <value>速度取值范围1-10级</value>
+  </data>
+  <data name="VETemperature" xml:space="preserve">
+    <value>取值范围-100.0-1000.0℃</value>
+  </data>
+  <data name="VEToleranceTemperature" xml:space="preserve">
+    <value>取值范围0.0-100.0℃</value>
+  </data>
+  <data name="VEWaitime" xml:space="preserve">
+    <value>停留时间取值范围1-600s</value>
+  </data>
+  <data name="VisualImage" xml:space="preserve">
+    <value>可见光图</value>
+  </data>
+  <data name="Voice" xml:space="preserve">
+    <value>语音</value>
+  </data>
+  <data name="VoiceCall" xml:space="preserve">
+    <value>语音电话</value>
+  </data>
+  <data name="WaitTime" xml:space="preserve">
+    <value>停留时间(s)</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>报警主机</value>
+  </data>
+  <data name="Warrning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="WeChat" xml:space="preserve">
+    <value>微信</value>
+  </data>
+  <data name="WeChatID" xml:space="preserve">
+    <value>微信地址</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Wiper" xml:space="preserve">
+    <value>雨刷</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>变倍</value>
+  </data>
+  <data name="UserImprovementPlanTest" xml:space="preserve">
+    <value>上海热像科技股份有限公司报警平台接入隐私政策
+引言
+感谢您信任并使用本产品的报警平台！保护用户的个人信息及隐私是我们的一项基本原则。 
+您在使用本产品时，我们可能会收集和使用您的相关信息。我们希望通过本隐私政策（以下简称“本政策”）向您说明，我们如何收集、使用、储存、披露和处理这些信息，以及为保障您享有的相关权利我们为您提供的访问、更新、控制和保护这些信息的方式。 
+需特别说明的是，本政策不适用于由第三方公司或个人提供的产品或服务（以下简称“第三方服务”）。为方便您使用本产品，我们的产品内可能含有第三方服务或其链接；鉴于第三方将独立地收集并处理您的个人信息，我们无法控制，因此，除非另有法律规定，我们对第三方服务不承担责任，您需自行阅读理解第三方服务的隐私政策，并独立判断是否使用其服务。 
+由于本政策与您所使用的产品和/或服务息息相关，在您使用我们的产品和/或服务前，希望您仔细阅读并了解本政策，特别应重点阅读我们以粗体/下划线标识的条款，在需要时，按照本政策的指引，做出您认为适当的选择。本政策中涉及的相关技术词汇，我们尽量采用简明扼要的表述，以便您的理解。您使用或继续使用我们的产品和/或服务，即意味着同意我们按照本政策收集、使用、储存、披露和处理您的相关信息。 
+如果您有任何疑问、意见或建议，可以通过本政策第六节约定的方式与我们进行联系。 
+
+本政策将帮助您了解以下内容： 
+一、我们如何收集、使用您的个人信息 
+二、我们如何共享、转让、公开披露您的个人信息 
+三、我们如何保护及保存您的个人信息
+四、您的权利
+五、本政策如何更新 
+六、如何联系我们
+
+一、我们如何收集、使用您的个人信息 
+（一）在您使用本产品的过程中，我们会按照下述条款收集相关信息，用以实现特定功能以及保障您的产品安全。 
+1．为实现报警转发功能（此功能需要您将产品接入互联网），我们会收集您的手机号码、微信号、钉钉号以及邮箱地址。收集该信息是为了向您发送报警消息。我们还将收集本产品所在服务器的报警消息，目的是为了将报警消息转发至本产品配置的接收地址。拒绝提供这些信息仅会使您无法使用报警转发功能，但不影响您正常使用其他功能。 
+2．为实现在线升级功能（此功能需要您将产品接入互联网），我们会收集本产品的IP地址、MAC地址、设备SN号，目的是为了识别在线升级指令指向的设备，保障您的产品安全。拒绝提供这些信息仅会使您无法使用在线升级功能，但不影响您正常使用其他功能。 
+3．为实现在线维护功能（此功能需要您将产品接入互联网），我们会收集本产品的IP地址、MAC地址、设备SN号，目的是为了进行产品维护的对接以及识别在线维护指令指向的设备，拒绝提供这些消息仅会使您无法正常使用在线维护功能，但不影响您正常使用其他功能。 
+提醒您注意： 
+1．我们的产品和/或服务通过不同载体提供，且不同用户选择使用的具体产品/服务、实现的功能存在差异；相应地，具体产品收集使用的个人信息类型、范围等会有所区别，请以具体的产品/服务功能为准； 
+2．如果您向我们提供的信息中含有他人个人信息，须确保已合法取得相关主体的授权。 
+  
+二、我们如何共享、转让、公开披露您的个人信息 
+我们不会主动共享或转让您的个人信息至第三方，如存在其他共享或转让您的个人信息情形时，我们会征得您的明示同意。 
+随着我们业务的持续发展，我们有可能进行合并、收购、资产转让等交易，我们将告知您相关情形，按照法律法规及不低于本政策所要求的标准继续保护或要求新的控制者继续保护您的个人信息。 
+（一）共享 
+我们不会与任何公司、组织和个人分享您的个人信息，但以下情况除外： 
+1．在获得您的明确同意后，我们会与其他方共享您的个人信息。 
+2．我们可能会根据法律法规规定，或按政府主管部门的强制性要求，以及其他法定义务履行之必须，共享您的个人信息。 
+3．与关联公司共享：为便于我们基于本产品向您提供产品和/或服务，推荐您可能感兴趣的信息，您的个人信息可能会与我们的关联公司共享。我们只会共享必要的个人信息，且受本政策中所声明目的的约束。关联公司如要改变个人信息的处理目的，将再次征求您的授权同意。 
+（二）转让 
+我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外： 
+1．在获取明确同意的情况下转让：获得您的明确同意后，我们会向其他方转让您的个人信息； 
+2．在涉及合并、分立、收购、解散或破产清算时，如涉及到个人信息转让，我们会向您告知接收方的名称或者姓名和联系方式，我们会要求新的持有您个人信息的公司、组织继续受本政策的约束，否则我们将要求该公司、组织重新向您征求授权同意。 
+（三）公开披露 
+我们仅会在以下情况下，公开披露您的个人信息： 
+1．获得您明确同意后； 
+2．基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。 
+另外，根据相关法律法规及国家标准，以下情形中，我们可能会共享、转让、公开披露个人信息无需事先征得个人信息主体的授权同意： 
+1） 与国家安全、国防安全直接相关的； 
+2） 与公共安全、公共卫生、重大公共利益直接相关的； 
+3） 与犯罪侦查、起诉、审判和判决执行等直接相关的； 
+4） 出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的； 
+5） 个人信息主体自行向社会公众公开的个人信息； 
+6） 从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。 
+三、我们如何保护及保存您的个人信息
+（一）我们如何保护您的个人信息
+1．我们已使用符合业界标准的安全防护措施保护您提供的个人信息，防止数据遭到未经授权访问、公开披露、使用、修改、损坏或丢失。我们会采取一切合理可行的措施，保护您的个人信息。例如：我们制定了内部管理制度和操作规程，并对个人信息实行分类管理，采取相应的加密、去标识化等安全技术措施，合理确定个人信息处理的操作权限，并定期对从业人员进行安全教育和培训，制定并组织实施个人信息安全事件应急预案；
+2．我们会采取一切合理可行的措施，确保未收集无关的个人信息。我们只会在达成本政策所述目的所需的期限内保留您的个人信息，除非需要延长保留期或受到法律的允许。
+3．互联网环境并非百分之百安全，我们将尽力确保或担保您发送给我们的任何信息的安全性。我们建议您积极采取措施在使用该产品时注意保护您的个人信息安全。
+4．在不幸发生个人信息安全事件后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施等。我们将及时将事件相关情况以邮件、信函、电话、推送通知等方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。
+（二）我们如何保存您的个人信息
+1．存储地点
+我们依照适用的数据保护法律的规定，将境内收集的您的个人信息存储于中华人民共和国境内。目前，我们不会将您的个人信息在跨境业务中使用、储存、共享和 披露，或将您的个人信息传输至境外。
+2．存储时间
+我们仅在本政策所述目的所必需的期间和法律法规及监管规定要求的时限内保留您的个人信息。我们将会按照适用的数据保护法律规定的期限保存您的个人信息。超出法定保存期限后，我们会将您的个人信息删除或做匿名化处理。
+四、您的权利
+按照中国相关的法律、法规、标准，以及其他国家、地区的通行做法，我们保障您对自己的个人信息行使以下权利：
+（一）访问您的个人信息 
+您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使数据访问权，可以通过以下方式自行访问：http://alarm.fotric.cn/asyncTask/m2/index.html。
+如果您无法通过上述链接访问这些个人信息，您可以发送电子邮件至info@fotric.cn我们将在30天内回复您的访问请求。
+对于您在使用我们的产品或服务过程中产生的其他个人信息，只要我们不需要过多投入，我们会向您提供。如果您想行使数据访问权，请发送电子邮件至info@fotric.cn。
+（二）更正您的个人信息 
+当您发现我们处理的关于您的个人信息有错误时，您有权要求我们作出更正。您可以通过“（一）访问您的个人信息”中罗列的方式提出更正申请。如果您无法通过上述链接更正这些个人信息，您可以发送电子邮件至info@fotric.cn。
+我们将在30天内回复您的更正请求。
+（三）删除您的个人信息 
+在以下情形中，您可以向我们提出删除个人信息的请求：
+1．如果我们处理个人信息的行为违反法律法规；
+2．如果我们收集、使用您的个人信息，却未征得您的同意；
+3．如果我们处理个人信息的行为违反了与您的约定；
+4．如果您不再使用我们的产品或服务，或您注销了账号；
+5．如果我们不再为您提供产品或服务。
+若我们决定响应您的删除请求，我们还将同时通知从我们获得您的个人信息的实体，要求其及时删除，除非法律法规另有规定，或这些实体获得您的独立授权。当您从我们的服务中删除信息后，我们可能不会立即在备份系统中删除相应的信息，但会在备份更新时删除这些信息。
+（四）改变您授权同意的范围 
+每个业务功能需要一些基本的个人信息才能得以完成。对于额外收集的个人信息的收集和使用，您可以随时给予或收回您的授权同意。
+您可以通过以下方式自行操作：点击系统配置页面，选择报警平台接入选项卡，取消启用报警平台接入后点击保存即完成收回同意。
+当您收回同意后，我们将不再处理相应的个人信息。但您收回同意的决定，不会影响此前基于您的授权而开展的个人信息处理。
+（五）个人信息主体注销账户
+您随时可注销此前注册的账户，您可以通过第六节的联系方式与我们进行联系。
+在注销账户之后，我们将停止为您提供产品或服务，并依据您的要求，删除您的个人信息，法律法规另有规定的除外。
+（六）响应您的上述请求 
+为保障安全，您可能需要提供书面请求，或以其他方式证明您的身份。我们可能会先要求您验证自己的身份，然后再处理您的请求。我们将在三十天内作出答复。
+对于您合理的请求，我们原则上不收取费用，但对多次重复、超出合理限度的请求，我们将视情收取一定成本费用。对于那些无端重复、需要过多技术手段（例如，需要开发新系统或从根本上改变现行惯例）、给他人合法权益带来风险或者非常不切实际（例如，涉及备份磁带上存放的信息）的请求，我们可能会予以拒绝。
+在以下情形中，我们将无法响应您的请求：
+1．与个人信息控制者履行法律法规规定的义务相关的；
+2．与国家安全、国防安全直接相关的；
+3．与公共安全、公共卫生、重大公共利益直接相关的；
+4．与刑事侦查、起诉、审判和执行判决等直接相关的；
+5．个人信息控制者有充分证据表明个人信息主体存在主观恶意或滥
+用权利的；
+6．出于维护个人信息主体或其他个人的生命、财产等重大合法权益但
+又很难得到本人同意的；
+7．响应个人信息主体的请求将导致个人信息主体或其他个人、组织的合法权益受到严重损害的；
+8．涉及商业秘密的。
+  
+ 五、本政策如何更新 
+我们可能会适时地对本政策进行修订或变更，您可以通过产品在线升级的功能在升级产品软件之后获得更新后的本政策，届时我们将按照更新后的政策收集、使用、存储、处理您的个人信息。 未经您明确同意，我们不会削减您按照本个人信息保护政策所应享有的权利。我们会在本页面上发布对本政策所做的任何变更。对于重大变更，我们还会提供更为显著的通知（包括对于某些服务，我们会通过电子邮件发送通知，说明个人信息保护政策的具体变更内容）。
+本政策所指的重大变更包括但不限于：
+1．我们的服务模式发生重大变化。如处理个人信息的目的、处理的个人信息类型、个人信息的使用方式等；
+2．我们在所有权结构、组织架构等方面发生重大变化。如业务调整、破产并购等引起的所有者变更等；
+3．个人信息共享、转让或公开披露的主要对象发生变化；
+4．您参与个人信息处理方面的权利及其行使方式发生重大变化；
+5．我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化时；
+6．个人信息安全影响评估报告表明存在高风险时。
+我们还会将本政策的旧版本存档，供您查阅。
+
+六、如何联系我们
+如果您对本个人信息保护政策有任何疑问、意见或建议，通过以下方式与我们联系：
+1．联系电话：400-821-1226
+2．电子邮箱：info@fotric.cn
+我们设立了个人信息保护专职部门（或个人信息保护专员），您可以通过以下方式与其联系：
+邮件寄到如下地址:
+上海市浦东新区秀浦路2500弄14号楼 【个人信息保护负责人】 （收）
+邮编：201315
+一般情况下，我们将在三十天内回复。
+如果您对我们的回复不满意，特别是我们的个人信息处理行为损害了您的合法权益，您还可以通过以下外部途径寻求解决方案：向被告住所地有管辖权的法院提起诉讼。</value>
+  </data>
+  <data name="ChannelType" xml:space="preserve">
+    <value>通道类型</value>
+  </data>
+  <data name="ASensor" xml:space="preserve">
+    <value>加速度传感器</value>
+  </data>
+  <data name="EnvHumSensor" xml:space="preserve">
+    <value>环境湿度传感器</value>
+  </data>
+  <data name="EnvTempSensor" xml:space="preserve">
+    <value>环境温度传感器</value>
+  </data>
+  <data name="NoiseSensor" xml:space="preserve">
+    <value>噪声传感器</value>
+  </data>
+  <data name="SSensor" xml:space="preserve">
+    <value>位移传感器</value>
+  </data>
+  <data name="TcSensor" xml:space="preserve">
+    <value>热电偶传感器</value>
+  </data>
+  <data name="TempSensor" xml:space="preserve">
+    <value>温度传感器</value>
+  </data>
+  <data name="VSensor" xml:space="preserve">
+    <value>速度传感器</value>
+  </data>
+  <data name="Unused" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="CommonConfig" xml:space="preserve">
+    <value>常用配置</value>
+  </data>
+  <data name="InspectionPlatform" xml:space="preserve">
+    <value>巡检平台</value>
+  </data>
+  <data name="SyncFail" xml:space="preserve">
+    <value>同步失败</value>
+  </data>
+  <data name="SyncLedger" xml:space="preserve">
+    <value>同步台账</value>
+  </data>
+  <data name="SyncSuccessfully" xml:space="preserve">
+    <value>同步成功</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>已使用</value>
+  </data>
+  <data name="ImageCanvas" xml:space="preserve">
+    <value>图像配置</value>
+  </data>
+  <data name="RenderMode" xml:space="preserve">
+    <value>图像比例</value>
+  </data>
+  <data name="FillMode" xml:space="preserve">
+    <value>满屏比例</value>
+  </data>
+  <data name="FitMode" xml:space="preserve">
+    <value>原始比例</value>
+  </data>
+  <data name="UserCustomization" xml:space="preserve">
+    <value>用户自定义</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>分组</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="ServiceDuration" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>密码输入错误，请重新输入</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>记住密码</value>
+  </data>
+  <data name="UsernameError" xml:space="preserve">
+    <value>账号输入错误，请重新输入</value>
+  </data>
+  <data name="DownloadDevices" xml:space="preserve">
+    <value>下载所有监控点</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>密码确认</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="InvalidFullName" xml:space="preserve">
+    <value>无效姓名</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>操作员</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="PermissionAgent" xml:space="preserve">
+    <value>服务器管理</value>
+  </data>
+  <data name="PermissionDevice" xml:space="preserve">
+    <value>监控点管理</value>
+  </data>
+  <data name="PermissionDeviceConf" xml:space="preserve">
+    <value>监控点配置</value>
+  </data>
+  <data name="PermissionEquipment" xml:space="preserve">
+    <value>设备管理</value>
+  </data>
+  <data name="PermissionRegion" xml:space="preserve">
+    <value>分组管理</value>
+  </data>
+  <data name="PermissionUser" xml:space="preserve">
+    <value>用户管理</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>超级用户</value>
+  </data>
+  <data name="UnauthorizedAccessException" xml:space="preserve">
+    <value>登录已过期</value>
+  </data>
+  <data name="UsersInGroup" xml:space="preserve">
+    <value>组内用户</value>
+  </data>
+  <data name="UserType" xml:space="preserve">
+    <value>用户类型</value>
+  </data>
+  <data name="AccountForbidden" xml:space="preserve">
+    <value>用户权限不足</value>
+  </data>
+  <data name="CreateUserFailed" xml:space="preserve">
+    <value>创建用户失败</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>无效的用户类型</value>
+  </data>
+  <data name="UserCount" xml:space="preserve">
+    <value>用户数</value>
+  </data>
+  <data name="AccountUsernameExist" xml:space="preserve">
+    <value>用户名已存在</value>
+  </data>
+  <data name="AssociatedGroup" xml:space="preserve">
+    <value>所属分组</value>
+  </data>
+  <data name="AllOption" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="UnConfirmed" xml:space="preserve">
+    <value>未处理</value>
+  </data>
+  <data name="AttendedBaggageCap" xml:space="preserve">
+    <value>物品拿取侦测</value>
+  </data>
+  <data name="ENVAlarm" xml:space="preserve">
+    <value>环境报警</value>
+  </data>
+  <data name="FieldDetection" xml:space="preserve">
+    <value>区域入侵侦测</value>
+  </data>
+  <data name="IRAlarm" xml:space="preserve">
+    <value>红外报警</value>
+  </data>
+  <data name="LineDetection" xml:space="preserve">
+    <value>越界侦测</value>
+  </data>
+  <data name="Loitering" xml:space="preserve">
+    <value>徘徊侦测</value>
+  </data>
+  <data name="RegionEntrance" xml:space="preserve">
+    <value>进入区域侦测</value>
+  </data>
+  <data name="RegionExiting" xml:space="preserve">
+    <value>离开区域侦测</value>
+  </data>
+  <data name="SecurityAlarm" xml:space="preserve">
+    <value>安防报警</value>
+  </data>
+  <data name="UnattendedBaggage" xml:space="preserve">
+    <value>物品遗留侦测</value>
+  </data>
+  <data name="ThresholdGreater" xml:space="preserve">
+    <value>阈值大于</value>
+  </data>
+  <data name="ThresholdLess" xml:space="preserve">
+    <value>阈值小于</value>
+  </data>
+  <data name="AutoLogin" xml:space="preserve">
+    <value>自动登录</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>登录时间</value>
+  </data>
+  <data name="AlarmOutConfig" xml:space="preserve">
+    <value>报警输出配置</value>
+  </data>
+  <data name="AlarmOutEnable" xml:space="preserve">
+    <value>报警输出使能</value>
+  </data>
+  <data name="OnlineChannel" xml:space="preserve">
+    <value>在线通道</value>
+  </data>
+  <data name="IPAddr" xml:space="preserve">
+    <value>IP地址</value>
+  </data>
+  <data name="LogConfig" xml:space="preserve">
+    <value>日志配置</value>
+  </data>
+  <data name="LogRetentionTime" xml:space="preserve">
+    <value>日志保存时间</value>
+  </data>
+  <data name="CustomSystem" xml:space="preserve">
+    <value>系统定制</value>
+  </data>
+  <data name="SoftwareIcon" xml:space="preserve">
+    <value>软件图标</value>
+  </data>
+  <data name="SoftwareName" xml:space="preserve">
+    <value>软件名称</value>
+  </data>
+  <data name="InvalidSoftwareIcon" xml:space="preserve">
+    <value>无效软件图标</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="TipSoftwareName" xml:space="preserve">
+    <value>软件名称不能为空</value>
+  </data>
+  <data name="TipUploadFileFailed" xml:space="preserve">
+    <value>上传文件失败</value>
+  </data>
+  <data name="EnableSuperResolution" xml:space="preserve">
+    <value>启用红外超分辨率</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>字号</value>
+  </data>
+  <data name="ExportImagesAsWell" xml:space="preserve">
+    <value>是否同时导出图片？</value>
+  </data>
+  <data name="AcousticMonitorAgent" xml:space="preserve">
+    <value>声像监控服务</value>
+  </data>
+  <data name="ACCamera" xml:space="preserve">
+    <value>声像</value>
+  </data>
+</root>

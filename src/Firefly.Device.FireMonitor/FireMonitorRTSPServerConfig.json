@@ -1,0 +1,12 @@
+﻿{
+  "rtspServerAddress": "127.0.0.1",
+  "rtspServerPort": 29080,
+  "rtpServerPort": 10000,
+  "rtcServerPort": 8000,
+  "httpServerPort": 19080,
+  "streamContentType": "video",
+  "priStr": "pri",
+  "subStr": "sub",
+  "subStreamWidth": 384,
+  "subStreamHeight": 288
+}

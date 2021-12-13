@@ -1,0 +1,89 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:local="clr-namespace:Firefly.Client.Control">
+
+    <Style x:Key="IRtekImageStyle" TargetType="{x:Type local:IRtekImage}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:IRtekImage}">
+                    <Border
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        ClipToBounds="True">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image
+                                Grid.Row="0"
+                                Source="{Binding RelativeSource={RelativeSource AncestorType={x:Type local:IRtekImage}}, Path=Source}"
+                                Stretch="Uniform" />
+                            <StackPanel
+                                x:Name="spFunc"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Bottom"
+                                Background="{DynamicResource IRtek.Brushes.ThemeBackground.Content}"
+                                Orientation="Horizontal"
+                                Visibility="Collapsed">
+                                <amur:Button
+                                    x:Name="btnAnalyzIR"
+                                    Width="32"
+                                    Height="32"
+                                    MinWidth="32"
+                                    Visibility="{Binding RelativeSource={RelativeSource AncestorType={x:Type local:IRtekImage}}, Path=SupportAnalyzIR, Converter={StaticResource BoolToVisibilityConverter}}">
+                                    <amur:Button.Content>
+                                        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Border
+                                                Width="20"
+                                                Height="20"
+                                                BorderBrush="{DynamicResource IRtek.Brushes.Button.Border}"
+                                                BorderThickness="1"
+                                                CornerRadius="4" />
+                                            <TextBlock
+                                                Width="20"
+                                                FontSize="14"
+                                                Text="IR"
+                                                TextAlignment="Center" />
+                                        </Grid>
+                                    </amur:Button.Content>
+                                </amur:Button>
+                                <Rectangle Width="{DynamicResource IntervalsWidth}" Visibility="{Binding RelativeSource={RelativeSource AncestorType={x:Type local:IRtekImage}}, Path=SupportAnalyzIR, Converter={StaticResource BoolToVisibilityConverter}}" />
+                                <amur:Button x:Name="btnDownload">
+                                    <amur:Button.Icon>
+                                        <amur:SymbolIcon Symbol="ArrowDownload20" />
+                                    </amur:Button.Icon>
+                                </amur:Button>
+                                <Rectangle Width="{DynamicResource IntervalsWidth}" />
+                                <amur:Button x:Name="btnFullScreen">
+                                    <amur:Button.Icon>
+                                        <amur:SymbolIcon Symbol="FullScreenMaximize20" />
+                                    </amur:Button.Icon>
+                                </amur:Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="True" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="spFunc" Property="Visibility" Value="Visible" />
+                        </MultiTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="spFunc" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource IRtekImageStyle}" TargetType="{x:Type local:IRtekImage}" />
+</ResourceDictionary>

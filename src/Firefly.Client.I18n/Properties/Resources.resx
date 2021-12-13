@@ -1,0 +1,2602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acceleration" xml:space="preserve">
+    <value>Acceleration</value>
+  </data>
+  <data name="AccelerationAlarmLevel" xml:space="preserve">
+    <value>Acceleration Alarm Level</value>
+  </data>
+  <data name="AccelerationWithSymbol" xml:space="preserve">
+    <value>Acceleration(m/s²)</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddArea" xml:space="preserve">
+    <value>Add Region</value>
+  </data>
+  <data name="AddEquipment" xml:space="preserve">
+    <value>Adding Asset</value>
+  </data>
+  <data name="AddEquipmentInfo" xml:space="preserve">
+    <value>Add Asset Info</value>
+  </data>
+  <data name="AddFail" xml:space="preserve">
+    <value>Failed to add</value>
+  </data>
+  <data name="AddPoint" xml:space="preserve">
+    <value>Add Inspection Point</value>
+  </data>
+  <data name="AddProperty" xml:space="preserve">
+    <value>Add Property</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddStation" xml:space="preserve">
+    <value>Add Station</value>
+  </data>
+  <data name="AddSuccessfully" xml:space="preserve">
+    <value>Successfully added</value>
+  </data>
+  <data name="AgentAddFailed" xml:space="preserve">
+    <value>Failed to add server</value>
+  </data>
+  <data name="AgentOffline" xml:space="preserve">
+    <value>Server offline</value>
+  </data>
+  <data name="Agree" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Alarm1Output" xml:space="preserve">
+    <value>Level I Alert</value>
+  </data>
+  <data name="Alarm2Output" xml:space="preserve">
+    <value>Level II Alert</value>
+  </data>
+  <data name="AlarmAgent" xml:space="preserve">
+    <value>Alarm Server</value>
+  </data>
+  <data name="AlarmCenter" xml:space="preserve">
+    <value>Alarm Center</value>
+  </data>
+  <data name="AlarmCenterConfig" xml:space="preserve">
+    <value>Alarm Center Config</value>
+  </data>
+  <data name="AlarmCenterDescription" xml:space="preserve">
+    <value>Used to display alarm messages of monitoring points in real time, at the same time, you can query the alarm history messages</value>
+  </data>
+  <data name="AlarmConfig" xml:space="preserve">
+    <value>Alarm Configuration</value>
+  </data>
+  <data name="AlarmConfigDescription" xml:space="preserve">
+    <value>Used to configure the alarm output action of the monitoring point</value>
+  </data>
+  <data name="AlarmConfirm" xml:space="preserve">
+    <value>Alarm Processing</value>
+  </data>
+  <data name="AlarmData" xml:space="preserve">
+    <value>Alarm Data</value>
+  </data>
+  <data name="AlarmDescription" xml:space="preserve">
+    <value>Alarm Description</value>
+  </data>
+  <data name="AlarmDetails" xml:space="preserve">
+    <value>Alarm Details</value>
+  </data>
+  <data name="AlarmDevice" xml:space="preserve">
+    <value>Alarmed Device</value>
+  </data>
+  <data name="AlarmFilteringTime" xml:space="preserve">
+    <value>Alarm Waiting Time(s)</value>
+  </data>
+  <data name="AlarmLevel" xml:space="preserve">
+    <value>Alarm Level</value>
+  </data>
+  <data name="AlarmMessage" xml:space="preserve">
+    <value>Alarm Message</value>
+  </data>
+  <data name="AlarmOutAction" xml:space="preserve">
+    <value>Alarm Output Action</value>
+  </data>
+  <data name="AlarmOutMode" xml:space="preserve">
+    <value>Alarm Output Mode</value>
+  </data>
+  <data name="AlarmPicture" xml:space="preserve">
+    <value>Alarm Image</value>
+  </data>
+  <data name="AlarmPlatform" xml:space="preserve">
+    <value>Alarm Platform</value>
+  </data>
+  <data name="AlarmPlatformAccess" xml:space="preserve">
+    <value>Alarm Platform Access</value>
+  </data>
+  <data name="AlarmQuery" xml:space="preserve">
+    <value>Alarm Query</value>
+  </data>
+  <data name="AlarmRecord" xml:space="preserve">
+    <value>Alarm Records</value>
+  </data>
+  <data name="AlarmRegion" xml:space="preserve">
+    <value>Alarm Region</value>
+  </data>
+  <data name="AlarmRepeatCount" xml:space="preserve">
+    <value>Alarm Repeat Count</value>
+  </data>
+  <data name="AlarmRetentionTime" xml:space="preserve">
+    <value>Alarm Retention Time</value>
+  </data>
+  <data name="AlarmRule" xml:space="preserve">
+    <value>Alarm Settings</value>
+  </data>
+  <data name="AlarmRuleFullMessage" xml:space="preserve">
+    <value>Support Up to 50 Alarm Rules</value>
+  </data>
+  <data name="AlarmSchedule" xml:space="preserve">
+    <value>Deployment Plan</value>
+  </data>
+  <data name="AlarmService" xml:space="preserve">
+    <value>Alarm Monitor Service</value>
+  </data>
+  <data name="AlarmStatus" xml:space="preserve">
+    <value>Alarm Status</value>
+  </data>
+  <data name="AlarmTemp" xml:space="preserve">
+    <value>Alarm Temperature(℃)</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>Alarm Time</value>
+  </data>
+  <data name="AlarmType" xml:space="preserve">
+    <value>Alarm Type</value>
+  </data>
+  <data name="AlarmValue" xml:space="preserve">
+    <value>Alarm Threshold</value>
+  </data>
+  <data name="AlarmVideo" xml:space="preserve">
+    <value>Alarm Video</value>
+  </data>
+  <data name="Alert1FilteringTime" xml:space="preserve">
+    <value>Level I warning waiting time(s)</value>
+  </data>
+  <data name="Alert1Temp" xml:space="preserve">
+    <value>Level I warning temperature(℃)</value>
+  </data>
+  <data name="Alert2FilteringTime" xml:space="preserve">
+    <value>Level II warning waiting time(s)</value>
+  </data>
+  <data name="Alert2Temp" xml:space="preserve">
+    <value>Level II warning temperature(℃)</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Total </value>
+  </data>
+  <data name="AlreadyRunning" xml:space="preserve">
+    <value>There are already instances in operation</value>
+  </data>
+  <data name="AnalysisFailed" xml:space="preserve">
+    <value>Failed to Parse</value>
+  </data>
+  <data name="AnalysisSuccessful" xml:space="preserve">
+    <value>Successfully Parsed</value>
+  </data>
+  <data name="Aperture" xml:space="preserve">
+    <value>Aperture</value>
+  </data>
+  <data name="AppKey" xml:space="preserve">
+    <value>Interface Key</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="AreaConfig" xml:space="preserve">
+    <value>Region Configuration</value>
+  </data>
+  <data name="AreaName" xml:space="preserve">
+    <value>Area Name</value>
+  </data>
+  <data name="Association" xml:space="preserve">
+    <value>Associate</value>
+  </data>
+  <data name="AtmTemp" xml:space="preserve">
+    <value>Atmospheric Temperature (℃)</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="AutoFocus" xml:space="preserve">
+    <value>Autofocus</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>Auto-play Video</value>
+  </data>
+  <data name="AverageGreater" xml:space="preserve">
+    <value>Average Temperature Greater Than</value>
+  </data>
+  <data name="AverageLess" xml:space="preserve">
+    <value>Average Temperature Less Than</value>
+  </data>
+  <data name="AvgColon" xml:space="preserve">
+    <value>Average:</value>
+  </data>
+  <data name="AvgTemperature" xml:space="preserve">
+    <value>Avg. Temp</value>
+  </data>
+  <data name="AvgTemperatureWithSymbol" xml:space="preserve">
+    <value>Avg. Temp(℃)</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>Basic Info</value>
+  </data>
+  <data name="BasicInfomation" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="BatchBinding" xml:space="preserve">
+    <value>Batch Binding</value>
+  </data>
+  <data name="Begin" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="BeginStop" xml:space="preserve">
+    <value>Start/Stop</value>
+  </data>
+  <data name="Binding" xml:space="preserve">
+    <value>Binding</value>
+  </data>
+  <data name="BindingResource" xml:space="preserve">
+    <value>Bind Resource</value>
+  </data>
+  <data name="BookmarkFormatFail" xml:space="preserve">
+    <value>Bookmark "{0}" format error.</value>
+  </data>
+  <data name="BookmarkIndexOutofRange" xml:space="preserve">
+    <value>Bookmark "{0}" parse fail.</value>
+  </data>
+  <data name="BookmarkMsg" xml:space="preserve">
+    <value>Insert bookmark "{0}"，Value: {1}.</value>
+  </data>
+  <data name="Bound" xml:space="preserve">
+    <value>Bound</value>
+  </data>
+  <data name="Brightness" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>Call</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelLoad" xml:space="preserve">
+    <value>Cancel the load</value>
+  </data>
+  <data name="CannotChooseYourself" xml:space="preserve">
+    <value>Cannot Select Itself</value>
+  </data>
+  <data name="CannotExceedMaxDuration" xml:space="preserve">
+    <value>Time period cannot be more than {0}</value>
+  </data>
+  <data name="Channel" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="ChannelConfig" xml:space="preserve">
+    <value>Channel Configuration</value>
+  </data>
+  <data name="ChannelList" xml:space="preserve">
+    <value>Channel List</value>
+  </data>
+  <data name="ChannelName" xml:space="preserve">
+    <value>Channel Name</value>
+  </data>
+  <data name="ChannelNo" xml:space="preserve">
+    <value>Channel Number</value>
+  </data>
+  <data name="ChannelZero" xml:space="preserve">
+    <value>Channel 0</value>
+  </data>
+  <data name="CharacterOverlay" xml:space="preserve">
+    <value>Character Overlay</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="ChooseDevice" xml:space="preserve">
+    <value>Select Monitoring Point</value>
+  </data>
+  <data name="ChooseEquipmentPoint" xml:space="preserve">
+    <value>Select Device Measurement Point</value>
+  </data>
+  <data name="ChooseFireAlarm" xml:space="preserve">
+    <value>Select Alarm Rules</value>
+  </data>
+  <data name="Clean" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CleanFailed" xml:space="preserve">
+    <value>Failed to Clear</value>
+  </data>
+  <data name="CleanSuccess" xml:space="preserve">
+    <value>Cleared Successfully</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CloseAlarmTip" xml:space="preserve">
+    <value>Close the Alarm Pop-up Window</value>
+  </data>
+  <data name="CloseSound" xml:space="preserve">
+    <value>Turn Off Sound</value>
+  </data>
+  <data name="CloseSpeech" xml:space="preserve">
+    <value>Turn off Voice</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Config" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Handle</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Handled</value>
+  </data>
+  <data name="ConfirmSameDeviceAlarm" xml:space="preserve">
+    <value>Batch Handle Alarms from the Same Device</value>
+  </data>
+  <data name="ConfirmState" xml:space="preserve">
+    <value>Handled State</value>
+  </data>
+  <data name="ConnectFailed" xml:space="preserve">
+    <value>Connection Failed</value>
+  </data>
+  <data name="ConnectionParam" xml:space="preserve">
+    <value>Connection Address</value>
+  </data>
+  <data name="ConnectionStatus" xml:space="preserve">
+    <value>Connection Status</value>
+  </data>
+  <data name="ContainInvalidValueError" xml:space="preserve">
+    <value>Cannot contain invalid input values</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Contrast" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="CopyFailed" xml:space="preserve">
+    <value>Failed to Copy</value>
+  </data>
+  <data name="CopySucceeded" xml:space="preserve">
+    <value>Copy Successful</value>
+  </data>
+  <data name="CopyTo" xml:space="preserve">
+    <value>Copy to</value>
+  </data>
+  <data name="CopyToPoints" xml:space="preserve">
+    <value>Copy to...</value>
+  </data>
+  <data name="CoverImage" xml:space="preserve">
+    <value>Cover Image</value>
+  </data>
+  <data name="Critical" xml:space="preserve">
+    <value>Critical Defects</value>
+  </data>
+  <data name="Critical1" xml:space="preserve">
+    <value>Critical</value>
+  </data>
+  <data name="CriticalFilteringTime" xml:space="preserve">
+    <value>Critical defect waiting time(s)</value>
+  </data>
+  <data name="CriticalTemp" xml:space="preserve">
+    <value>Critical defect temperature(℃)</value>
+  </data>
+  <data name="Cruise" xml:space="preserve">
+    <value>Cruise</value>
+  </data>
+  <data name="CruiseName" xml:space="preserve">
+    <value>Cruise Name</value>
+  </data>
+  <data name="CruiseRoute" xml:space="preserve">
+    <value>Cruise Path</value>
+  </data>
+  <data name="CruiseRouteCountLessThanTen" xml:space="preserve">
+    <value>The number of cruise path cannot exceed 10</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>data</value>
+  </data>
+  <data name="DataAlarm" xml:space="preserve">
+    <value>Data Alarm</value>
+  </data>
+  <data name="DatabasesConfig" xml:space="preserve">
+    <value>DatabasesConfig</value>
+  </data>
+  <data name="DataByteOrder" xml:space="preserve">
+    <value>Data Byte Sequence</value>
+  </data>
+  <data name="DataCenter" xml:space="preserve">
+    <value>Data Center</value>
+  </data>
+  <data name="DataCenterDescription" xml:space="preserve">
+    <value>For querying historical data of monitoring points and devices</value>
+  </data>
+  <data name="DataLength" xml:space="preserve">
+    <value>Byte Length</value>
+  </data>
+  <data name="DataOffset" xml:space="preserve">
+    <value>Data Offset</value>
+  </data>
+  <data name="DataRecord" xml:space="preserve">
+    <value>Data Record</value>
+  </data>
+  <data name="DataRecordEnabled" xml:space="preserve">
+    <value>Enable Data Recording</value>
+  </data>
+  <data name="DataRecordInterval" xml:space="preserve">
+    <value>Data Record Interval (data per frame)</value>
+  </data>
+  <data name="DataRecordTime" xml:space="preserve">
+    <value>Data Record Time</value>
+  </data>
+  <data name="DataRefreshTime" xml:space="preserve">
+    <value>Data Refresh Time</value>
+  </data>
+  <data name="DataRetentionTime" xml:space="preserve">
+    <value>Data Retention Time</value>
+  </data>
+  <data name="DataScale" xml:space="preserve">
+    <value>Scaling</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="DataValue" xml:space="preserve">
+    <value>Data Value</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="DCCamera" xml:space="preserve">
+    <value>DC Camera</value>
+  </data>
+  <data name="DefaultPolling" xml:space="preserve">
+    <value>Default Cruising</value>
+  </data>
+  <data name="DefectEquipment" xml:space="preserve">
+    <value>Defect Asset</value>
+  </data>
+  <data name="DefectImage" xml:space="preserve">
+    <value>Defect Image</value>
+  </data>
+  <data name="DefectLevel" xml:space="preserve">
+    <value>Defect Level</value>
+  </data>
+  <data name="DefectPoint" xml:space="preserve">
+    <value>Defect Inspection Point(s)</value>
+  </data>
+  <data name="DefectRecord" xml:space="preserve">
+    <value>Defect Record</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Delete All</value>
+  </data>
+  <data name="DeleteCruiseRouteNotify" xml:space="preserve">
+    <value>Current cruise path is occupied by timed task(s), please remove the timed task(s) first</value>
+  </data>
+  <data name="DeleteFail" xml:space="preserve">
+    <value>Failed to Delete</value>
+  </data>
+  <data name="DeleteInstantTaskFailed" xml:space="preserve">
+    <value>Failed to Delete the Temporary Task</value>
+  </data>
+  <data name="DeletePresetNotify" xml:space="preserve">
+    <value>Current inspection point is occupied by a cruise path, please remove the cruise path first</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>Deleted Successfully</value>
+  </data>
+  <data name="Describe" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Detected" xml:space="preserve">
+    <value>Inspected</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="DeviceAbilityNotMatch" xml:space="preserve">
+    <value>The selected monitoring points' capability sets do not match</value>
+  </data>
+  <data name="DeviceBeenDeleted" xml:space="preserve">
+    <value>The monitoring point has been deleted and the alarm video is not available.</value>
+  </data>
+  <data name="DeviceChannelNotMatch" xml:space="preserve">
+    <value>Monitoring point's channel and ID do not match</value>
+  </data>
+  <data name="DeviceConfig" xml:space="preserve">
+    <value>Device Configuration</value>
+  </data>
+  <data name="DeviceCount" xml:space="preserve">
+    <value>Number of Device(s)</value>
+  </data>
+  <data name="DeviceDetail" xml:space="preserve">
+    <value>Monitoring Point Details</value>
+  </data>
+  <data name="DeviceGroup" xml:space="preserve">
+    <value>Device Group</value>
+  </data>
+  <data name="DeviceID" xml:space="preserve">
+    <value>Device ID</value>
+  </data>
+  <data name="DeviceManager" xml:space="preserve">
+    <value>Device Manager</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>Device Name</value>
+  </data>
+  <data name="DeviceNotExist" xml:space="preserve">
+    <value>The monitoring point does not exist</value>
+  </data>
+  <data name="DeviceNotExisted" xml:space="preserve">
+    <value>Contains non-existent monitoring points</value>
+  </data>
+  <data name="DeviceStatistics" xml:space="preserve">
+    <value>Monitoring Point Statistics</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>Device Type</value>
+  </data>
+  <data name="DiffColon" xml:space="preserve">
+    <value>Temperature Difference Value:</value>
+  </data>
+  <data name="DiffTempGreater" xml:space="preserve">
+    <value>Temperature Difference Greater Than</value>
+  </data>
+  <data name="DiffTempLess" xml:space="preserve">
+    <value>Temperature Difference Less Than</value>
+  </data>
+  <data name="DingTalk" xml:space="preserve">
+    <value>DingTalk</value>
+  </data>
+  <data name="DingTalkID" xml:space="preserve">
+    <value>DingTalk ID</value>
+  </data>
+  <data name="DisableAll" xml:space="preserve">
+    <value>Disable All</value>
+  </data>
+  <data name="DisplayDevice" xml:space="preserve">
+    <value>Show Monitoring Points</value>
+  </data>
+  <data name="DisplayEquipmentPoint" xml:space="preserve">
+    <value>Show the device's inspection points</value>
+  </data>
+  <data name="DisplayType" xml:space="preserve">
+    <value>Show Type</value>
+  </data>
+  <data name="Disposal" xml:space="preserve">
+    <value>Handle</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance (m)</value>
+  </data>
+  <data name="DocumentFormatMismatch" xml:space="preserve">
+    <value>Document Format Mismatch</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Download Failed</value>
+  </data>
+  <data name="DownloadSuccessfully" xml:space="preserve">
+    <value>Download Successful</value>
+  </data>
+  <data name="DownloadTemplateFile" xml:space="preserve">
+    <value>Download Template File</value>
+  </data>
+  <data name="DPVMaximumCount" xml:space="preserve">
+    <value>Maximum Number is</value>
+  </data>
+  <data name="EachPage" xml:space="preserve">
+    <value>per page</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditAlarmOut" xml:space="preserve">
+    <value>Modify Alarm Output</value>
+  </data>
+  <data name="EditArea" xml:space="preserve">
+    <value>Edit Region</value>
+  </data>
+  <data name="EditDevice" xml:space="preserve">
+    <value>Modify Monitoring Points</value>
+  </data>
+  <data name="EditEquipment" xml:space="preserve">
+    <value>Edit Asset</value>
+  </data>
+  <data name="EditEquipmentInfo" xml:space="preserve">
+    <value>Edit Asset Info</value>
+  </data>
+  <data name="EditPoint" xml:space="preserve">
+    <value>Edit Inspection Points</value>
+  </data>
+  <data name="EditProperty" xml:space="preserve">
+    <value>Edit Property</value>
+  </data>
+  <data name="EditStation" xml:space="preserve">
+    <value>Edit Station</value>
+  </data>
+  <data name="EditSuccess" xml:space="preserve">
+    <value>Modified Successfully</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Mailbox</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Mailbox Address</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="Emissivity" xml:space="preserve">
+    <value>Emissivity</value>
+  </data>
+  <data name="EmptyNameError" xml:space="preserve">
+    <value>Name Cannot Be Empty</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="EnableAlarmPlatform" xml:space="preserve">
+    <value>Enable Alarm Platform Access</value>
+  </data>
+  <data name="EnableAll" xml:space="preserve">
+    <value>Enable All</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="EnableOSD" xml:space="preserve">
+    <value>Enable OSD</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="EnvironmentMonitorAgent" xml:space="preserve">
+    <value>Sensor Server</value>
+  </data>
+  <data name="EnvironmentMonitorAlarm" xml:space="preserve">
+    <value>Environment Alarm</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Asset</value>
+  </data>
+  <data name="EquipmentAliasName" xml:space="preserve">
+    <value>Asset Aliases</value>
+  </data>
+  <data name="EquipmentAndPoint" xml:space="preserve">
+    <value>Asset and Inspection Pts</value>
+  </data>
+  <data name="EquipmentConfig" xml:space="preserve">
+    <value>Device Configuration</value>
+  </data>
+  <data name="EquipmentExist" xml:space="preserve">
+    <value>The Asset Already Exists</value>
+  </data>
+  <data name="EquipmentID" xml:space="preserve">
+    <value>Asset ID</value>
+  </data>
+  <data name="EquipmentInfo" xml:space="preserve">
+    <value>Asset Info</value>
+  </data>
+  <data name="EquipmentManagerPlatform" xml:space="preserve">
+    <value>Equipment Manager Platform</value>
+  </data>
+  <data name="EquipmentManagerPlatformAccess" xml:space="preserve">
+    <value>Equipment Manager Platform Access</value>
+  </data>
+  <data name="EquipmentMonitor" xml:space="preserve">
+    <value>Asset Monitoring</value>
+  </data>
+  <data name="EquipmentMonitorAgent" xml:space="preserve">
+    <value>Asset Status Server</value>
+  </data>
+  <data name="EquipmentMonitorAlarm" xml:space="preserve">
+    <value>Asset Status Alarm</value>
+  </data>
+  <data name="EquipmentMonitorDescription" xml:space="preserve">
+    <value>Used to detect the alarm status of the equipment in real time and to grasp the abnormal status of the equipment in time</value>
+  </data>
+  <data name="EquipmentName" xml:space="preserve">
+    <value>Asset Name</value>
+  </data>
+  <data name="EquipmentNO" xml:space="preserve">
+    <value>Asset No</value>
+  </data>
+  <data name="EquipmentPointList" xml:space="preserve">
+    <value>Asset's Inspection Point List</value>
+  </data>
+  <data name="EquipmentSerial" xml:space="preserve">
+    <value>Asset Serial Number</value>
+  </data>
+  <data name="EquipmentSerialNO" xml:space="preserve">
+    <value>Equipment SerialNO</value>
+  </data>
+  <data name="EquipmentStatistics" xml:space="preserve">
+    <value>Asset Statistics</value>
+  </data>
+  <data name="EventDetails" xml:space="preserve">
+    <value>Event Details</value>
+  </data>
+  <data name="EventTrigger" xml:space="preserve">
+    <value>Alarm Linkage</value>
+  </data>
+  <data name="EventTriggerOutput" xml:space="preserve">
+    <value>Alarm Output</value>
+  </data>
+  <data name="ExitExe" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Expansion" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ExportAll" xml:space="preserve">
+    <value>Export All</value>
+  </data>
+  <data name="ExportConfig" xml:space="preserve">
+    <value>Export configuration</value>
+  </data>
+  <data name="Exported" xml:space="preserve">
+    <value>Exported</value>
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>Exportation Failed</value>
+  </data>
+  <data name="ExportFailedFileOccupied" xml:space="preserve">
+    <value>The file is occupied, exportation failed</value>
+  </data>
+  <data name="ExportFileFilter" xml:space="preserve">
+    <value>Configuration file (*.json)|*.json</value>
+  </data>
+  <data name="ExportSuccess" xml:space="preserve">
+    <value>Successfully exported</value>
+  </data>
+  <data name="ExtOptTemp" xml:space="preserve">
+    <value>External optical temperature(℃)</value>
+  </data>
+  <data name="ExtOptTrans" xml:space="preserve">
+    <value>External optical transmittance</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="Fault" xml:space="preserve">
+    <value>Severe defect</value>
+  </data>
+  <data name="FaultFilteringTime" xml:space="preserve">
+    <value>Severe defect waiting time(s)</value>
+  </data>
+  <data name="FaultTemp" xml:space="preserve">
+    <value>Severe defect temperature(℃)</value>
+  </data>
+  <data name="FileFormatException" xml:space="preserve">
+    <value>Document format abnormality</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="FileSaved" xml:space="preserve">
+    <value>File saved to</value>
+  </data>
+  <data name="FireMonitorAgent" xml:space="preserve">
+    <value>Infrared Server</value>
+  </data>
+  <data name="FireMonitorAlarm" xml:space="preserve">
+    <value>Fire Prevention Alarm</value>
+  </data>
+  <data name="FireMonitorService" xml:space="preserve">
+    <value>Fire Prevention Monitoring Service</value>
+  </data>
+  <data name="FireService" xml:space="preserve">
+    <value>Fire Monitoring Service</value>
+  </data>
+  <data name="FirmwareVersion" xml:space="preserve">
+    <value>Firmware Version No.</value>
+  </data>
+  <data name="FixedSpan" xml:space="preserve">
+    <value>Fixed temperature span</value>
+  </data>
+  <data name="FixMonitoringNoCruise" xml:space="preserve">
+    <value>Fixed-point monitoring cannot activate cruise mode</value>
+  </data>
+  <data name="FixMonitoringOnlyPreset1" xml:space="preserve">
+    <value>Fixed-point monitoring can only use preset position 1</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="FunctinalCenter" xml:space="preserve">
+    <value>Function Center</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="General1" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="GeneralDefects" xml:space="preserve">
+    <value>General Defects</value>
+  </data>
+  <data name="GeneralFilteringTime" xml:space="preserve">
+    <value>General defect waiting time(s)</value>
+  </data>
+  <data name="GeneralTemp" xml:space="preserve">
+    <value>General defect temperature(℃)</value>
+  </data>
+  <data name="GradleService" xml:space="preserve">
+    <value>Ladle monitoring service</value>
+  </data>
+  <data name="Greater" xml:space="preserve">
+    <value>Threshold greater than</value>
+  </data>
+  <data name="GroupConfig" xml:space="preserve">
+    <value>Group Configuration</value>
+  </data>
+  <data name="GroupError" xml:space="preserve">
+    <value>Grouping Error</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="HappenTime" xml:space="preserve">
+    <value>Occurrence Time</value>
+  </data>
+  <data name="HighestGreater" xml:space="preserve">
+    <value>Highest Temperature Greater Than</value>
+  </data>
+  <data name="HighestLess" xml:space="preserve">
+    <value>Highest Temperature Less Than</value>
+  </data>
+  <data name="IllegalExpression" xml:space="preserve">
+    <value>Illegal Expression.</value>
+  </data>
+  <data name="ImageRecordEnable" xml:space="preserve">
+    <value>Enable Snapshot Recording</value>
+  </data>
+  <data name="ImageRecordInterval" xml:space="preserve">
+    <value>Snapshot Recording Interval (image per data)</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ImportConfig" xml:space="preserve">
+    <value>Import configuration</value>
+  </data>
+  <data name="Imported" xml:space="preserve">
+    <value>Imported</value>
+  </data>
+  <data name="ImportFailed" xml:space="preserve">
+    <value>Importation failed</value>
+  </data>
+  <data name="ImportFailedForEquipmentAliasName" xml:space="preserve">
+    <value>The device alias does not conform to the naming convention, importation failed</value>
+  </data>
+  <data name="ImportFailedForEquipmentInfo" xml:space="preserve">
+    <value>The asset Info format not correct, importation failed.</value>
+  </data>
+  <data name="ImportFailedForEquipmentName" xml:space="preserve">
+    <value>The device name does not conform to naming convention, import failed</value>
+  </data>
+  <data name="ImportFailedForPointAliasName" xml:space="preserve">
+    <value>Inspection point alias does not conform to the naming convention, importation failed</value>
+  </data>
+  <data name="ImportFailedForPointName" xml:space="preserve">
+    <value>Inspection point name does not conform to the naming convention, importation failed</value>
+  </data>
+  <data name="ImportFailedForRegionName" xml:space="preserve">
+    <value>Region name does not conform to the naming convention, importation failed</value>
+  </data>
+  <data name="ImportFailedForStationName" xml:space="preserve">
+    <value>The station name does not conform to naming convention, import failed</value>
+  </data>
+  <data name="ImportFailedUnexistPreset" xml:space="preserve">
+    <value>The preset position does not exist, the importation failed</value>
+  </data>
+  <data name="ImportFile" xml:space="preserve">
+    <value>Import File</value>
+  </data>
+  <data name="ImportFileFilter" xml:space="preserve">
+    <value>Configuration file (*.json)|*.json</value>
+  </data>
+  <data name="ImportFromDevice" xml:space="preserve">
+    <value>Import From Monitoring Point</value>
+  </data>
+  <data name="ImportFromFile" xml:space="preserve">
+    <value>Import From File</value>
+  </data>
+  <data name="ImportSuccessfully" xml:space="preserve">
+    <value>Imported successfully</value>
+  </data>
+  <data name="ImportTemplateFile" xml:space="preserve">
+    <value>Import template</value>
+  </data>
+  <data name="InfoDesc" xml:space="preserve">
+    <value>Info Description</value>
+  </data>
+  <data name="InnerTaskID" xml:space="preserve">
+    <value>Inner task id</value>
+  </data>
+  <data name="InputChannel" xml:space="preserve">
+    <value>Restore cruise input channel</value>
+  </data>
+  <data name="InspectionLedger" xml:space="preserve">
+    <value>Inspection Ledger</value>
+  </data>
+  <data name="InspectionTask" xml:space="preserve">
+    <value>Inspection Task</value>
+  </data>
+  <data name="InspectionTaskAgent" xml:space="preserve">
+    <value>Inspection Task Server</value>
+  </data>
+  <data name="InspectionTaskStatusCanceled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="InspectionTaskStatusExecuting" xml:space="preserve">
+    <value>Executing</value>
+  </data>
+  <data name="InspectionTaskStatusFinished" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="InspectionTaskStatusNotStarted" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="InstantTask" xml:space="preserve">
+    <value>Instant tasks</value>
+  </data>
+  <data name="IntelligentApplications" xml:space="preserve">
+    <value>Smart Application</value>
+  </data>
+  <data name="InTheCarousel" xml:space="preserve">
+    <value>Cruising</value>
+  </data>
+  <data name="InvalidAlarmOutput" xml:space="preserve">
+    <value>Contains invalid alarm linkage</value>
+  </data>
+  <data name="InvalidAlarmPlatformUserInfo" xml:space="preserve">
+    <value>Current Configuration Contains Invalid User Information</value>
+  </data>
+  <data name="InvalidAliasName" xml:space="preserve">
+    <value>Alias Allows English, Numbers; But the Length Cannot Exceed 64 Characters</value>
+  </data>
+  <data name="InvalidAppKey" xml:space="preserve">
+    <value>Invalid Interface Key</value>
+  </data>
+  <data name="InvalidBindingInfo" xml:space="preserve">
+    <value>Invalid Binding</value>
+  </data>
+  <data name="InvalidChannel" xml:space="preserve">
+    <value>Invalid Channel</value>
+  </data>
+  <data name="InvalidDevice" xml:space="preserve">
+    <value>Invalid Monitoring Point</value>
+  </data>
+  <data name="InvalidIP" xml:space="preserve">
+    <value>Invalid IP Address</value>
+  </data>
+  <data name="InvalidMarker" xml:space="preserve">
+    <value>Contains Invalid Temperature Measurement Object</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Name Allows Chinese, English, Numbers, the Length Can Not Exceed 64 Characters</value>
+  </data>
+  <data name="InvalidNote" xml:space="preserve">
+    <value>Invalid Notes, the Length Can Not Exceed 255 Characters</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Invalid Password</value>
+  </data>
+  <data name="InvalidPort" xml:space="preserve">
+    <value>Invalid Port</value>
+  </data>
+  <data name="InvalidProtocolType" xml:space="preserve">
+    <value>Invalid Protocol</value>
+  </data>
+  <data name="InvalidPTZ" xml:space="preserve">
+    <value>Monitoring point is performing immediate tasks</value>
+  </data>
+  <data name="InvalidSensitivity" xml:space="preserve">
+    <value>Invalid Sensitivity</value>
+  </data>
+  <data name="InvalidServer" xml:space="preserve">
+    <value>Invalid Server</value>
+  </data>
+  <data name="InvalidShieldMarker" xml:space="preserve">
+    <value>Contains Invalid Masked Areas</value>
+  </data>
+  <data name="InvalidTestData" xml:space="preserve">
+    <value>Invalid Test Data</value>
+  </data>
+  <data name="IRCamera" xml:space="preserve">
+    <value>IR Camera</value>
+  </data>
+  <data name="IsAdd" xml:space="preserve">
+    <value>Confirm to Add the Selected Item</value>
+  </data>
+  <data name="IsAddingRuleError" xml:space="preserve">
+    <value>Please complete the current new rule first</value>
+  </data>
+  <data name="IsCancelInspectionTask" xml:space="preserve">
+    <value>Confirm to Cancel the Inspection Task:{0}</value>
+  </data>
+  <data name="IsCleanData" xml:space="preserve">
+    <value>Confirm to Clear The Data</value>
+  </data>
+  <data name="IsCleanListMsg" xml:space="preserve">
+    <value>Confirm to Clear The List</value>
+  </data>
+  <data name="IsClear" xml:space="preserve">
+    <value>Confirm to Clear the Selected Entry</value>
+  </data>
+  <data name="IsCloseSound" xml:space="preserve">
+    <value>Confirm to Turn Off the Sound</value>
+  </data>
+  <data name="IsCloseSpeech" xml:space="preserve">
+    <value>Confirm to Turn Off the Voice</value>
+  </data>
+  <data name="IsDelete" xml:space="preserve">
+    <value>Confirm to Delete the Selected Entry</value>
+  </data>
+  <data name="IsDeleteInspectionTask" xml:space="preserve">
+    <value>Confirm to Delete the Inspection Task:{0}</value>
+  </data>
+  <data name="IsDeleteMessage" xml:space="preserve">
+    <value>Confirm to Delete the Selected Entries</value>
+  </data>
+  <data name="IsExport" xml:space="preserve">
+    <value>Confirm to Export</value>
+  </data>
+  <data name="IsExportResource" xml:space="preserve">
+    <value>Confirm to Export the Resource List</value>
+  </data>
+  <data name="IsLeave" xml:space="preserve">
+    <value>Confirm to Discard the Changed Contents</value>
+  </data>
+  <data name="IsOpenSound" xml:space="preserve">
+    <value>Confirm to Turn On the Sound</value>
+  </data>
+  <data name="IsOpenSpeech" xml:space="preserve">
+    <value>Confirm to Turn On the Voice</value>
+  </data>
+  <data name="IsPollingStarted" xml:space="preserve">
+    <value>Unable to Operate During the Monitor Rotation</value>
+  </data>
+  <data name="IsUnbinding" xml:space="preserve">
+    <value>Confirm to Unbind the Selected Item</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value> Items</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="LadleAgent" xml:space="preserve">
+    <value>Steel Ladle Server</value>
+  </data>
+  <data name="Ledger" xml:space="preserve">
+    <value>Ledger</value>
+  </data>
+  <data name="LedgerDescription" xml:space="preserve">
+    <value>Used to manage devices. Capable of adding, modifying, deleting and configuring features</value>
+  </data>
+  <data name="LedgerManager" xml:space="preserve">
+    <value>Asset Management</value>
+  </data>
+  <data name="LedgerServerAddress" xml:space="preserve">
+    <value>Ledger Server Address</value>
+  </data>
+  <data name="Less" xml:space="preserve">
+    <value>Threshold value is less than</value>
+  </data>
+  <data name="LimitMarkerLine" xml:space="preserve">
+    <value>The number of temperature measurement objects (lines) has reached the upper limit</value>
+  </data>
+  <data name="LimitMarkerRegion" xml:space="preserve">
+    <value>The number of temperature measurement objects (areas) has reached the upper limit</value>
+  </data>
+  <data name="LimitMarkerSpot" xml:space="preserve">
+    <value>The number of temperature measurement objects (points) has reached the upper limit</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="LivePlot" xml:space="preserve">
+    <value>Real-time Temperature Plot</value>
+  </data>
+  <data name="LivePreview" xml:space="preserve">
+    <value>Real-time Preview</value>
+  </data>
+  <data name="LivePreviewDescription" xml:space="preserve">
+    <value>Preview screen for viewing monitoring points in real time</value>
+  </data>
+  <data name="LiveVideo" xml:space="preserve">
+    <value>Real-time Video</value>
+  </data>
+  <data name="LowestGreater" xml:space="preserve">
+    <value>Lowest Temperature Greater Than</value>
+  </data>
+  <data name="LowestLess" xml:space="preserve">
+    <value>Lowest Temperature Less Than</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MainStream" xml:space="preserve">
+    <value>Main Stream</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management Config</value>
+  </data>
+  <data name="ManuallyClearAlarm" xml:space="preserve">
+    <value>Manually Clear the Alarm(s)</value>
+  </data>
+  <data name="ManuallyTriggerAlarm" xml:space="preserve">
+    <value>Manually Triggered the Alarm</value>
+  </data>
+  <data name="Markers" xml:space="preserve">
+    <value>Temperature Measurement Object</value>
+  </data>
+  <data name="MaxColon" xml:space="preserve">
+    <value>Highest Value:</value>
+  </data>
+  <data name="Maximize" xml:space="preserve">
+    <value>Full Screen</value>
+  </data>
+  <data name="MaxTemperature" xml:space="preserve">
+    <value>Max. Temp</value>
+  </data>
+  <data name="MaxTemperatureWithSymbol" xml:space="preserve">
+    <value>Max. Temp(℃)</value>
+  </data>
+  <data name="MeasurementData" xml:space="preserve">
+    <value>Monitoring Data</value>
+  </data>
+  <data name="MeasurementPicture" xml:space="preserve">
+    <value>Monitoring Image</value>
+  </data>
+  <data name="MeasurementPlot" xml:space="preserve">
+    <value>Monitoring Curve</value>
+  </data>
+  <data name="MeasurementStatus" xml:space="preserve">
+    <value>Monitoring Status</value>
+  </data>
+  <data name="MeasurementTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="MinColon" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="MinimizeToTray" xml:space="preserve">
+    <value>Minimize to System Tray</value>
+  </data>
+  <data name="MinTemperature" xml:space="preserve">
+    <value>Min. Temp</value>
+  </data>
+  <data name="MinTemperatureWithSymbol" xml:space="preserve">
+    <value>Min. Temp(℃)</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="EntityName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameExist" xml:space="preserve">
+    <value>The name already exists</value>
+  </data>
+  <data name="NetworkException" xml:space="preserve">
+    <value>Network Exception</value>
+  </data>
+  <data name="NextGroup" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoArea" xml:space="preserve">
+    <value>No Region Info</value>
+  </data>
+  <data name="NoCheckedAlarmAction" xml:space="preserve">
+    <value>No alarm output configuration selected</value>
+  </data>
+  <data name="NoConfirm" xml:space="preserve">
+    <value>Unhandled</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No Data</value>
+  </data>
+  <data name="NoDataToExport" xml:space="preserve">
+    <value>No Exportable Data</value>
+  </data>
+  <data name="NoDevice" xml:space="preserve">
+    <value>No Monitoring Point Information</value>
+  </data>
+  <data name="NoEquipment" xml:space="preserve">
+    <value>No Device Information</value>
+  </data>
+  <data name="NoExport" xml:space="preserve">
+    <value>Not Exported</value>
+  </data>
+  <data name="Noise" xml:space="preserve">
+    <value>Noise</value>
+  </data>
+  <data name="NoiseWithSymbol" xml:space="preserve">
+    <value>Noise (dB)</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NoPageTip" xml:space="preserve">
+    <value>Current Page is Under Development</value>
+  </data>
+  <data name="NoPicture" xml:space="preserve">
+    <value>No Picture</value>
+  </data>
+  <data name="NoPlotData" xml:space="preserve">
+    <value>No Curve Data</value>
+  </data>
+  <data name="NoPoint" xml:space="preserve">
+    <value>No Measurement Point Information</value>
+  </data>
+  <data name="NoRecord" xml:space="preserve">
+    <value>No Records</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Normal1" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="NormalEquipment" xml:space="preserve">
+    <value>Normal Asset</value>
+  </data>
+  <data name="NormalPoint" xml:space="preserve">
+    <value>Normal Inspection Points</value>
+  </data>
+  <data name="NoSelection" xml:space="preserve">
+    <value>No Selected Item</value>
+  </data>
+  <data name="NoSupportMarkerLine" xml:space="preserve">
+    <value>Does not support adding temperature measurement object (line)</value>
+  </data>
+  <data name="NoSupportMarkerOffset" xml:space="preserve">
+    <value>Does not support the modification of temperature measurement parameters (Offset)</value>
+  </data>
+  <data name="NoSupportMarkerRef" xml:space="preserve">
+    <value>Does not support the modification of temperature measurement parameters (reflected temperature)</value>
+  </data>
+  <data name="NoSupportMarkerRegion" xml:space="preserve">
+    <value>Does not support adding temperature measurement object (area)</value>
+  </data>
+  <data name="NoSupportMarkerSpot" xml:space="preserve">
+    <value>Does not support adding temperature measurement object (point)</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="NoTemperaturePlot" xml:space="preserve">
+    <value>No Temperature Curve Information</value>
+  </data>
+  <data name="NotImported" xml:space="preserve">
+    <value>Not Imported</value>
+  </data>
+  <data name="NotLessThanTime" xml:space="preserve">
+    <value>The time period cannot be smaller than</value>
+  </data>
+  <data name="NotRepeatOfTimePeriods" xml:space="preserve">
+    <value>The time period cannot be repeated</value>
+  </data>
+  <data name="NotSelectDeviceFailed" xml:space="preserve">
+    <value>No Monitoring Point Selected</value>
+  </data>
+  <data name="NotSelectEventType" xml:space="preserve">
+    <value>Event Type is Not Selected</value>
+  </data>
+  <data name="NotStartedPolling" xml:space="preserve">
+    <value>Please start the monitor rotation first</value>
+  </data>
+  <data name="NotSynchronized" xml:space="preserve">
+    <value>No Synchronized</value>
+  </data>
+  <data name="NoVideo" xml:space="preserve">
+    <value>No Video</value>
+  </data>
+  <data name="NVRManage" xml:space="preserve">
+    <value>NVR Management</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Off-line</value>
+  </data>
+  <data name="OffsetTemp" xml:space="preserve">
+    <value>Offset (℃)</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="OnlineDevice" xml:space="preserve">
+    <value>Active Device</value>
+  </data>
+  <data name="OnlyAssociatedOnePoint" xml:space="preserve">
+    <value>Only one inspection point can be associated</value>
+  </data>
+  <data name="OpenAlarmTip" xml:space="preserve">
+    <value>Enable Alarm Pop-up Window</value>
+  </data>
+  <data name="OpenSound" xml:space="preserve">
+    <value>Turn On Sound</value>
+  </data>
+  <data name="OpenSpeech" xml:space="preserve">
+    <value>Turn On Voice</value>
+  </data>
+  <data name="Operation" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="OpticalCoupler" xml:space="preserve">
+    <value>Optocoupler</value>
+  </data>
+  <data name="OpticalCouplerOutput" xml:space="preserve">
+    <value>Optocoupler Output</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="OutMode" xml:space="preserve">
+    <value>Output Method</value>
+  </data>
+  <data name="OutputChannel" xml:space="preserve">
+    <value>Output Channel</value>
+  </data>
+  <data name="OutputState" xml:space="preserve">
+    <value>Output Status</value>
+  </data>
+  <data name="OverriedFailed" xml:space="preserve">
+    <value>Failed to override the specified monitoring point configuration</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value> Pages</value>
+  </data>
+  <data name="ParentArea" xml:space="preserve">
+    <value>Parent Region</value>
+  </data>
+  <data name="ParentGroup" xml:space="preserve">
+    <value>Parent Group</value>
+  </data>
+  <data name="ParentStation" xml:space="preserve">
+    <value>Parent Station</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="PauseCruise" xml:space="preserve">
+    <value>Suspend Cruising</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="PlanPolling" xml:space="preserve">
+    <value>Cruising Plan</value>
+  </data>
+  <data name="PlatformServerAddress" xml:space="preserve">
+    <value>Platform Address</value>
+  </data>
+  <data name="Playback" xml:space="preserve">
+    <value>Playback</value>
+  </data>
+  <data name="PleaseAssociate" xml:space="preserve">
+    <value>Please Associate</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>Inspection Points</value>
+  </data>
+  <data name="PointAliasName" xml:space="preserve">
+    <value>Inspection Point Alias</value>
+  </data>
+  <data name="PointAssociation" xml:space="preserve">
+    <value>Associate Inspection Point</value>
+  </data>
+  <data name="PointBinding" xml:space="preserve">
+    <value>Associated Inspection Point</value>
+  </data>
+  <data name="PointDetails" xml:space="preserve">
+    <value>Inspection Point Details</value>
+  </data>
+  <data name="PointID" xml:space="preserve">
+    <value>Point ID</value>
+  </data>
+  <data name="PointMonitorEnable" xml:space="preserve">
+    <value>Enable Fixed-point Monitoring</value>
+  </data>
+  <data name="PointName" xml:space="preserve">
+    <value>Inspection Point Name</value>
+  </data>
+  <data name="PointSerialNO" xml:space="preserve">
+    <value>Point SerialNO</value>
+  </data>
+  <data name="Polling" xml:space="preserve">
+    <value>Cruising</value>
+  </data>
+  <data name="PollingGroupEmpty" xml:space="preserve">
+    <value>Cruising Group is Empty</value>
+  </data>
+  <data name="PollingTime" xml:space="preserve">
+    <value>Cruising Time</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="Preset" xml:space="preserve">
+    <value>Preset</value>
+  </data>
+  <data name="PresetControl" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="PresetDescription" xml:space="preserve">
+    <value>Preset Description</value>
+  </data>
+  <data name="PresetEmpeyError" xml:space="preserve">
+    <value>Preset Cannot Be Empty</value>
+  </data>
+  <data name="PresetFullShieldMarkerMessage" xml:space="preserve">
+    <value>Support Up to 10 Mask Areas</value>
+  </data>
+  <data name="PresetIndex" xml:space="preserve">
+    <value>Preset {0}</value>
+  </data>
+  <data name="PresetName" xml:space="preserve">
+    <value>Preset</value>
+  </data>
+  <data name="PresetOne" xml:space="preserve">
+    <value>Preset 1</value>
+  </data>
+  <data name="PrevGroup" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="PropertyID" xml:space="preserve">
+    <value>Property ID</value>
+  </data>
+  <data name="PropertyName" xml:space="preserve">
+    <value>Property Name</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="PTZControl" xml:space="preserve">
+    <value>Cloud Station Control</value>
+  </data>
+  <data name="Query" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="QueryType" xml:space="preserve">
+    <value>Query Type</value>
+  </data>
+  <data name="Real" xml:space="preserve">
+    <value>Real Number</value>
+  </data>
+  <data name="RealTimeAlarms" xml:space="preserve">
+    <value>Real-time Alarm</value>
+  </data>
+  <data name="RealTimeMonitor" xml:space="preserve">
+    <value>Real-time Monitoring</value>
+  </data>
+  <data name="RealtimeMonitorConfiguration" xml:space="preserve">
+    <value>Real-time Monitoring Configuration</value>
+  </data>
+  <data name="RealTimeTask" xml:space="preserve">
+    <value>Real-time Tasks</value>
+  </data>
+  <data name="ReaTimeMonitor" xml:space="preserve">
+    <value>Real-time Preview</value>
+  </data>
+  <data name="ReceivedTime" xml:space="preserve">
+    <value>Receive Time</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="RecordDetail" xml:space="preserve">
+    <value>Recording Details</value>
+  </data>
+  <data name="Recording" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Relay" xml:space="preserve">
+    <value>Relay</value>
+  </data>
+  <data name="RelayOutput" xml:space="preserve">
+    <value>Relay Output</value>
+  </data>
+  <data name="RelHumidity" xml:space="preserve">
+    <value>Ambient Relative Humidity</value>
+  </data>
+  <data name="RelTemp" xml:space="preserve">
+    <value>Reflected Temperature (℃)</value>
+  </data>
+  <data name="RepeatedNameError" xml:space="preserve">
+    <value>The Name Already Exists</value>
+  </data>
+  <data name="RepeatIPPortError" xml:space="preserve">
+    <value>Cannot Use the Same IP Address And Port</value>
+  </data>
+  <data name="Resource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="ResourceConfig" xml:space="preserve">
+    <value>Resource Management</value>
+  </data>
+  <data name="ResourceConfigDescription" xml:space="preserve">
+    <value>Used to manage monitoring points. Capable of adding, modifying, deleting and configure features</value>
+  </data>
+  <data name="RestoreTime" xml:space="preserve">
+    <value>Task Recovery Time(s)</value>
+  </data>
+  <data name="ResumeCruise" xml:space="preserve">
+    <value>Resume Cruise</value>
+  </data>
+  <data name="ResumeCruiseFail" xml:space="preserve">
+    <value>Failed to Resume Cruise</value>
+  </data>
+  <data name="RetentionTimeMustGreaterThan0" xml:space="preserve">
+    <value>Retention Time Must Be  Greater Than 0</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="RH" xml:space="preserve">
+    <value>Relative Humidity</value>
+  </data>
+  <data name="RHWithSymbol" xml:space="preserve">
+    <value>Relative Humidity(%)</value>
+  </data>
+  <data name="SampleInterval" xml:space="preserve">
+    <value>Sampling Rate(s/f)</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>Saved Successfully</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>Failed to Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchFromEquipmentMonitor" xml:space="preserve">
+    <value>Device Monitoring Filter</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="SecurityMonitorAlarm" xml:space="preserve">
+    <value>Security Alarm</value>
+  </data>
+  <data name="SecurityMonitorTransferAgent" xml:space="preserve">
+    <value>CCD Server</value>
+  </data>
+  <data name="SecurityMonitorTransferService" xml:space="preserve">
+    <value>Security Monitoring Forwarding Service</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="SelectedDevice" xml:space="preserve">
+    <value>Selected Monitoring Points</value>
+  </data>
+  <data name="SelectEquipmentService" xml:space="preserve">
+    <value>Select Device Service</value>
+  </data>
+  <data name="SelectPoint" xml:space="preserve">
+    <value>Select Inspection Points</value>
+  </data>
+  <data name="SendDingTalk" xml:space="preserve">
+    <value>Send Dingtalk Message</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="SendSMS" xml:space="preserve">
+    <value>Send SMS</value>
+  </data>
+  <data name="SendTestMessage" xml:space="preserve">
+    <value>Send Test Content</value>
+  </data>
+  <data name="SendWeChat" xml:space="preserve">
+    <value>Send WeChat</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>Sensitivity</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>Server Address</value>
+  </data>
+  <data name="ServerConfig" xml:space="preserve">
+    <value>Server Configuration</value>
+  </data>
+  <data name="ServerConfigDeserializeError" xml:space="preserve">
+    <value>Server Configuration Deserialization Error</value>
+  </data>
+  <data name="ServerExist" xml:space="preserve">
+    <value>Server Address Already Exists</value>
+  </data>
+  <data name="ServerManager" xml:space="preserve">
+    <value>Server Manager</value>
+  </data>
+  <data name="ServerName" xml:space="preserve">
+    <value>Server Name</value>
+  </data>
+  <data name="ServerPort" xml:space="preserve">
+    <value>Server Port</value>
+  </data>
+  <data name="ServerType" xml:space="preserve">
+    <value>Server Type</value>
+  </data>
+  <data name="ServerTypeError" xml:space="preserve">
+    <value>Server Type Error</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="SetAlarmOutFail" xml:space="preserve">
+    <value>Failed to Set Alarm Output</value>
+  </data>
+  <data name="SetFail" xml:space="preserve">
+    <value>Failed to Set</value>
+  </data>
+  <data name="SetPresetFailed" xml:space="preserve">
+    <value>Failed to Set Preset</value>
+  </data>
+  <data name="SetSuccess" xml:space="preserve">
+    <value>Successfully Set</value>
+  </data>
+  <data name="ShieldMasks" xml:space="preserve">
+    <value>Masked Area</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Position Drift</value>
+  </data>
+  <data name="ShiftAlarmLevel" xml:space="preserve">
+    <value>Position Drift Alarm Level</value>
+  </data>
+  <data name="ShiftWithSymbol" xml:space="preserve">
+    <value>Position Drift(mm)</value>
+  </data>
+  <data name="ShowAvg" xml:space="preserve">
+    <value>Display the Average Temperature</value>
+  </data>
+  <data name="ShowChannelName" xml:space="preserve">
+    <value>Display Channel Name</value>
+  </data>
+  <data name="ShowMainWindow" xml:space="preserve">
+    <value>Display Main Interface</value>
+  </data>
+  <data name="ShowMarkerTemp" xml:space="preserve">
+    <value>Display Temperature Measurement Information</value>
+  </data>
+  <data name="ShowMax" xml:space="preserve">
+    <value>Display the Maximum Temperature</value>
+  </data>
+  <data name="ShowMin" xml:space="preserve">
+    <value>Display the Minimum Temperature</value>
+  </data>
+  <data name="ShowName" xml:space="preserve">
+    <value>Display Description</value>
+  </data>
+  <data name="ShowPresetName" xml:space="preserve">
+    <value>Display Preset Title</value>
+  </data>
+  <data name="ShowTime" xml:space="preserve">
+    <value>Display Time</value>
+  </data>
+  <data name="Sign" xml:space="preserve">
+    <value>Signed Integer</value>
+  </data>
+  <data name="SmartApp" xml:space="preserve">
+    <value>Smart Application</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>Text Message</value>
+  </data>
+  <data name="Sn" xml:space="preserve">
+    <value>Serial No.</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>Local Snapshot</value>
+  </data>
+  <data name="SoundAlarm" xml:space="preserve">
+    <value>Sound Alarm</value>
+  </data>
+  <data name="SpeechAlarm" xml:space="preserve">
+    <value>Voice Alarm</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Cloud Station Speed</value>
+  </data>
+  <data name="Split" xml:space="preserve">
+    <value>Split Screen</value>
+  </data>
+  <data name="Spot" xml:space="preserve">
+    <value>Spot</value>
+  </data>
+  <data name="StartGreaterThanEnd" xml:space="preserve">
+    <value>Start time must be earlier than end time</value>
+  </data>
+  <data name="StartPolling" xml:space="preserve">
+    <value>Start Monitor Rotation</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Station" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="StationName" xml:space="preserve">
+    <value>Station Name</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusMonitor" xml:space="preserve">
+    <value>Alarm Monitoring</value>
+  </data>
+  <data name="StatusMonitorDescription" xml:space="preserve">
+    <value>Used to monitor the alarm status and the abnormal condition of the monitoring point in real time</value>
+  </data>
+  <data name="StopAllPreview" xml:space="preserve">
+    <value>Stop All Previews</value>
+  </data>
+  <data name="StopPolling" xml:space="preserve">
+    <value>Stop Monitor Rotations</value>
+  </data>
+  <data name="StopPreview" xml:space="preserve">
+    <value>Stop Preview</value>
+  </data>
+  <data name="StoreAgent" xml:space="preserve">
+    <value>Storage Server</value>
+  </data>
+  <data name="StoreDevice" xml:space="preserve">
+    <value>Storage Device</value>
+  </data>
+  <data name="StorePlan" xml:space="preserve">
+    <value>Storage Plan</value>
+  </data>
+  <data name="SubStream" xml:space="preserve">
+    <value>Sub Stream</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="Synchronized" xml:space="preserve">
+    <value>Synced</value>
+  </data>
+  <data name="SyncStatus" xml:space="preserve">
+    <value>Synchronize Status</value>
+  </data>
+  <data name="SyncTime" xml:space="preserve">
+    <value>Synchronize Time</value>
+  </data>
+  <data name="SystemConfig" xml:space="preserve">
+    <value>System Configuration</value>
+  </data>
+  <data name="SystemConfigDescription" xml:space="preserve">
+    <value>Basic configuration for digital integrated management platform</value>
+  </data>
+  <data name="TaskCenter" xml:space="preserve">
+    <value>Task Center</value>
+  </data>
+  <data name="TaskCenterDescription" xml:space="preserve">
+    <value>For viewing the task ledger and historical data</value>
+  </data>
+  <data name="TaskID" xml:space="preserve">
+    <value>Task id</value>
+  </data>
+  <data name="TaskName" xml:space="preserve">
+    <value>Task Name</value>
+  </data>
+  <data name="TaskQuery" xml:space="preserve">
+    <value>Task Query</value>
+  </data>
+  <data name="TaskSchedule" xml:space="preserve">
+    <value>Timed Tasks</value>
+  </data>
+  <data name="TaskScheduleUploadFailMsg" xml:space="preserve">
+    <value>Please Link the Cruise Path</value>
+  </data>
+  <data name="TempConfig" xml:space="preserve">
+    <value>Temperature Measurement Configuration</value>
+  </data>
+  <data name="Temperature" xml:space="preserve">
+    <value>Temp.(℃)</value>
+  </data>
+  <data name="TemperatureAlarm" xml:space="preserve">
+    <value>Temperature Alarm</value>
+  </data>
+  <data name="TemperatureAlarmLevel" xml:space="preserve">
+    <value>Temperature Alarm Level</value>
+  </data>
+  <data name="TemperatureWithSymbol" xml:space="preserve">
+    <value>Temperature(℃)</value>
+  </data>
+  <data name="TemplateFormatMismatch" xml:space="preserve">
+    <value>Document template format mismatch</value>
+  </data>
+  <data name="TempRange" xml:space="preserve">
+    <value>Temperature Range(℃)</value>
+  </data>
+  <data name="TempSuddenChangeClosingFilteringTime" xml:space="preserve">
+    <value>Undo Wait Time(s)</value>
+  </data>
+  <data name="TempSuddenChangeDiff" xml:space="preserve">
+    <value>Trigger Temperature Difference(℃)</value>
+  </data>
+  <data name="TempSuddenChangeEnabled" xml:space="preserve">
+    <value>Enable sudden change high temperature blocking</value>
+  </data>
+  <data name="TempSuddenChangeInterval" xml:space="preserve">
+    <value>Time Interval(s)</value>
+  </data>
+  <data name="TempSuddenChangeSensitivity" xml:space="preserve">
+    <value>Masked Area</value>
+  </data>
+  <data name="TempSuddenChangeThreshold" xml:space="preserve">
+    <value>Temperature Threshold(℃)</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>Term</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="TestFailed" xml:space="preserve">
+    <value>Test Failed</value>
+  </data>
+  <data name="TestSuccessfully" xml:space="preserve">
+    <value>Test Successful</value>
+  </data>
+  <data name="ThermalImage" xml:space="preserve">
+    <value>IR Image</value>
+  </data>
+  <data name="ThresholdUnit" xml:space="preserve">
+    <value>Threshold Unit</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TimeWorng" xml:space="preserve">
+    <value>Please enter the correct time period</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>Prompt</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Digital Integrated Management Platform</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="ToleranceTemp" xml:space="preserve">
+    <value>Tolerable Margin Temperature(℃)</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Unbound" xml:space="preserve">
+    <value>Unbound</value>
+  </data>
+  <data name="Unbinding" xml:space="preserve">
+    <value>Unbind</value>
+  </data>
+  <data name="UnconfiguredDevice" xml:space="preserve">
+    <value>No Monitoring Point Configured</value>
+  </data>
+  <data name="UnconfirmedAlarmMessage" xml:space="preserve">
+    <value>Unhandled Alarm</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UnSelectAll" xml:space="preserve">
+    <value>Cancel All</value>
+  </data>
+  <data name="UnselectedDevice" xml:space="preserve">
+    <value>Monitoring Point to Be Selected</value>
+  </data>
+  <data name="UnSign" xml:space="preserve">
+    <value>Unsigned Integer</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>Modification Failed</value>
+  </data>
+  <data name="UserImprovementPlan" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="UserManage" xml:space="preserve">
+    <value>User Management</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="VEAlarmFilteringTime" xml:space="preserve">
+    <value>Value Range: 0-200s</value>
+  </data>
+  <data name="VEDataRecordInterval" xml:space="preserve">
+    <value>Value Range: 1-36000 Sampling Interval</value>
+  </data>
+  <data name="VEDiffTemperature" xml:space="preserve">
+    <value>Value Range: 10.0-100.0℃</value>
+  </data>
+  <data name="VEImageRecordInterval" xml:space="preserve">
+    <value>Value Range: 1-36000 Data Logging Interval</value>
+  </data>
+  <data name="VEIntervalTime" xml:space="preserve">
+    <value>Value Range: 1-60s</value>
+  </data>
+  <data name="Velocity" xml:space="preserve">
+    <value>Speed</value>
+  </data>
+  <data name="VelocityAlarmLevel" xml:space="preserve">
+    <value>Speed Alarm Level</value>
+  </data>
+  <data name="VelocityWithSymbol" xml:space="preserve">
+    <value>Speed(m/s)</value>
+  </data>
+  <data name="VELongName" xml:space="preserve">
+    <value>Name can only be entered in English and numbers, no more than 64 characters</value>
+  </data>
+  <data name="VENormalName" xml:space="preserve">
+    <value>Name can only be entered in English and numbers, no more than 40 characters</value>
+  </data>
+  <data name="VERestoreTime" xml:space="preserve">
+    <value>Task recovery time can range from 5 to 720s</value>
+  </data>
+  <data name="VESampleInterval" xml:space="preserve">
+    <value>Value Range: 0.1-3600s/f</value>
+  </data>
+  <data name="VESpeed" xml:space="preserve">
+    <value>Speed Range: 1-10 levels</value>
+  </data>
+  <data name="VETemperature" xml:space="preserve">
+    <value>Value Range: -100.0-1000.0°C</value>
+  </data>
+  <data name="VEToleranceTemperature" xml:space="preserve">
+    <value>Value Range: 0.0-100.0℃</value>
+  </data>
+  <data name="VEWaitime" xml:space="preserve">
+    <value>Dwelling Time Range: 1-600s</value>
+  </data>
+  <data name="VisualImage" xml:space="preserve">
+    <value>DC Image</value>
+  </data>
+  <data name="Voice" xml:space="preserve">
+    <value>Voice</value>
+  </data>
+  <data name="VoiceCall" xml:space="preserve">
+    <value>Voice Call</value>
+  </data>
+  <data name="WaitTime" xml:space="preserve">
+    <value>Dwelling Time(s)</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Alarm Host</value>
+  </data>
+  <data name="Warrning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="WeChat" xml:space="preserve">
+    <value>WeChat</value>
+  </data>
+  <data name="WeChatID" xml:space="preserve">
+    <value>WeChat Address</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="Wiper" xml:space="preserve">
+    <value>Wiper</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="UserImprovementPlanTest" xml:space="preserve">
+    <value>FOTRIC Inc. Alarm Platform Access Privacy Policy
+Introduction
+Thank you for trusting and using this product's alarm platform! Protecting your personal information and privacy is one of our basic principles. 
+When you use this product, we may collect and use information about you. Through this Privacy Policy (this "Policy"), we want to explain to you how we collect, use, store, disclose and process this information and how we provide you with access to, update, control, and protect it in order to protect your rights in relation to it. 
+In particular, this policy does not apply to products or services provided by third-party companies or individuals ("Third Party Services"). To facilitate your use of our products, our products may contain third-party services or links to them; since third parties will independently collect and process your personal information over which we have no control, we are not responsible for third-party services unless otherwise required by law, and you are responsible for reading and understanding the privacy policies of third party services and making your own judgment about whether to use their services. 
+As this policy is closely related to the products and/or services you use, you are encouraged to read and understand this policy carefully before using our products and/or services, with particular emphasis on our bolded/underlined terms, and to follow the guidelines in this policy when necessary to make the choices you deem appropriate. We have tried to be as concise as possible in the presentation of the relevant technical terms in this policy to facilitate your understanding. By using or continuing to use our products and/or services, you consent to our collection, use, storage, disclosure, and processing of information about you in accordance with this Policy. 
+If you have any questions, comments, or suggestions, you may contact us through the means agreed to in Section VI of this Policy. 
+
+This policy will help you understand the following: 
+I. How we collect and use your personal information 
+II. How we share, transfer and publicly disclose your personal information 
+III. How we protect and store your personal information
+IV. Your rights
+V. How to update this policy 
+VI. How to contact us
+
+A. How we collect and use your personal information 
+(a) In the process of your use of this product, we will collect relevant information in accordance with the following terms to achieve certain functions and to protect your product security. 
+1. In order to implement the alarm forwarding function (this function requires you to connect the product to the Internet), we will collect your cell phone number, micro signal, pin number, and email address. This information is collected in order to send you an alarm message. We will also collect alarm messages from the server where the product is located for the purpose of forwarding alarm messages to the receiving address configured for the product. Refusal to provide this information will only prevent you from using the alarm forwarding function, but will not affect your normal use of other functions. 
+2. In order to implement the online upgrade function (this function requires you to connect the product to the Internet), we will collect the IP address, MAC address, and device SN number of the product for the purpose of identifying the device to which the online upgrade command is directed and securing your product. Refusal to provide this information will only prevent you from using the online upgrade function, but will not affect your normal use of other functions. 
+3. In order to implement the online maintenance function (this function requires you to connect your product to the Internet), we will collect the IP address, MAC address, and device SN number of this product for the purpose of product maintenance docking and identifying the device to which the online maintenance instruction refers, refusing to provide these messages will only prevent you from using the online maintenance function normally, but will not affect your normal use of other functions. 
+You are reminded that: 
+1. our products and/or services are provided through different carriers, and the specific products/services that different users choose to use and the functions they achieve differ; accordingly, the type and scope of personal information collected and used by specific products may differ, so please refer to the specific product/service functions; 
+2. If the information you provide to us contains personal information of others, you must ensure that you have legally obtained the authorization of the relevant subject. 
+  
+II. How we share, transfer and publicly disclose your personal information 
+We will not actively share or transfer your personal information to third parties but will obtain your express consent if there are other cases of sharing or transferring your personal information. 
+As our business continues to grow, we may engage in mergers, acquisitions, asset transfers, and other transactions, and we will inform you of the circumstances and continue to protect or require new controllers to continue to protect your personal information in accordance with laws and regulations and standards no less stringent than those required by this policy. 
+(i) Sharing 
+We will not share your personal information with any company, organization or individual, except for the following circumstances: 
+1. We may share your personal information with other parties with your express consent. 
+2. We may share your personal information in accordance with laws and regulations, or in accordance with mandatory requirements of government authorities, and as necessary to fulfill other legal obligations. 
+3. Sharing with Affiliates: Your personal information may be shared with our affiliates in order to facilitate our provision of products and/or services to you based on this product and to recommend information that may be of interest to you. We will only share personal information that is necessary and is subject to the purposes stated in this policy. Affiliates will again seek your authorized consent if they wish to change the purposes for which personal information is processed. 
+(ii) Transfer 
+We will not transfer your personal information to any company, organization or individual, except for the following: 
+1. transfer with express consent: after obtaining your express consent, we will transfer your personal information to other parties; 
+2. in the event of a merger, separation, acquisition, dissolution or bankruptcy and liquidation involving the transfer of personal information, we will inform you of the name or name and contact information of the recipient, and we will require the new company or organization holding your personal information to continue to be bound by this policy, otherwise we will require the company or organization to seek your authorized consent again. 
+(iii) Public Disclosure 
+We will only disclose your personal information publicly if we 
+1. after obtaining your express consent; 
+(2) Disclosure based on law: We may publicly disclose your personal information when compelled to do so by law, legal process, litigation, or government authorities. 
+In addition, in accordance with relevant laws and regulations and national standards, we may share, transfer, and publicly disclose personal information without the prior authorized consent of the subject of the personal information in the following cases: 
+1） Directly related to national security and national defense security; 
+2） Directly related to public safety, public health, and significant public interests 
+3) directly related to crime investigation, prosecution, trial and execution of judgments, etc; 
+4） For the purpose of safeguarding the life, property, and other significant legitimate rights and interests of the subject of personal information or other individuals but where it is difficult to obtain his or her consent 
+5） Personal information disclosed to the public by the subject of the personal information himself/herself; 
+6） Personal information collected from legitimate public disclosures, such as legitimate news reports, government information disclosure, and other channels. 
+III. How we protect and preserve your personal information
+(a) How we protect your personal information
+1. We have used security measures in accordance with industry standards to protect the personal information you provide against unauthorized access, public disclosure, use, modification, damage, or loss of data. We will take all reasonably practicable steps to protect your personal information. For example, we have established an internal management system and operation procedures, implemented classification management of personal information, adopt corresponding encryption, de-identification, and other security technology measures, reasonably determine the operation authority of personal information handling, and regularly provide security education and training for employees, and develop and organize the implementation of contingency plans for personal information security incidents;
+2. We will take all reasonable and feasible measures to ensure that no irrelevant personal information is collected. We will only retain your personal information for as long as necessary to achieve the purposes described in this policy unless an extended retention period is required or permitted by law.
+The Internet environment is not 100% secure and we will endeavor to ensure or warrant the security of any information you send to us. We recommend that you take active steps to protect the security of your personal information when using this product.
+4. In the unfortunate event of a personal information security incident, we will promptly inform you, in accordance with the requirements of laws and regulations, of: the basic situation and possible impact of the security incident, the measures we have taken or will take to deal with it, the suggestions you can independently prevent and reduce the risk, and the remedial measures for you. We will promptly inform you of the event-related situation by email, letter, telephone, push notification, etc. When it is difficult to inform the subject of personal information one by one, we will take a reasonable and effective way to issue an announcement. At the same time, we will also take the initiative to report the disposition of personal information security incidents in accordance with the requirements of regulatory authorities.
+(II) How we store your personal information
+1. Storage location
+We store your personal information collected within the territory of the People's Republic of China in accordance with the provisions of applicable data protection laws. At present, we do not use, store, share, or disclose your personal information in a cross-border business or transfer your personal information outside of China.
+2. Storage Time
+We will only retain your personal information for as long as is necessary for the purposes described in this policy and for as long as required by laws, regulations, and regulatory requirements. We will retain your personal information for the period required by applicable data protection laws. After the legal retention period, we will delete or anonymize your personal information.
+IV. Your rights
+In accordance with the relevant Chinese laws, regulations, and standards, as well as the common practices of other countries and regions, we protect your right to exercise the following rights with respect to your personal information:
+(a) Access to your personal information 
+You have the right to access your personal information, except for the exceptions provided by laws and regulations. If you wish to exercise your right access to your data, you can do so yourself through the following: http://alarm.fotric.cn/asyncTask/m2/index.html.
+If you are unable to access such personal information through the link above, please contact us through info@fotric.com and we will get back to you within 30 days.
+For other personal information generated in the course of your use of our products or services, we will provide it to you as long as we do not require excessive input. If you wish to exercise your right to data access, please contact us through info@fotric.com.
+(ii) Correction of your personal information 
+When you discover an error in the personal information we process about you, you have the right to request that we make a correction. You can request a correction by using the methods listed under "(a) Access to your personal information". If you are unable to correct such personal information through the link above, please reach out to info@fotric.com.
+We will respond to your request for correction within 30 days.
+(iii) Deletion of your personal information 
+You may request us to delete your personal information in the following cases:
+1. if our handling of personal information violates laws and regulations;
+2. if we collect and use your personal information without your consent
+3. if our handling of personal information violates the agreement with you;
+4. if you no longer use our products or services, or if you cancel your account;
+5. if we no longer provide products or services to you.
+If we decide to respond to your request for deletion, we will also simultaneously notify the entities from which we obtained your personal information and request that they delete it promptly, unless otherwise required by law or regulation, or unless those entities have your independent authorization. When you delete information from our service, we may not immediately delete the corresponding information in our backup system but will delete it when the backup is updated.
+(iv) Change the scope of your authorized consent 
+Each business function requires some basic personal information in order to be completed. You may give or withdraw your consent at any time for the collection and use of additional personal information collected.
+You can do this yourself by clicking on the system configuration page, selecting the Alarm Platform Access tab, disabling Alarm Platform Access, and then clicking Save to complete the withdrawal of consent.
+When you withdraw your consent, we will no longer process the corresponding personal information. However, your decision to withdraw consent will not affect the processing of personal information previously carried out based on your authorization.
+(V) Cancellation of accounts by personal information subjects
+You may cancel your previously registered account at any time by contacting us through the contact information in Section 6.
+After canceling your account, we will stop providing you with products or services and delete your personal information upon your request, except as otherwise provided by law or regulation.
+(f) Responding to your request above 
+For security purposes, you may be required to provide a written request or otherwise prove your identity. We may ask you to verify your identity first before processing your request. We will respond within thirty days.
+In principle, we do not charge a fee for your reasonable requests, but we will charge a cost fee for multiple repetitive requests that exceed reasonable limits, as appropriate. We may deny requests that are unwarrantedly repetitive, require excessive technical means (for example, requiring the development of new systems or fundamental changes to current practices), pose a risk to the legal rights of others, or are highly impractical (for example, involving the backup of information stored on tapes).
+We will not be able to respond to your request in the following cases:
+1. it is related to the performance of the obligations of the controller of personal information under laws and regulations
+2. directly related to national security or national defense security
+3. directly related to public safety, public health, or vital public interests
+4. directly related to criminal investigations, prosecutions, trials and enforcement of sentences, etc;
+5. the controller of personal information has sufficient evidence that the subject of personal information has subjective malice or abuse
+The use of rights;
+6. in order to protect the life, property and other significant legitimate rights and interests of the subject of personal information or other individuals but
+6. it is difficult to obtain the consent of the person concerned;
+7. responding to the request of the subject of personal information will lead to serious damage to the legitimate rights and interests of the subject of personal information or other individuals or organizations
+8. where commercial secrets are involved.
+  
+ V. How to update this policy 
+We may revise or change this policy from time to time, you can get the updated policy after upgrading the product software through the function of product online upgrade, then we will collect, use, store and process your personal information in accordance with the updated policy. We will not reduce your rights under this personal information protection policy without your express consent. We will post any changes to this policy on this page. For material changes, we will also provide more prominent notice (including, for certain services, email notification of specific changes to our Personal Information Protection Policy).
+Material changes to this policy include, but are not limited to:
+1. a significant change in our service model. Such as the purpose of processing personal information, the type of personal information processed, and the manner in which personal information is used;
+2. Significant changes in our ownership structure, organizational structure, etc. Such as change of ownership caused by business restructuring, bankruptcy, and merger, etc;
+3. changes in the main recipients of personal information sharing, transfer, or public disclosure;
+4. significant changes in your rights to participate in the processing of personal information and the manner in which they are exercised
+5. When there is a change in the department responsible for handling personal information security, contact information, and complaint channels of us
+6. When the personal information security impact assessment report indicates that there is a high risk.
+We will also keep an older version of this policy on file for your review.
+
+VI. How to contact us
+If you have any questions, comments, or suggestions about this personal information protection policy, contact us through the following ways:
+1. Contact number: 400-821-1226
+2. E-mail: info@fotric.com
+We have set up a dedicated department for personal information protection (or personal information protection officer), you can contact it through the following ways:
+Mail to the following address.
+Building 14, Lane 2500, Xiupu Road, Pudong New Area, Shanghai, China [Personal Information Protection Officer] (Attention)
+Zip code: 201315
+In general, we will reply within thirty days.
+If you are not satisfied with our response, especially if our personal information processing behavior has harmed your legitimate rights and interests, you can also seek a solution through the following external means: file a lawsuit with the court with jurisdiction in the defendant's domicile."</value>
+  </data>
+  <data name="ChannelType" xml:space="preserve">
+    <value>Channel Type</value>
+  </data>
+  <data name="ASensor" xml:space="preserve">
+    <value>Acceleration Sensor</value>
+  </data>
+  <data name="EnvHumSensor" xml:space="preserve">
+    <value>Humidity Sensor</value>
+  </data>
+  <data name="EnvTempSensor" xml:space="preserve">
+    <value>Ambient Temperature Sensor</value>
+  </data>
+  <data name="NoiseSensor" xml:space="preserve">
+    <value>Noise Sensor</value>
+  </data>
+  <data name="SSensor" xml:space="preserve">
+    <value>Position Drift Sensor</value>
+  </data>
+  <data name="TcSensor" xml:space="preserve">
+    <value>Thermocouple Sensor</value>
+  </data>
+  <data name="TempSensor" xml:space="preserve">
+    <value>Temperature Sensor</value>
+  </data>
+  <data name="VSensor" xml:space="preserve">
+    <value>Speed Sensor</value>
+  </data>
+  <data name="Unused" xml:space="preserve">
+    <value>Unused</value>
+  </data>
+  <data name="CommonConfig" xml:space="preserve">
+    <value>Common Configuration</value>
+  </data>
+  <data name="InspectionPlatform" xml:space="preserve">
+    <value>Inspection Platform</value>
+  </data>
+  <data name="SyncFail" xml:space="preserve">
+    <value>Sync Fail</value>
+  </data>
+  <data name="SyncLedger" xml:space="preserve">
+    <value>Sync Ledger</value>
+  </data>
+  <data name="SyncSuccessfully" xml:space="preserve">
+    <value>Sync Successfully</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="ImageCanvas" xml:space="preserve">
+    <value>Image Configuration</value>
+  </data>
+  <data name="RenderMode" xml:space="preserve">
+    <value>Image ratio</value>
+  </data>
+  <data name="FillMode" xml:space="preserve">
+    <value>Full screen ratio</value>
+  </data>
+  <data name="FitMode" xml:space="preserve">
+    <value>Original Scale</value>
+  </data>
+  <data name="UserCustomization" xml:space="preserve">
+    <value>User-defined</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grouping</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="ServiceDuration" xml:space="preserve">
+    <value>Service Duration</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Incorrect password. Please try again.</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+  <data name="UsernameError" xml:space="preserve">
+    <value>Incorrect username. Please try again.</value>
+  </data>
+  <data name="DownloadDevices" xml:space="preserve">
+    <value>Download devices</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="InvalidFullName" xml:space="preserve">
+    <value>Invalid Name</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login Failed</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="PermissionAgent" xml:space="preserve">
+    <value>Server Management</value>
+  </data>
+  <data name="PermissionDevice" xml:space="preserve">
+    <value>Device Management</value>
+  </data>
+  <data name="PermissionDeviceConf" xml:space="preserve">
+    <value>Device Configuration</value>
+  </data>
+  <data name="PermissionEquipment" xml:space="preserve">
+    <value>Equipment Management</value>
+  </data>
+  <data name="PermissionRegion" xml:space="preserve">
+    <value>Group Management</value>
+  </data>
+  <data name="PermissionUser" xml:space="preserve">
+    <value>User Management</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>Super Admin</value>
+  </data>
+  <data name="UnauthorizedAccessException" xml:space="preserve">
+    <value>Your login session has expired.</value>
+  </data>
+  <data name="UsersInGroup" xml:space="preserve">
+    <value>Users in the Group</value>
+  </data>
+  <data name="UserType" xml:space="preserve">
+    <value>User Type</value>
+  </data>
+  <data name="AccountForbidden" xml:space="preserve">
+    <value>Insufficient User Permissions</value>
+  </data>
+  <data name="CreateUserFailed" xml:space="preserve">
+    <value>Failed to create user</value>
+  </data>
+  <data name="InvalidUserType" xml:space="preserve">
+    <value>Invalid UserType</value>
+  </data>
+  <data name="UserCount" xml:space="preserve">
+    <value>Number of Users</value>
+  </data>
+  <data name="AccountUsernameExist" xml:space="preserve">
+    <value>Username already exists</value>
+  </data>
+  <data name="AssociatedGroup" xml:space="preserve">
+    <value>Associated Group</value>
+  </data>
+  <data name="AllOption" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="UnConfirmed" xml:space="preserve">
+    <value>UnConfirmed</value>
+  </data>
+  <data name="AttendedBaggageCap" xml:space="preserve">
+    <value>Item Pick-up Detection</value>
+  </data>
+  <data name="ENVAlarm" xml:space="preserve">
+    <value>EnvironmentMonitorAlarm</value>
+  </data>
+  <data name="FieldDetection" xml:space="preserve">
+    <value>Area Intrusion Detection</value>
+  </data>
+  <data name="IRAlarm" xml:space="preserve">
+    <value>IRAlarm</value>
+  </data>
+  <data name="LineDetection" xml:space="preserve">
+    <value>Out-of-bounds Detection</value>
+  </data>
+  <data name="Loitering" xml:space="preserve">
+    <value>Loitering Detection</value>
+  </data>
+  <data name="RegionEntrance" xml:space="preserve">
+    <value>Enter Area Detection</value>
+  </data>
+  <data name="RegionExiting" xml:space="preserve">
+    <value>Exit Area Detection</value>
+  </data>
+  <data name="SecurityAlarm" xml:space="preserve">
+    <value>SecurityAlarm</value>
+  </data>
+  <data name="UnattendedBaggage" xml:space="preserve">
+    <value>Item Detection Left Behind</value>
+  </data>
+  <data name="ThresholdGreater" xml:space="preserve">
+    <value>Threshold is Greater Than</value>
+  </data>
+  <data name="ThresholdLess" xml:space="preserve">
+    <value>Threshold is Less Than</value>
+  </data>
+  <data name="AutoLogin" xml:space="preserve">
+    <value>Auto Login</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>Login Time</value>
+  </data>
+  <data name="AlarmOutConfig" xml:space="preserve">
+    <value>Alarm Out Config</value>
+  </data>
+  <data name="AlarmOutEnable" xml:space="preserve">
+    <value>Alarm Out Enabled</value>
+  </data>
+  <data name="OnlineChannel" xml:space="preserve">
+    <value>Online Channel</value>
+  </data>
+  <data name="IPAddr" xml:space="preserve">
+    <value>IP Address</value>
+  </data>
+  <data name="LogConfig" xml:space="preserve">
+    <value>Log configuration</value>
+  </data>
+  <data name="LogRetentionTime" xml:space="preserve">
+    <value>Log retention period</value>
+  </data>
+  <data name="CustomSystem" xml:space="preserve">
+    <value>System Customization</value>
+  </data>
+  <data name="SoftwareIcon" xml:space="preserve">
+    <value>Software icon</value>
+  </data>
+  <data name="SoftwareName" xml:space="preserve">
+    <value>Software name</value>
+  </data>
+  <data name="InvalidSoftwareIcon" xml:space="preserve">
+    <value>Invalid software icon</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="TipSoftwareName" xml:space="preserve">
+    <value>The software name cannot be empty</value>
+  </data>
+  <data name="TipUploadFileFailed" xml:space="preserve">
+    <value>Failed to upload file</value>
+  </data>
+  <data name="EnableSuperResolution" xml:space="preserve">
+    <value>Enable Super-Resolution</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="ExportImagesAsWell" xml:space="preserve">
+    <value>Export images as well?</value>
+  </data>
+  <data name="AcousticMonitorAgent" xml:space="preserve">
+    <value>Acoustic Service</value>
+  </data>
+  <data name="ACCamera" xml:space="preserve">
+    <value>AC Camera</value>
+  </data>
+</root>

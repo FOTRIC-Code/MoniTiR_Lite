@@ -1,0 +1,134 @@
+﻿<Window
+    x:Class="Firefly.Client.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:control="clr-namespace:Firefly.Client.Control;assembly=Firefly.Client.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+    xmlns:local="clr-namespace:Firefly.Client"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:service="clr-namespace:Firefly.Client.Service;assembly=Firefly.Client.Service"
+    x:Name="root"
+    Width="1920"
+    Height="900"
+    MinWidth="1000"
+    MinHeight="600"
+    Loaded="MainWindow_OnLoaded"
+    ShowInTaskbar="True"
+    Style="{StaticResource ResizableWindow}"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style BasedOn="{StaticResource IRtek.Styles.ListViewItem.NonSelectable}" TargetType="{x:Type ListViewItem}">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Bottom" />
+            <Setter Property="Padding" Value="0,0,4,0" />
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <amur:IRtekWindowHeader
+            x:Name="irHeader"
+            Grid.Row="0"
+            Height="48"
+            DockPanel.Dock="Top"
+            FontSize="{StaticResource LargeFontSize}"
+            HeaderMaxWidth="316"
+            Icon="{Binding IconPath}"
+            IsShowMinMaxRestore="True"
+            ResizeMode="{Binding ElementName=root, Path=ResizeMode}"
+            SoftwareTitleFontSize="{Binding SoftwareTitleFontSize}"
+            TitleWidth="220">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ListView
+                    x:Name="lvPages"
+                    amur:ItemHelper.ActiveSelectionBackgroundBrush="{DynamicResource IRtek.Brushes.ThemeBackground.Navbar}"
+                    amur:ItemHelper.HoverBackgroundBrush="{DynamicResource IRtek.Brushes.ThemeBackground.Navbar}"
+                    amur:ItemHelper.SelectedBackgroundBrush="{DynamicResource IRtek.Brushes.ThemeBackground.Navbar}"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    ItemsSource="{Binding DisplayPages}"
+                    ScrollViewer.CanContentScroll="False"
+                    ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                    ScrollViewer.PanningMode="HorizontalOnly"
+                    ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel
+                                IsItemsHost="True"
+                                Orientation="Horizontal"
+                                ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <control:ClosableLabel
+                                x:Name="clPage"
+                                VerticalAlignment="Bottom"
+                                CanClose="{Binding CanClose}"
+                                Close="clPage_Close"
+                                Content="{Binding Name}"
+                                FontSize="{StaticResource NormalFontSize}"
+                                Icon="{Binding TitleIcon}"
+                                IsSelected="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}, Path=IsSelected}"
+                                MouseLeftButtonUp="clPage_MouseLeftButtonUp"
+                                Tag="{Binding}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackPanel
+                    Grid.Column="1"
+                    Margin="{DynamicResource RightMargin}"
+                    Orientation="Horizontal">
+                    <control:SymbolIcon
+                        Margin="0,0,8,0"
+                        FontSize="20"
+                        Symbol="Time" />
+                    <TextBlock Margin="0,0,18,0" Text="{Binding Time, Mode=OneWay, StringFormat={}{0:yyyy-MM-dd HH:mm:ss}}" />
+                </StackPanel>
+            </Grid>
+        </amur:IRtekWindowHeader>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Frame x:Name="fmPages" NavigationUIVisibility="Hidden">
+                <Frame.Style>
+                    <Style BasedOn="{StaticResource {x:Type Frame}}" TargetType="{x:Type Frame}">
+                        <Setter Property="Margin" Value="0,0,0,45" />
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Frame}">
+                                    <Border>
+                                        <ContentPresenter
+                                            x:Name="PART_FrameCP"
+                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <DataTrigger Binding="{Binding DataContext.NoContainAlarmPage, RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}" Value="False">
+                                            <Setter Property="Margin" Value="0" />
+                                        </DataTrigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Frame.Style>
+            </Frame>
+            <local:AlarmStatusBarControl
+                x:Name="alarmBar"
+                MinHeight="45"
+                VerticalAlignment="Bottom"
+                Tag="{Binding DataContext.AlarmCenterPage, RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                Visibility="{Binding DataContext.NoContainAlarmPage, Converter={StaticResource BoolToVisibilityConverter}, RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}" />
+        </Grid>
+    </DockPanel>
+</Window>

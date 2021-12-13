@@ -1,0 +1,82 @@
+﻿<UserControl
+    x:Class="Firefly.Client.Control.Pagination"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+    xmlns:local="clr-namespace:Firefly.Client.Control"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="50"
+    d:DesignWidth="900"
+    Background="{StaticResource IRtek.Brushes.ThemeBackground.Statusbar}"
+    mc:Ignorable="d">
+    <StackPanel
+        Height="40"
+        HorizontalAlignment="Right"
+        Orientation="Horizontal">
+        <amur:Button
+            x:Name="btnFirst"
+            Click="btnFirst_Click"
+            IsEnabled="{Binding CanGoFirstOrPre}">
+            <amur:Button.Icon>
+                <amur:SymbolIcon Symbol="ArrowPrevious20" />
+            </amur:Button.Icon>
+        </amur:Button>
+        <Rectangle Width="{DynamicResource IntervalsWidth}" />
+        <amur:Button
+            x:Name="btnPrev"
+            Click="btnPrev_Click"
+            IsEnabled="{Binding CanGoFirstOrPre}">
+            <amur:Button.Icon>
+                <amur:SymbolIcon Symbol="ChevronLeft20" />
+            </amur:Button.Icon>
+        </amur:Button>
+        <Rectangle Width="{DynamicResource IntervalsWidth}" />
+        <TextBlock Text="{x:Static lang:Resources.Sequence}" />
+        <TextBox
+            x:Name="tbPageIndex"
+            Width="50"
+            Height="32"
+            Margin="{StaticResource NormalMargin}"
+            KeyDown="tbPageIndex_OnKeyDown"
+            Text="{Binding CurrentPageIndex}" />
+        <TextBlock Text="/" />
+        <TextBlock Text="{Binding PageCount}" />
+        <TextBlock Text="{x:Static lang:Resources.Page}" />
+        <Rectangle Width="{DynamicResource IntervalsWidth}" />
+        <amur:Button
+            x:Name="btnNext"
+            Click="btnNext_Click"
+            IsEnabled="{Binding CanGoLastOrNext}">
+            <amur:Button.Icon>
+                <amur:SymbolIcon Symbol="ChevronRight20" />
+            </amur:Button.Icon>
+        </amur:Button>
+        <Rectangle Width="{DynamicResource IntervalsWidth}" />
+        <amur:Button
+            x:Name="btnLast"
+            Click="btnLast_Click"
+            IsEnabled="{Binding CanGoLastOrNext}">
+            <amur:Button.Icon>
+                <amur:SymbolIcon Symbol="ArrowNext20" />
+            </amur:Button.Icon>
+        </amur:Button>
+        <Rectangle Width="{DynamicResource IntervalsWidth}" />
+        <TextBlock Text="{x:Static lang:Resources.EachPage}" />
+        <ComboBox
+            x:Name="cmbCombox"
+            Width="120"
+            Height="32"
+            Margin="{StaticResource NormalMargin}"
+            VerticalAlignment="Stretch"
+            ItemsSource="{Binding PageSizeList}"
+            SelectedValue="{Binding CurrentPageSize}"
+            SelectionChanged="cmbCombox_OnSelectionChanged" />
+        <TextBlock Text="{x:Static lang:Resources.Item}" />
+        <Rectangle Margin="{StaticResource NormalMargin}" />
+        <TextBlock Text="{x:Static lang:Resources.All}" />
+        <TextBlock Text="{Binding TotalCount}" />
+        <TextBlock Text="{x:Static lang:Resources.Item}" />
+    </StackPanel>
+</UserControl>

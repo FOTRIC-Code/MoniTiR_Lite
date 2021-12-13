@@ -1,0 +1,155 @@
+﻿<TabItem
+    x:Class="Firefly.Client.CommonConfigControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:control="http://schemas.fireflyclient.com/control/2022/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:Firefly.Client.I18n.Properties;assembly=Firefly.Client.I18n"
+    xmlns:local="clr-namespace:Firefly.Client"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    amur:TabItemAssist.Icon="{control:SymbolIcon DataCenter}"
+    d:DataContext="{d:DesignInstance local:CommonConfigControl,
+                                     IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Loaded="CommonConfigControl_Loaded"
+    Style="{StaticResource IRtek.Styles.TabItem.Classic}"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource IRtek.Brushes.ThemeBackground.WorkArea}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="{DynamicResource LargeMargin}" Background="{StaticResource IRtek.Brushes.ThemeBackground.Content}">
+                <StackPanel
+                    Margin="{DynamicResource LeftMargin}"
+                    HorizontalAlignment="Left"
+                    Orientation="Vertical">
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <TextBlock Text="{x:Static lang:Resources.DatabasesConfig}" />
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="340"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Text="{Binding ViewModel.DataRetentionTime, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Left" />
+                            <TextBlock
+                                Margin="{DynamicResource LeftMargin}"
+                                Text="{x:Static lang:Resources.Day}"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.DataRetentionTime}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="340"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Text="{Binding ViewModel.AlarmRetentionTime, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Left" />
+                            <TextBlock
+                                Margin="{DynamicResource LeftMargin}"
+                                Text="{x:Static lang:Resources.Day}"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.AlarmRetentionTime}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <TextBlock Text="{x:Static lang:Resources.LogConfig}" />
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="340"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Text="{Binding ViewModel.LogRetentionTime, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Left" />
+                            <TextBlock
+                                Margin="{DynamicResource LeftMargin}"
+                                Text="{x:Static lang:Resources.Day}"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.LogRetentionTime}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <TextBlock Text="{x:Static lang:Resources.AlarmRepeatCount}" />
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="340"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Text="{Binding ViewModel.SpeechCount, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.SpeechAlarm}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                    <Rectangle Height="{DynamicResource IntervalsHeight}" />
+                    <DockPanel Margin="{DynamicResource LeftMargin}">
+                        <StackPanel
+                            Width="340"
+                            DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Width="300"
+                                Text="{Binding ViewModel.SoundCount, UpdateSourceTrigger=PropertyChanged}"
+                                TextAlignment="Left" />
+                        </StackPanel>
+                        <Rectangle Width="{DynamicResource IntervalsWidth}" DockPanel.Dock="Right" />
+                        <TextBlock
+                            MinWidth="120"
+                            DockPanel.Dock="Left"
+                            Text="{x:Static lang:Resources.SoundAlarm}"
+                            TextAlignment="Right" />
+                    </DockPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel
+            Grid.Row="1"
+            Margin="{StaticResource RightMargin}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Orientation="Horizontal">
+            <Button
+                x:Name="btnSave"
+                Click="btnSave_Click"
+                Content="{x:Static lang:Resources.Save}"
+                IsDefault="True" />
+        </StackPanel>
+    </Grid>
+</TabItem>

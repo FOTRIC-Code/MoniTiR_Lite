@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E2157CB-49AE-4DC8-957E-B995BC108EDA}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Firefly.Client.Control</RootNamespace>
+    <AssemblyName>Firefly.Client.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amur.Common, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Amur.Controls, Version=1.9.5.878, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Amur.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FFmpeg.AutoGen" Version="5.1.1" />
+    <PackageReference Include="log4net" Version="2.0.13" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ClosableLabel\ClosableLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Image\IRtekImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ValidationPopup\ValidationPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IRtekWaitWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OSDConfig\CharacterThumb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DayScrollbar\DayGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DayScrollbar\DayGridItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DayScrollbar\DayOverride.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditableDateTime.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="IRtekMessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OSDConfig\OSDConfigGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pagination.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Dictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WheelControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adorner\ImageBehavior.cs" />
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="Canvas\CanvasType.cs" />
+    <Compile Include="Canvas\RTSPClientControl.cs" />
+    <Compile Include="Canvas\RTSP\RTSPClient.cs" />
+    <Compile Include="Canvas\RTSP\VideoFrameConverter.cs" />
+    <Compile Include="Canvas\RTSP\VideoStreamDecoder.cs" />
+    <Compile Include="Canvas\DeviceMarker.cs" />
+    <Compile Include="Canvas\ImageCanvas.cs" />
+    <Compile Include="Controls\IconElement\SymbolIcon.cs" />
+    <Compile Include="Controls\Image\IRtekImage.cs" />
+    <Compile Include="Controls\Image\IRtekImageAdorner.cs" />
+    <Compile Include="Controls\Page\IPage.cs" />
+    <Compile Include="Extensions\FireflyIconExtensions.cs" />
+    <Compile Include="Controls\SymbolRegular.cs" />
+    <Compile Include="IRFileControl\ThermalHint.cs" />
+    <Compile Include="IRFileControl\BitmapExtend.cs" />
+    <Compile Include="IRFileControl\IRtekFileViewModel.cs" />
+    <Compile Include="IRFileControl\ImageThumb.cs" />
+    <Compile Include="IRFileControl\IRtekFileControl.cs" />
+    <Compile Include="IRFileControl\DCFileControl.cs" />
+    <Compile Include="IRFileControl\UNIIRFileControl.cs" />
+    <Compile Include="Canvas\ThermalCommon.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarker.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerCanvas.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerEllipse.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerPolygon.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerPolyline.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerRectangle.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMarkerSpot.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalResizeMarker.cs" />
+    <Compile Include="Canvas\ThermalMarker\ThermalMask.cs" />
+    <Compile Include="IRtekWaitWindow.xaml.cs">
+      <DependentUpon>IRtekWaitWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markup\SymbolIconExtension.cs" />
+    <Compile Include="OSDConfig\CharacterThumb.xaml.cs">
+      <DependentUpon>CharacterThumb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ClosableLabel\ClosableLabel.cs" />
+    <Compile Include="OSDConfig\OSDConfigGrid.xaml.cs">
+      <DependentUpon>OSDConfigGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\IPreference.cs" />
+    <Compile Include="Preferences\PreferenceHelper.cs" />
+    <Compile Include="TreeComboBox\TreeComboBox.cs" />
+    <Compile Include="UIConstants.cs" />
+    <Compile Include="DayScrollbar\DayTickBar.cs" />
+    <Compile Include="DayScrollbar\Duration.cs" />
+    <Compile Include="DayScrollbar\DayGrid.xaml.cs">
+      <DependentUpon>DayGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DayScrollbar\DayGridItem.xaml.cs">
+      <DependentUpon>DayGridItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DayScrollbar\DayOverride.xaml.cs">
+      <DependentUpon>DayOverride.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditableDateTime.xaml.cs">
+      <DependentUpon>EditableDateTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IRtekCursors.cs" />
+    <Compile Include="IRtekMessageBox.xaml.cs">
+      <DependentUpon>IRtekMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NotEqualityToBoolConverter.cs" />
+    <Compile Include="Pagination.xaml.cs">
+      <DependentUpon>Pagination.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReverseBooleanConverter.cs" />
+    <Compile Include="SimpleCommand.cs" />
+    <Compile Include="Controls\ValidationPopup\ValidateViewModel.cs" />
+    <Compile Include="Controls\ValidationPopup\ValidationConverter.cs" />
+    <Compile Include="Controls\ValidationPopup\ValidationPopup.cs" />
+    <Compile Include="Controls\ValidationPopup\ValidationRang.cs" />
+    <Compile Include="WheelControl.xaml.cs">
+      <DependentUpon>WheelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowAssist.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\area_icon.png" />
+    <Resource Include="Resources\arrow_down_icon.png" />
+    <Resource Include="Resources\arrow_up_icon.png" />
+    <Resource Include="Resources\delete_icon.png" />
+    <Resource Include="Resources\device_icon.png" />
+    <Resource Include="Resources\first_icon.png" />
+    <Resource Include="Resources\form_close_icon.png" />
+    <Resource Include="Resources\form_max_icon.png" />
+    <Resource Include="Resources\form_min_icon.png" />
+    <Resource Include="Resources\form_normal_icon.png" />
+    <Resource Include="Resources\last_icon.png" />
+    <Resource Include="Resources\next_icon.png" />
+    <Resource Include="Resources\preview_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly.Client.Common\Firefly.Client.Common.csproj">
+      <Project>{cf3bf28a-e3b0-4f16-936e-a731a5455e5e}</Project>
+      <Name>Firefly.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.Client.I18n\Firefly.Client.I18n.csproj">
+      <Project>{1e8054ff-276d-4f30-aa3c-6421c14d2dd2}</Project>
+      <Name>Firefly.Client.I18n</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly.SDK.File\Firefly.SDK.File.csproj">
+      <Project>{0306a04f-63a4-41f9-a744-6873662af19a}</Project>
+      <Name>Firefly.SDK.File</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Delta.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ellipse.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Label.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Line.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Polygon.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Polyline.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Rectangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Spot.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SpotSizeAll.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\SymbolRegular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Condition=" '$(Platform)' == 'x86'" Include=".\FFmpeg\x86\*.*">
+      <TargetPath>FFmpeg\%(Filename)%(Extension)</TargetPath>
+      <Visible>False</Visible>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Condition=" '$(Platform)' == 'x64'" Include=".\FFmpeg\x64\*.*">
+      <TargetPath>FFmpeg\%(Filename)%(Extension)</TargetPath>
+      <Visible>False</Visible>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

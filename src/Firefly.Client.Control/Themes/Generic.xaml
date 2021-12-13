@@ -1,0 +1,169 @@
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amur="http://schemas.amur.com/amur/2022/xaml"
+    xmlns:local="clr-namespace:Firefly.Client.Control">
+
+    <ResourceDictionary.MergedDictionaries>
+        <amur:ControlsDictionary />
+        <ResourceDictionary Source="pack://application:,,,/Firefly.Client.Control;component/Themes/Dictionary.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Firefly.Client.Control;component/Controls/ClosableLabel/ClosableLabel.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Firefly.Client.Control;component/Controls/ValidationPopup/ValidationPopup.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type local:RTSPClientControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:RTSPClientControl}">
+                    <Border
+                        Padding="{TemplateBinding Control.Padding}"
+                        Background="{TemplateBinding Panel.Background}"
+                        BorderBrush="{TemplateBinding Border.BorderBrush}"
+                        BorderThickness="{TemplateBinding Border.BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <Grid>
+                            <local:ImageCanvas x:Name="imageCanvas" />
+                            <local:ThermalMarkerCanvas
+                                x:Name="tmcMarkerCanvas"
+                                FontFamily="{TemplateBinding FontFamily}"
+                                FontSize="{TemplateBinding FontSize}"
+                                FontStyle="{TemplateBinding FontStyle}"
+                                FontWeight="{TemplateBinding FontWeight}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:IRtekFileControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:IRtekFileControl}">
+                    <Border
+                        Background="{TemplateBinding Control.Background}"
+                        BorderBrush="{TemplateBinding Border.BorderBrush}"
+                        BorderThickness="{TemplateBinding Border.BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <Grid Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid x:Name="PART_DisplayArea">
+                                <local:ImageThumb x:Name="PART_ThumbImage" ClipToBounds="True" />
+                                <local:ThermalHint
+                                    x:Name="PART_Hint"
+                                    CanvasMode="{Binding CanvasMode, RelativeSource={RelativeSource TemplatedParent}}"
+                                    FontFamily="{TemplateBinding FontFamily}"
+                                    FontSize="{TemplateBinding FontSize}"
+                                    FontStyle="{TemplateBinding FontStyle}"
+                                    FontWeight="{TemplateBinding FontWeight}"
+                                    ShapeCreatorType="{Binding ShapeCreatorType, RelativeSource={RelativeSource TemplatedParent}}" />
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <ListBox
+                                    x:Name="PART_ImageList"
+                                    BorderThickness="0"
+                                    ItemsSource="{Binding ImageItemVMs}">
+                                    <ListBox.Resources>
+                                        <DataTemplate DataType="{x:Type local:ImageItemViewModel}">
+                                            <Border
+                                                Margin="{DynamicResource NormalMargin}"
+                                                BorderBrush="{DynamicResource BorderBrush}"
+                                                BorderThickness="{DynamicResource DefaultBorderThickness}">
+                                                <StackPanel Orientation="Vertical">
+                                                    <Image Height="90" Source="{Binding Source}" />
+                                                    <Border>
+                                                        <TextBlock Text="{Binding Title}" />
+                                                    </Border>
+                                                </StackPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListBox.Resources>
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <VirtualizingStackPanel Orientation="Horizontal" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                </ListBox>
+                                <Border
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                    Width="1"
+                                    HorizontalAlignment="Left"
+                                    Background="{DynamicResource IRtek.Brushes.Highlight}" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:UNIIRFileControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:UNIIRFileControl}">
+                    <Border
+                        Background="{TemplateBinding Control.Background}"
+                        BorderBrush="{TemplateBinding Border.BorderBrush}"
+                        BorderThickness="{TemplateBinding Border.BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <Grid x:Name="PART_DisplayArea" Background="Transparent">
+                            <local:ImageThumb x:Name="PART_ThumbImage" ClipToBounds="True" />
+                            <local:ThermalHint
+                                x:Name="PART_Hint"
+                                CanvasMode="{Binding CanvasMode, RelativeSource={RelativeSource TemplatedParent}}"
+                                FontFamily="{TemplateBinding FontFamily}"
+                                FontSize="{TemplateBinding FontSize}"
+                                FontStyle="{TemplateBinding FontStyle}"
+                                FontWeight="{TemplateBinding FontWeight}"
+                                ShapeCreatorType="{Binding ShapeCreatorType, RelativeSource={RelativeSource TemplatedParent}}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:DCFileControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DCFileControl}">
+                    <Border
+                        Background="{TemplateBinding Control.Background}"
+                        BorderBrush="{TemplateBinding Border.BorderBrush}"
+                        BorderThickness="{TemplateBinding Border.BorderThickness}"
+                        SnapsToDevicePixels="True">
+                        <Grid Background="Transparent">
+                            <local:ImageThumb x:Name="PART_ThumbImage" ClipToBounds="True" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:ImageThumb}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ImageThumb}">
+                    <Image Name="PART_Image">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <TranslateTransform x:Name="PART_Translate" />
+                                <ScaleTransform x:Name="PART_Zoom" />
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
