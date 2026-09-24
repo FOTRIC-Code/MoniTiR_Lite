@@ -1,88 +1,88 @@
 # Firefly.Client
 
-产品名称是 **MoniTiR Lite**。这是 Windows 桌面客户端，用于红外监控：实时预览、告警、数据中心和火情配置。界面是 WPF，目标框架 .NET Framework 4.6.1。仓库里的启动项目是 `src/Firefly.Client`，编译出的程序集名是 `MoniTiRLite`。
+The product name is **MoniTiR Lite**. It is a Windows desktop client for infrared monitoring: live preview, alarms, a data center, and device configuration. The UI is WPF, and the target framework is .NET Framework 4.6.1. The startup project in this repository is `src/Firefly.Client`. The compiled assembly name is `MoniTiRLite`.
 
-## 环境
+## Requirements
 
 - Windows
-- Visual Studio 2022（含 .NET 桌面开发工作负载）
-- .NET Framework 4.6.1 目标包
+- Visual Studio 2022 with the .NET desktop development workload
+- The .NET Framework 4.6.1 targeting pack
 
-解决方案文件是 `src/Firefly.Client.sln`。请使用 **Debug | x64**。主程序是 x64。`Firefly.Client.Control` 在 Any CPU 配置下是 x86，和主程序、`src/Lib` 里的 AMD64 程序集不一致。
+The solution file is `src/Firefly.Client.sln`. Use **Debug | x64**. The main application is x64. `Firefly.Client.Control` is x86 under the Any CPU configuration, which does not match the main application or the AMD64 assemblies in `src/Lib`.
 
-## 编译和运行
+## Build and run
 
-在仓库根目录执行：
+From the repository root:
 
 ```bat
 msbuild src\Firefly.Client.sln /t:Build /p:Configuration=Debug /p:Platform=x64
 ```
 
-或在 Visual Studio 中打开 `src/Firefly.Client.sln`，配置选 Debug、平台选 x64，生成启动项目 `Firefly.Client`。
+Or open `src/Firefly.Client.sln` in Visual Studio, select Debug and x64, and build the startup project `Firefly.Client`.
 
-运行：
+Run:
 
 ```text
 src\Firefly.Client\bin\x64\Debug\MoniTiRLite.exe
 ```
 
-生成 `Firefly.Client` 时会把 `src/Lib` 复制到输出目录。本地数据文件是可执行文件同目录下的 `lite.db`。设备访问地址在 `AppConfig.Load` 中固定为 `http://127.0.0.1:9080`。没有设备时界面可以打开，实时预览没有画面。
+Building `Firefly.Client` copies `src/Lib` into the output directory. The local database is `lite.db` next to the executable. The device address is fixed in `AppConfig.Load` to `http://127.0.0.1:9080`. The UI opens with no device connected. Live preview then has no video.
 
-`src/Firefly.Client/App.config` 里相关项：
+Settings in `src/Firefly.Client/App.config`:
 
-| 键 | 默认值 | 作用 |
+| Key | Default | Purpose |
 | --- | --- | --- |
-| `HWACC` | `false` | 硬件加速 |
-| `SUPPORT_LIVE_GROUP` | `false` | 实时预览分组 |
-| `SHOW_SPLASH` | `true` | 启动闪屏 |
-| `LITE.SERVER_ROOT` | 空 | 本地服务根目录，空则用程序目录 |
+| `HWACC` | `false` | Hardware acceleration |
+| `SUPPORT_LIVE_GROUP` | `false` | Live preview groups |
+| `SHOW_SPLASH` | `true` | Startup splash screen |
+| `LITE.SERVER_ROOT` | empty | Local server root. Empty uses the application directory |
 
-## 目录
+## Layout
 
-| 路径 | 作用 |
+| Path | Role |
 | --- | --- |
-| `src/Firefly.Client` | 主程序。入口是 `App.xaml.cs` 的 `OnStartup`。界面在 `View/` |
-| `src/Firefly.Client.Control` | WPF 控件，含 RTSP 播放 |
-| `src/Firefly.Client.Service` | 设备、告警、配置和本地数据库访问 |
-| `src/Firefly.Client.Common` | 公共类型和常量 |
-| `src/Firefly.Client.I18n` | 界面文案 |
-| `src/Firefly.SDK.File` | 红外文件读写，调用 `IRtekFileSDK.dll` |
-| `src/Firefly.Device.FireMonitor` | 火情监测 |
-| `src/Firefly.Server.StorageAgent` | 存储与 NVR 回放 |
-| `src/Plugin/Firefly.Client.Control.Fire` | 火情设备配置界面 |
-| `src/Lib` | 没有放进本仓库源码的 DLL，编译和运行都要保留 |
+| `src/Firefly.Client` | Main application. Entry point is `OnStartup` in `App.xaml.cs`. Views are under `View/` |
+| `src/Firefly.Client.Control` | WPF controls, including RTSP playback |
+| `src/Firefly.Client.Service` | Device, alarm, configuration, and local database access |
+| `src/Firefly.Client.Common` | Shared types and constants |
+| `src/Firefly.Client.I18n` | UI strings |
+| `src/Firefly.SDK.File` | Infrared file read and write. Calls `IRtekFileSDK.dll` |
+| `src/Firefly.Device.FireMonitor` | Fire monitoring |
+| `src/Firefly.Server.StorageAgent` | Storage and NVR playback |
+| `src/Plugin/Firefly.Client.Control.Fire` | Device configuration UI |
+| `src/Lib` | DLLs that are not built from source in this repository. Required to build and run |
 
 ## src/Lib
 
-不要修改、替换或删除这些文件。带源码的工程编出来的程序集以 `src` 下对应工程为准；`src/Lib` 里同名的 `Firefly.Client.Common.dll`、`Firefly.Client.Control.dll`、`Firefly.Client.Control.Fire.dll` 是随目录复制的二进制。
+Do not modify, replace, or delete these files. Assemblies that have source projects are built from those projects under `src`. The copies in `src/Lib` named `Firefly.Client.Common.dll`, `Firefly.Client.Control.dll`, and `Firefly.Client.Control.Fire.dll` are binaries copied with the directory.
 
-工程直接引用：
+Referenced directly by projects:
 
-| 文件 | 引用方 |
+| File | Referenced by |
 | --- | --- |
-| `Amur.Common.dll`、`Amur.Controls.dll` | 主程序、Control、Service、火情插件 |
-| `Firefly.Device.dll`、`Firefly.I18n.dll`、`Firefly.LogFactory.dll`、`Firefly.Painter.dll`、`Firefly.Stream.Core.dll` | `Firefly.Device.FireMonitor` |
-| `OWB.dll`、`OWB.DataFrame.dll`、`OWB.DCCamera.dll`、`OWB.Drawing.dll`、`OWB.IRCamera.dll`、`OWB.NetSDK.dll` | `Firefly.Device.FireMonitor` |
+| `Amur.Common.dll`, `Amur.Controls.dll` | Main application, Control, Service, and the device configuration plugin |
+| `Firefly.Device.dll`, `Firefly.I18n.dll`, `Firefly.LogFactory.dll`, `Firefly.Painter.dll`, `Firefly.Stream.Core.dll` | `Firefly.Device.FireMonitor` |
+| `OWB.dll`, `OWB.DataFrame.dll`, `OWB.DCCamera.dll`, `OWB.Drawing.dll`, `OWB.IRCamera.dll`, `OWB.NetSDK.dll` | `Firefly.Device.FireMonitor` |
 | `OWB.NVR.dll` | `Firefly.Server.StorageAgent` |
 
-运行时由 P/Invoke 或整目录复制带上：
+Loaded by P/Invoke or copied with the whole directory:
 
-| 路径 | 作用 |
+| Path | Role |
 | --- | --- |
-| `FFmpeg/` | RTSP 解码用的 FFmpeg 5.1 动态库 |
-| `libssl-3-x64.dll`、`libcrypto-3-x64.dll` | OpenSSL 3.0.5 |
-| `IRtekFileSDK.dll`、`IRtek.IRtekFileSDK.dll`、`IRtekNetSDK.dll` | 红外文件和网络 SDK |
-| `FANetSDK.dll` | 红外网络 SDK |
-| `RTSPServer.dll`、`ZLMediaKit.Autogen.dll`、`srtp2.dll` | RTSP 服务 |
-| `HCNetSDK/` | NVR 原生库，加载路径是输出目录下的 `HCNetSDK\HCNetSDK.dll` |
-| `OWB.IRFile.dll`、`OWB.Onvif.dll`、`OWB.Palette.dll`、`OWB.Radiation.dll`、`OWB.SVSDK.dll`、`OWB.CZFSDK.dll`、`OWB.MeasureSDK.dll`、`MeasureUtils.dll`、`Firefly.Mqtt.dll`、`Firefly.UNIFileSDK.dll` | 随 `src/Lib` 复制到输出目录 |
-| `log4net.config` | 日志配置，复制到输出目录 |
+| `FFmpeg/` | FFmpeg 5.1 libraries used to decode RTSP |
+| `libssl-3-x64.dll`, `libcrypto-3-x64.dll` | OpenSSL 3.0.5 |
+| `IRtekFileSDK.dll`, `IRtek.IRtekFileSDK.dll`, `IRtekNetSDK.dll` | Infrared file and network SDKs |
+| `FANetSDK.dll` | Infrared network SDK |
+| `RTSPServer.dll`, `ZLMediaKit.Autogen.dll`, `srtp2.dll` | RTSP server |
+| `HCNetSDK/` | NVR native libraries. Loaded from `HCNetSDK\HCNetSDK.dll` in the output directory |
+| `OWB.IRFile.dll`, `OWB.Onvif.dll`, `OWB.Palette.dll`, `OWB.Radiation.dll`, `OWB.SVSDK.dll`, `OWB.CZFSDK.dll`, `OWB.MeasureSDK.dll`, `MeasureUtils.dll`, `Firefly.Mqtt.dll`, `Firefly.UNIFileSDK.dll` | Copied to the output directory with `src/Lib` |
+| `log4net.config` | Log configuration. Copied to the output directory |
 
 ## Third-party notices
 
 ### Tabler Icons
 
-`src/Firefly.Client/Resources/svg_resources.xaml` 中的图标路径来自 [Tabler Icons](https://tabler-icons.io/)，命名与上游一致。
+Icon paths in `src/Firefly.Client/Resources/svg_resources.xaml` come from [Tabler Icons](https://tabler-icons.io/). Names match the upstream icons.
 
 MIT License
 
@@ -96,14 +96,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### FFmpeg
 
-`src/Lib/FFmpeg/` 下的动态库（avcodec 59.37.100、avformat 59.27.100、avutil 57.28.100、avdevice 59.7.100、avfilter 8.44.100、swresample 4.7.100、swscale 6.7.100）版权归 FFmpeg Project 所有：Copyright (C) 2000-2022 FFmpeg Project。
+Libraries under `src/Lib/FFmpeg/` (avcodec 59.37.100, avformat 59.27.100, avutil 57.28.100, avdevice 59.7.100, avfilter 8.44.100, swresample 4.7.100, swscale 6.7.100) are Copyright (C) 2000-2022 FFmpeg Project.
 
-这些库以动态链接方式使用，许可为 GNU Lesser General Public License 2.1 或更高版本：https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html 。库版本号对应 FFmpeg 5.1 发行版，源码标签为 https://github.com/FFmpeg/FFmpeg/releases/tag/n5.1 。本仓库没有记录这套二进制的 configure 参数。若编译时启用了 GPL 组件，则适用 GNU General Public License：https://www.gnu.org/licenses/gpl-3.0.html 。
+They are used by dynamic linking under the GNU Lesser General Public License 2.1 or later: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html . The library versions match the FFmpeg 5.1 release. Source tag: https://github.com/FFmpeg/FFmpeg/releases/tag/n5.1 . This repository does not record the configure flags used to build these binaries. If the build enabled GPL components, the GNU General Public License applies: https://www.gnu.org/licenses/gpl-3.0.html .
 
 ### OpenSSL
 
-`src/Lib/libssl-3-x64.dll` 与 `src/Lib/libcrypto-3-x64.dll` 为 OpenSSL 3.0.5。
+`src/Lib/libssl-3-x64.dll` and `src/Lib/libcrypto-3-x64.dll` are OpenSSL 3.0.5.
 
 Copyright 1998-2022 The OpenSSL Authors. All rights reserved.
 
-Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0 。OpenSSL 许可证说明见 https://www.openssl.org/source/license.html 。
+Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0 . OpenSSL license notes: https://www.openssl.org/source/license.html .

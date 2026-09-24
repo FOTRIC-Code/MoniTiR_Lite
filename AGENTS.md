@@ -1,27 +1,27 @@
 # Firefly.Client
 
-给改这个仓库的人或编码助手看的约定。产品说明和编译步骤在 `README.md`。
+Conventions for people and coding agents changing this repository. Product description and build steps are in `README.md`.
 
-## 技术栈
+## Stack
 
-- C#，WPF，.NET Framework 4.6.1。
-- 旧式 csproj。不要改成 SDK 风格工程，不要升级目标框架。
-- 解决方案：`src/Firefly.Client.sln`。
-- 生成：`msbuild src\Firefly.Client.sln /t:Build /p:Configuration=Debug /p:Platform=x64`。
-- 主程序输出是 `src/Firefly.Client/bin/x64/Debug/MoniTiRLite.exe`。产品名称是 MoniTiR Lite。
-- 平台用 x64。不要用 Any CPU 或 x86 作为交付配置。
+- C#, WPF, .NET Framework 4.6.1.
+- Legacy csproj format. Do not convert projects to SDK-style, and do not change the target framework.
+- Solution: `src/Firefly.Client.sln`.
+- Build: `msbuild src\Firefly.Client.sln /t:Build /p:Configuration=Debug /p:Platform=x64`.
+- The main executable is `src/Firefly.Client/bin/x64/Debug/MoniTiRLite.exe`. The product name is MoniTiR Lite.
+- Use x64. Do not use Any CPU or x86 as the shipping configuration.
 
-## 从哪里改
+## Where to edit
 
-- 入口：`src/Firefly.Client/App.xaml.cs` 的 `OnStartup`。
-- 界面：`src/Firefly.Client/View/`。
-- 设备、告警、配置、本地库：`src/Firefly.Client.Service/`。
-- 控件和 RTSP：`src/Firefly.Client.Control/`。
-- 火情配置界面：`src/Plugin/Firefly.Client.Control.Fire/`。
-- 文案：`src/Firefly.Client.I18n/`。改完需要同步生成的 Designer，或在 Visual Studio 里保存 resx。
+- Entry point: `OnStartup` in `src/Firefly.Client/App.xaml.cs`.
+- UI: `src/Firefly.Client/View/`.
+- Devices, alarms, configuration, and the local database: `src/Firefly.Client.Service/`.
+- Controls and RTSP: `src/Firefly.Client.Control/`.
+- Device configuration UI: `src/Plugin/Firefly.Client.Control.Fire/`.
+- UI strings: `src/Firefly.Client.I18n/`. After editing, update the generated Designer or save the resx in Visual Studio.
 
-## 不要动
+## Leave unchanged
 
-- `src/Lib` 下的 DLL 和 `HCNetSDK/`、`FFmpeg/`。没有源码，编译和运行都依赖它们。
-- 源文件头的两行版权声明：`Copyright (c) IRtek.Co.Ltd.` 和 `SPDX-License-Identifier: Apache-2.0`。
-- 根目录 `LICENSE` 是 Apache License 2.0 原文。
+- DLLs under `src/Lib`, including `HCNetSDK/` and `FFmpeg/`. They have no source here and are required to build and run.
+- The two-line source header: `Copyright (c) IRtek.Co.Ltd.` and `SPDX-License-Identifier: Apache-2.0`.
+- The root `LICENSE` file. It is the Apache License 2.0 text.
